@@ -1,0 +1,15 @@
+influxdb操作
+
+1.influx
+进入数据库
+
+2.use db_name
+使用数据库
+
+3.show measurements
+显示数据库下的所有表
+
+4.create database "db_name"
+创建一个数据库
+
+5.

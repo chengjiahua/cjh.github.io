@@ -1,0 +1,66 @@
+mysql
+1.登陆数据库
+mysql -h 127.0.0.1 -u kops -pKylin123.
+
+2.查看用户
+SELECT user,host from mysql.user;
+
+3.查看所有数据库
+show databases;
+
+4.查看所有数据库里面的表
+SELECT * FROM information_schema.TABLES WHERE TABLE_SCHEMA = 'khatch';
+
+5.查看表的结构
+desc TABLE_NAME;
+
+6.创建数据库
+CREATE DATABASE kops;
+DROP DATABASE kops;
+
+6.通过sql脚本配置表
+mysql -h 127.0.0.1 -u root -pKylin123. -Dkops < mysql_kylincloud_configs.sql
+sql脚本内为mysql语句
+
+7.mysql数据库备份
+mysqldump -u kops -p kops > MysqlBackup.sql
+
+8.添加用户
+CREATE USER 'kops'@'%' IDENTIFIED BY '1234';
+
+9.更改加密方式
+ALTER USER 'kops'@'%' IDENTIFIED WITH mysql_native_password BY '1234';
+
+10.添加权限
+grant all privileges on *.*  to 'kops'@'%' ;
+
+11.立即生效
+flush privileges;
+
+12.查看用户信息
+SELECT User, Host FROM mysql.user;
+
+13.删除字段
+alter table cruis_tasks drop column facilities_id;
+
+14.修改字段信息
+ALTER TABLE record_report CHANGE facility  facilities_id text;
+
+15.新增字段
+ALTER TABLE testalter_tbl ADD i INT;
+
+16.修改表名
+rename table cruis_facility to facility;
+
+17.时间同步
+SET time_zone = '+8:00';
+flush privileges;
+
+13.新数据库对接kops
+CREATE USER 'kops'@'%' IDENTIFIED BY 'Kylin123.';
+ALTER USER 'kops'@'%' IDENTIFIED WITH mysql_native_password BY 'Kylin123.';
+grant all privileges on *.*  to 'kops'@'%' ;
+flush privileges;
+CREATE DATABASE kops;
+
+

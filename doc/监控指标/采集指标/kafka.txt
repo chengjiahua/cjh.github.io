@@ -1,0 +1,31 @@
+指标名称(单位)
+
+消费请求最大耗时(毫秒/条)
+kafka_network_requestmetrics_totaltimems{request="FetchConsumer"}
+
+生产请求最大耗时(毫秒/条)
+kafka_network_requestmetrics_totaltimems{request="Produce"}
+
+GC次数(次)
+increase(jvm_gc_collection_seconds_count{gc="G1 Old Generation"}[5m])
+
+GC耗时(毫秒/次)
+increase(jvm_gc_collection_seconds_count{gc="G1 Old Generation"}[5m])
+
+jvm内存使用率(%)
+sum(jvm_memory_bytes_used)/sum(jvm_memory_bytes_max)*100
+
+Leader的数量(个)
+kafka_server_replicamanager_leadercount
+
+分区的数量(个)
+kafka_server_replicamanager_partitioncount
+
+文件句柄使用率(%)
+process_open_fds/process_max_fds*100
+
+是否是控制节点()
+kafka_controller_kafkacontroller_activecontrollercount
+
+未完成复制的的分区数(个)
+kafka_server_replicamanager_underreplicatedpartitions

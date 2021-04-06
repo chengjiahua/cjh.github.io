@@ -1,0 +1,328 @@
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 1.8061e-05
+go_gc_duration_seconds{quantile="0.25"} 2.0261e-05
+go_gc_duration_seconds{quantile="0.5"} 2.246e-05
+go_gc_duration_seconds{quantile="0.75"} 3.644e-05
+go_gc_duration_seconds{quantile="1"} 0.000229021
+go_gc_duration_seconds_sum 0.000596824
+go_gc_duration_seconds_count 16
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 8
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.13.14"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 2.939672e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 3.4570344e+07
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.455674e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 400014
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 9.48949375915653e-05
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 2.443264e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 2.939672e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 6.1325312e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 5.095424e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 14022
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 5.9768832e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 6.6420736e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.6002419841959841e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 414036
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 6944
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 65144
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 81920
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 1.245886e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 688128
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 688128
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 7.2351992e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 12
+# HELP openstack_cinder_agent_state agent_state
+# TYPE openstack_cinder_agent_state counter
+openstack_cinder_agent_state{adminState="enabled",disabledReason="",hostname="cpt1",service="cinder-backup",uuid="eec61b32-5bca-7a8f-2df3-6d0862cb2755",zone="nova"} 1
+openstack_cinder_agent_state{adminState="enabled",disabledReason="",hostname="cpt1@rbd-1",service="cinder-volume",uuid="71507945-3cca-a31c-b157-9861a1500cea",zone="nova"} 1
+openstack_cinder_agent_state{adminState="enabled",disabledReason="",hostname="cpt2",service="cinder-backup",uuid="001d5ec7-46df-7134-7b32-4b4a82d0ebd3",zone="nova"} 1
+openstack_cinder_agent_state{adminState="enabled",disabledReason="",hostname="cpt2@rbd-1",service="cinder-volume",uuid="0b08bf9d-2518-636d-dc82-2644656abefa",zone="nova"} 1
+openstack_cinder_agent_state{adminState="enabled",disabledReason="",hostname="ctr1",service="cinder-scheduler",uuid="089d69d7-20b1-9c04-b121-bcc6dbffa700",zone="nova"} 1
+# HELP openstack_cinder_limits_volume_max_gb limits_volume_max_gb
+# TYPE openstack_cinder_limits_volume_max_gb gauge
+openstack_cinder_limits_volume_max_gb{tenant="6grQsA70jGphSh0N",tenant_id="216ddb799ae741669c1c5a8e4eea8201"} 1000
+openstack_cinder_limits_volume_max_gb{tenant="admin",tenant_id="72a575bd0d1540ae99f55e3c4f9ce6f2"} 1000
+openstack_cinder_limits_volume_max_gb{tenant="service",tenant_id="702dcba172d74d7ba676ced3810e68e5"} 1000
+# HELP openstack_cinder_limits_volume_used_gb limits_volume_used_gb
+# TYPE openstack_cinder_limits_volume_used_gb gauge
+openstack_cinder_limits_volume_used_gb{tenant="6grQsA70jGphSh0N",tenant_id="216ddb799ae741669c1c5a8e4eea8201"} 24
+openstack_cinder_limits_volume_used_gb{tenant="admin",tenant_id="72a575bd0d1540ae99f55e3c4f9ce6f2"} 0
+openstack_cinder_limits_volume_used_gb{tenant="service",tenant_id="702dcba172d74d7ba676ced3810e68e5"} 0
+# HELP openstack_cinder_pool_capacity_free_gb pool_capacity_free_gb
+# TYPE openstack_cinder_pool_capacity_free_gb gauge
+openstack_cinder_pool_capacity_free_gb{name="cpt1@rbd-1#rbd-1",vendor_name="Open Source",volume_backend_name="rbd-1"} 116.71
+openstack_cinder_pool_capacity_free_gb{name="cpt2@rbd-1#rbd-1",vendor_name="Open Source",volume_backend_name="rbd-1"} 116.71
+# HELP openstack_cinder_pool_capacity_total_gb pool_capacity_total_gb
+# TYPE openstack_cinder_pool_capacity_total_gb gauge
+openstack_cinder_pool_capacity_total_gb{name="cpt1@rbd-1#rbd-1",vendor_name="Open Source",volume_backend_name="rbd-1"} 118.19
+openstack_cinder_pool_capacity_total_gb{name="cpt2@rbd-1#rbd-1",vendor_name="Open Source",volume_backend_name="rbd-1"} 118.19
+# HELP openstack_cinder_snapshots snapshots
+# TYPE openstack_cinder_snapshots gauge
+openstack_cinder_snapshots 0
+# HELP openstack_cinder_up up
+# TYPE openstack_cinder_up gauge
+openstack_cinder_up 1
+# HELP openstack_cinder_volume_status volume_status
+# TYPE openstack_cinder_volume_status gauge
+openstack_cinder_volume_status{bootable="true",id="1d2b011f-dc53-4aea-aa54-e6bff36e0c65",name="",size="4",status="available",tenant_id="216ddb799ae741669c1c5a8e4eea8201",volume_type=""} 1
+openstack_cinder_volume_status{bootable="true",id="398b29f4-6d15-44ad-9dd8-5b048a28930a",name="",size="20",status="available",tenant_id="216ddb799ae741669c1c5a8e4eea8201",volume_type=""} 1
+# HELP openstack_cinder_volumes volumes
+# TYPE openstack_cinder_volumes gauge
+openstack_cinder_volumes 2
+# HELP openstack_glance_images images
+# TYPE openstack_glance_images gauge
+openstack_glance_images 1
+# HELP openstack_glance_up up
+# TYPE openstack_glance_up gauge
+openstack_glance_up 1
+# HELP openstack_identity_domains domains
+# TYPE openstack_identity_domains gauge
+openstack_identity_domains 1
+# HELP openstack_identity_groups groups
+# TYPE openstack_identity_groups gauge
+openstack_identity_groups 0
+# HELP openstack_identity_projects projects
+# TYPE openstack_identity_projects gauge
+openstack_identity_projects 3
+# HELP openstack_identity_regions regions
+# TYPE openstack_identity_regions gauge
+openstack_identity_regions 1
+# HELP openstack_identity_up up
+# TYPE openstack_identity_up gauge
+openstack_identity_up 1
+# HELP openstack_identity_users users
+# TYPE openstack_identity_users gauge
+openstack_identity_users 8
+# HELP openstack_neutron_agent_state agent_state
+# TYPE openstack_neutron_agent_state counter
+openstack_neutron_agent_state{adminState="up",hostname="cpt1",id="f9ed1ad0-772c-464d-aa3a-1cfc6291de17",service="neutron-linuxbridge-agent"} 1
+openstack_neutron_agent_state{adminState="up",hostname="cpt2",id="61a6ff99-21a4-4760-9373-88c249be971e",service="neutron-linuxbridge-agent"} 1
+openstack_neutron_agent_state{adminState="up",hostname="ctr1",id="09fe89b0-0550-48c9-bac8-660e47e2cbe2",service="neutron-l3-agent"} 1
+openstack_neutron_agent_state{adminState="up",hostname="ctr1",id="8a3f83d5-f068-4797-b8fb-fa0703a54d6d",service="neutron-linuxbridge-agent"} 1
+openstack_neutron_agent_state{adminState="up",hostname="ctr1",id="a3780ea3-7969-466f-ad0d-901c33e55dcf",service="neutron-lbaasv2-agent"} 1
+openstack_neutron_agent_state{adminState="up",hostname="ctr1",id="b500aeae-4296-4b43-8f2c-a404602ce639",service="neutron-metadata-agent"} 1
+openstack_neutron_agent_state{adminState="up",hostname="ctr1",id="d607afff-79c3-409b-8820-f5dc9ccb32fd",service="neutron-dhcp-agent"} 1
+# HELP openstack_neutron_floating_ips floating_ips
+# TYPE openstack_neutron_floating_ips gauge
+openstack_neutron_floating_ips 0
+# HELP openstack_neutron_floating_ips_associated_not_active floating_ips_associated_not_active
+# TYPE openstack_neutron_floating_ips_associated_not_active gauge
+openstack_neutron_floating_ips_associated_not_active 0
+# HELP openstack_neutron_loadbalancers loadbalancers
+# TYPE openstack_neutron_loadbalancers gauge
+openstack_neutron_loadbalancers 0
+# HELP openstack_neutron_loadbalancers_not_active loadbalancers_not_active
+# TYPE openstack_neutron_loadbalancers_not_active gauge
+openstack_neutron_loadbalancers_not_active 0
+# HELP openstack_neutron_network_ip_availabilities_total network_ip_availabilities_total
+# TYPE openstack_neutron_network_ip_availabilities_total gauge
+openstack_neutron_network_ip_availabilities_total{cidr="10.17.100.0/24",ip_version="4",network_id="068ee5f2-0345-4292-bb98-36a892690a32",network_name="outer",project_id="216ddb799ae741669c1c5a8e4eea8201",subnet_name="sub_outer"} 41
+openstack_neutron_network_ip_availabilities_total{cidr="10.17.100.0/24",ip_version="4",network_id="92dd1f8b-94fd-4b35-8b25-afc6d2a8967c",network_name="manager",project_id="216ddb799ae741669c1c5a8e4eea8201",subnet_name="manager"} 99
+openstack_neutron_network_ip_availabilities_total{cidr="192.168.10.0/24",ip_version="4",network_id="c7ec8922-dce0-4693-802f-602ff80bd50c",network_name="test",project_id="216ddb799ae741669c1c5a8e4eea8201",subnet_name="subtest"} 11
+# HELP openstack_neutron_network_ip_availabilities_used network_ip_availabilities_used
+# TYPE openstack_neutron_network_ip_availabilities_used gauge
+openstack_neutron_network_ip_availabilities_used{cidr="10.17.100.0/24",ip_version="4",network_id="068ee5f2-0345-4292-bb98-36a892690a32",network_name="outer",project_id="216ddb799ae741669c1c5a8e4eea8201",subnet_name="sub_outer"} 2
+openstack_neutron_network_ip_availabilities_used{cidr="10.17.100.0/24",ip_version="4",network_id="92dd1f8b-94fd-4b35-8b25-afc6d2a8967c",network_name="manager",project_id="216ddb799ae741669c1c5a8e4eea8201",subnet_name="manager"} 4
+openstack_neutron_network_ip_availabilities_used{cidr="192.168.10.0/24",ip_version="4",network_id="c7ec8922-dce0-4693-802f-602ff80bd50c",network_name="test",project_id="216ddb799ae741669c1c5a8e4eea8201",subnet_name="subtest"} 2
+# HELP openstack_neutron_networks networks
+# TYPE openstack_neutron_networks gauge
+openstack_neutron_networks 3
+# HELP openstack_neutron_port port
+# TYPE openstack_neutron_port gauge
+openstack_neutron_port{binding_vif_type="bridge",device_owner="compute:nova",mac_address="fa:16:3e:20:a9:0e",network_id="92dd1f8b-94fd-4b35-8b25-afc6d2a8967c",status="ACTIVE",uuid="678f0b17-4e5b-49b4-a422-e16e0e33358c"} 1
+openstack_neutron_port{binding_vif_type="bridge",device_owner="compute:nova",mac_address="fa:16:3e:8f:1a:75",network_id="92dd1f8b-94fd-4b35-8b25-afc6d2a8967c",status="ACTIVE",uuid="7eb52fbc-2e8b-4dbe-a236-26ea32e3b2ad"} 1
+openstack_neutron_port{binding_vif_type="bridge",device_owner="compute:nova",mac_address="fa:16:3e:f6:89:a5",network_id="92dd1f8b-94fd-4b35-8b25-afc6d2a8967c",status="ACTIVE",uuid="4b7f3904-4d6c-46c5-af88-ab6a5c8e78da"} 1
+openstack_neutron_port{binding_vif_type="bridge",device_owner="network:dhcp",mac_address="fa:16:3e:75:e1:6d",network_id="068ee5f2-0345-4292-bb98-36a892690a32",status="ACTIVE",uuid="6ab18c73-43e3-4331-adc4-3db105475ae8"} 1
+openstack_neutron_port{binding_vif_type="bridge",device_owner="network:dhcp",mac_address="fa:16:3e:c8:49:02",network_id="92dd1f8b-94fd-4b35-8b25-afc6d2a8967c",status="ACTIVE",uuid="730f6fad-5f7a-457e-9d22-4627147c9383"} 1
+openstack_neutron_port{binding_vif_type="bridge",device_owner="network:dhcp",mac_address="fa:16:3e:e3:0d:6e",network_id="c7ec8922-dce0-4693-802f-602ff80bd50c",status="ACTIVE",uuid="5d1de876-1243-4fe1-bce8-c18789e2f237"} 1
+openstack_neutron_port{binding_vif_type="bridge",device_owner="network:router_interface",mac_address="fa:16:3e:46:00:f5",network_id="c7ec8922-dce0-4693-802f-602ff80bd50c",status="ACTIVE",uuid="ed7dfdf7-6772-4bc9-a741-a027960aa329"} 1
+openstack_neutron_port{binding_vif_type="bridge",device_owner="network:router_interface",mac_address="fa:16:3e:6c:88:4e",network_id="068ee5f2-0345-4292-bb98-36a892690a32",status="ACTIVE",uuid="f7ba6a40-9335-46a1-b912-77ff897c27e9"} 1
+# HELP openstack_neutron_ports ports
+# TYPE openstack_neutron_ports gauge
+openstack_neutron_ports 8
+# HELP openstack_neutron_ports_lb_not_active ports_lb_not_active
+# TYPE openstack_neutron_ports_lb_not_active gauge
+openstack_neutron_ports_lb_not_active 0
+# HELP openstack_neutron_ports_no_ips ports_no_ips
+# TYPE openstack_neutron_ports_no_ips gauge
+openstack_neutron_ports_no_ips 0
+# HELP openstack_neutron_routers routers
+# TYPE openstack_neutron_routers gauge
+openstack_neutron_routers 1
+# HELP openstack_neutron_routers_not_active routers_not_active
+# TYPE openstack_neutron_routers_not_active gauge
+openstack_neutron_routers_not_active 0
+# HELP openstack_neutron_security_groups security_groups
+# TYPE openstack_neutron_security_groups gauge
+openstack_neutron_security_groups 3
+# HELP openstack_neutron_subnets subnets
+# TYPE openstack_neutron_subnets gauge
+openstack_neutron_subnets 3
+# HELP openstack_neutron_up up
+# TYPE openstack_neutron_up gauge
+openstack_neutron_up 1
+# HELP openstack_nova_agent_state agent_state
+# TYPE openstack_nova_agent_state counter
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="cpt1",id="8",service="nova-compute",zone="nova"} 1
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="cpt2",id="9",service="nova-compute",zone="nova"} 1
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="ctr1",id="1",service="nova-scheduler",zone="internal"} 1
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="ctr1",id="2",service="nova-conductor",zone="internal"} 1
+openstack_nova_agent_state{adminState="enabled",disabledReason="",hostname="ctr1",id="7",service="nova-consoleauth",zone="internal"} 1
+# HELP openstack_nova_availability_zones availability_zones
+# TYPE openstack_nova_availability_zones gauge
+openstack_nova_availability_zones 1
+# HELP openstack_nova_current_workload current_workload
+# TYPE openstack_nova_current_workload gauge
+openstack_nova_current_workload{aggregates="",availability_zone="",hostname="cpt1"} 0
+openstack_nova_current_workload{aggregates="",availability_zone="",hostname="cpt2"} 0
+# HELP openstack_nova_flavors flavors
+# TYPE openstack_nova_flavors gauge
+openstack_nova_flavors 52
+# HELP openstack_nova_limits_memory_max limits_memory_max
+# TYPE openstack_nova_limits_memory_max gauge
+openstack_nova_limits_memory_max{tenant="6grQsA70jGphSh0N",tenant_id="216ddb799ae741669c1c5a8e4eea8201"} 51200
+openstack_nova_limits_memory_max{tenant="admin",tenant_id="72a575bd0d1540ae99f55e3c4f9ce6f2"} 51200
+openstack_nova_limits_memory_max{tenant="service",tenant_id="702dcba172d74d7ba676ced3810e68e5"} 51200
+# HELP openstack_nova_limits_memory_used limits_memory_used
+# TYPE openstack_nova_limits_memory_used gauge
+openstack_nova_limits_memory_used{tenant="6grQsA70jGphSh0N",tenant_id="216ddb799ae741669c1c5a8e4eea8201"} 6144
+openstack_nova_limits_memory_used{tenant="admin",tenant_id="72a575bd0d1540ae99f55e3c4f9ce6f2"} 0
+openstack_nova_limits_memory_used{tenant="service",tenant_id="702dcba172d74d7ba676ced3810e68e5"} 0
+# HELP openstack_nova_limits_vcpus_max limits_vcpus_max
+# TYPE openstack_nova_limits_vcpus_max gauge
+openstack_nova_limits_vcpus_max{tenant="6grQsA70jGphSh0N",tenant_id="216ddb799ae741669c1c5a8e4eea8201"} 20
+openstack_nova_limits_vcpus_max{tenant="admin",tenant_id="72a575bd0d1540ae99f55e3c4f9ce6f2"} 20
+openstack_nova_limits_vcpus_max{tenant="service",tenant_id="702dcba172d74d7ba676ced3810e68e5"} 20
+# HELP openstack_nova_limits_vcpus_used limits_vcpus_used
+# TYPE openstack_nova_limits_vcpus_used gauge
+openstack_nova_limits_vcpus_used{tenant="6grQsA70jGphSh0N",tenant_id="216ddb799ae741669c1c5a8e4eea8201"} 6
+openstack_nova_limits_vcpus_used{tenant="admin",tenant_id="72a575bd0d1540ae99f55e3c4f9ce6f2"} 0
+openstack_nova_limits_vcpus_used{tenant="service",tenant_id="702dcba172d74d7ba676ced3810e68e5"} 0
+# HELP openstack_nova_local_storage_available_bytes local_storage_available_bytes
+# TYPE openstack_nova_local_storage_available_bytes gauge
+openstack_nova_local_storage_available_bytes{aggregates="",availability_zone="",hostname="cpt1"} 1.5032385536e+11
+openstack_nova_local_storage_available_bytes{aggregates="",availability_zone="",hostname="cpt2"} 1.5032385536e+11
+# HELP openstack_nova_local_storage_used_bytes local_storage_used_bytes
+# TYPE openstack_nova_local_storage_used_bytes gauge
+openstack_nova_local_storage_used_bytes{aggregates="",availability_zone="",hostname="cpt1"} 4.294967296e+10
+openstack_nova_local_storage_used_bytes{aggregates="",availability_zone="",hostname="cpt2"} 2.147483648e+10
+# HELP openstack_nova_memory_available_bytes memory_available_bytes
+# TYPE openstack_nova_memory_available_bytes gauge
+openstack_nova_memory_available_bytes{aggregates="",availability_zone="",hostname="cpt1"} 8.301576192e+09
+openstack_nova_memory_available_bytes{aggregates="",availability_zone="",hostname="cpt2"} 8.301576192e+09
+# HELP openstack_nova_memory_used_bytes memory_used_bytes
+# TYPE openstack_nova_memory_used_bytes gauge
+openstack_nova_memory_used_bytes{aggregates="",availability_zone="",hostname="cpt1"} 4.831838208e+09
+openstack_nova_memory_used_bytes{aggregates="",availability_zone="",hostname="cpt2"} 2.68435456e+09
+# HELP openstack_nova_running_vms running_vms
+# TYPE openstack_nova_running_vms gauge
+openstack_nova_running_vms{aggregates="",availability_zone="",hostname="cpt1"} 2
+openstack_nova_running_vms{aggregates="",availability_zone="",hostname="cpt2"} 1
+# HELP openstack_nova_security_groups security_groups
+# TYPE openstack_nova_security_groups gauge
+openstack_nova_security_groups 1
+# HELP openstack_nova_server_status server_status
+# TYPE openstack_nova_server_status gauge
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="1353f409-0721-411b-9a4b-1877dda05768",host_id="05b2fbdedb394e44698e3e35add55a8c9689603bd9145c70a68e8206",id="16a94cc3-9783-4c57-92ec-838ada525eb6",name="test2",status="SHUTOFF",tenant_id="216ddb799ae741669c1c5a8e4eea8201",user_id="154707576dcb46cf90736c00a97cc686",uuid="16a94cc3-9783-4c57-92ec-838ada525eb6"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="1353f409-0721-411b-9a4b-1877dda05768",host_id="05b2fbdedb394e44698e3e35add55a8c9689603bd9145c70a68e8206",id="1fd6874e-7d2e-4590-ba50-487490b4047a",name="test",status="SHUTOFF",tenant_id="216ddb799ae741669c1c5a8e4eea8201",user_id="154707576dcb46cf90736c00a97cc686",uuid="1fd6874e-7d2e-4590-ba50-487490b4047a"} 11
+openstack_nova_server_status{address_ipv4="",address_ipv6="",availability_zone="nova",flavor_id="1353f409-0721-411b-9a4b-1877dda05768",host_id="8990cb9ac4135a31934f29a88435bf4f6ed2e529cd9f3b1f7ae6c44a",id="7233b05d-ac52-4798-a065-fe1d732c3fac",name="cpt2-test",status="SHUTOFF",tenant_id="216ddb799ae741669c1c5a8e4eea8201",user_id="154707576dcb46cf90736c00a97cc686",uuid="7233b05d-ac52-4798-a065-fe1d732c3fac"} 11
+# HELP openstack_nova_total_vms total_vms
+# TYPE openstack_nova_total_vms gauge
+openstack_nova_total_vms 3
+# HELP openstack_nova_up up
+# TYPE openstack_nova_up gauge
+openstack_nova_up 1
+# HELP openstack_nova_vcpus_available vcpus_available
+# TYPE openstack_nova_vcpus_available gauge
+openstack_nova_vcpus_available{aggregates="",availability_zone="",hostname="cpt1"} 4
+openstack_nova_vcpus_available{aggregates="",availability_zone="",hostname="cpt2"} 4
+# HELP openstack_nova_vcpus_used vcpus_used
+# TYPE openstack_nova_vcpus_used gauge
+openstack_nova_vcpus_used{aggregates="",availability_zone="",hostname="cpt1"} 4
+openstack_nova_vcpus_used{aggregates="",availability_zone="",hostname="cpt2"} 2
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.68
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1024
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 10
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 1.31072e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.60024191943e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 4.7284224e+08
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes -1
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 7
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0

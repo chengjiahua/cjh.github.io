@@ -1,0 +1,6 @@
+vi /etc/sysconfig/network-scripts/ifcfg-xxxx
+nmcli c reload xxxx
+
+nmcli c up [ifname]
+nmcli d reapply [ifname]
+nmcli d connect [ifname]

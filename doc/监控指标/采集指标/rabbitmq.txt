@@ -1,0 +1,129 @@
+采集器状态()
+rabbitmq_up
+
+RabbitMQ节点运行状态()
+rabbitmq_running
+
+内存使用量(M)
+rabbitmq_node_mem_used/1024/1024
+
+可用存储空间(M)
+rabbitmq_node_disk_free/1024/1024
+
+内存使用率(%)
+rabbitmq_node_mem_used/rabbitmq_node_mem_limit*100
+
+文件句柄使用率(%)
+rabbitmq_fd_used/rabbitmq_fd_available*100
+
+socket连接使用率(%)
+rabbitmq_sockets_used/rabbitmq_sockets_available*100
+
+消费速率-手动确认(个/秒)
+rate(rabbitmq_queue_messages_delivered_total[5m])
+
+生产速率(个/秒)
+rate(rabbitmq_queue_messages_published_total[5m])
+
+消费者数(个)
+rabbitmq_consumers
+
+连接数(个)
+rabbitmq_connections
+
+通道数(个)
+rabbitmq_channels
+
+队列数(个)
+rabbitmq_queues
+
+队列可消费和未确认消息总数(个)
+rabbitmq_queue_messages_global
+
+队列可消费消息数(个)
+rabbitmq_queue_messages_ready_global
+
+队列未确认消息数(个)
+queue_messages_unacknowledged_global
+
+
+
+
+
+总共的指标
+
+ rabbitmq_channels
+ 通道数。
+ 
+ rabbitmq_connections
+ 连接数。
+ 
+ rabbitmq_consumers
+ 消息使用者的数量。
+ 
+ rabbitmq_exchange_messages_published_in_total
+ 总计发布到交换机中的消息数，即不考虑路由。
+ 
+ rabbitmq_exchange_messages_published_out_total
+ 总数从交换机发布的消息数，即考虑路由。
+ 
+ rabbitmq_exchanges
+ 正在使用的交换数量。
+ 
+ rabbitmq_exporter_build_info
+ 一个带有常量'1'值的度量标准，由版本，修订版，分支和构建日期标记，用于构建Rabbitmq_exporter。
+ 
+ rabbitmq_fd_available
+ 可用的文件描述符
+ 
+ rabbitmq_fd_used
+ 使用的文件描述符
+ 
+ rabbitmq_module_scrape_duration_seconds
+ 最后一次抓取的持续时间（以秒为单位）
+ 
+ rabbitmq_module_up
+ 是每个模块上一次成功的Rabbitmq刮擦。
+ 
+ rabbitmq_node_disk_free
+ 磁盘可用空间（以字节为单位）。
+ 
+ rabbitmq_node_disk_free_alarm
+ 磁盘警报是否已消失。
+ 
+ rabbitmq_node_disk_free_limit
+ 磁盘警报将在该点发出。
+ 
+ rabbitmq_node_mem_alarm
+ 内存警报是否已发出
+ 
+ rabbitmq_node_mem_limit
+ 内存警报将在该点发出
+ 
+ Rabbitmq_node_mem_used
+ 以字节为单位使用的内存
+ 
+ rabbitmq_partitions
+ 当前网络分区数。 0可以。如果集群被分割，则该值至少为2
+ 
+ rabbitmq_queue_consumer_utilisation
+ 队列能够立即将消息传递给使用者的时间的分数（介于0.0和1.0之间）。
+ 如果使用者受到网络拥塞或预取计数的限制，则该值可以小于1.0。
+ 
+ rabbitmq_queue_consumers
+ 消费者数量。
+ 
+ rabbitmq_queue_disk_reads_total
+ 自此队列启动以来从磁盘读取消息的总次数。
+ 
+ rabbitmq_queue_disk_writes_total
+ 自此队列启动以来，消息已将消息写入磁盘的总次数。
+ 
+ rabbitmq_queue_gc_collections_before_fullsweep
+ 全扫前的最大世代收藏
+ 
+ rabbitmq_queue_gc_min_heap
+ 最小堆大小（以字为单位）
+ 
+ rabbitmq_queue_gc_min_vheap
+ 最小二进制虚拟堆大小（以字为单位）

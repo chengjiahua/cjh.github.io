@@ -1,0 +1,918 @@
+# HELP ceph_active_pgs No. of active PGs in the cluster
+# TYPE ceph_active_pgs gauge
+ceph_active_pgs{cluster="ceph"} 2048
+# HELP ceph_backfill_wait_pgs No. of PGs in the cluster with backfill_wait state
+# TYPE ceph_backfill_wait_pgs gauge
+ceph_backfill_wait_pgs{cluster="ceph"} 0
+# HELP ceph_backfilling_pgs No. of backfilling PGs in the cluster
+# TYPE ceph_backfilling_pgs gauge
+ceph_backfilling_pgs{cluster="ceph"} 0
+# HELP ceph_cache_evict_io_bytes Rate of bytes being evicted from the cache pool per second
+# TYPE ceph_cache_evict_io_bytes gauge
+ceph_cache_evict_io_bytes{cluster="ceph"} 0
+# HELP ceph_cache_flush_io_bytes Rate of bytes being flushed from the cache pool per second
+# TYPE ceph_cache_flush_io_bytes gauge
+ceph_cache_flush_io_bytes{cluster="ceph"} 0
+# HELP ceph_cache_promote_io_ops Total cache promote operations measured per second
+# TYPE ceph_cache_promote_io_ops gauge
+ceph_cache_promote_io_ops{cluster="ceph"} 0
+# HELP ceph_client_io_ops Total client ops on the cluster measured per second
+# TYPE ceph_client_io_ops gauge
+ceph_client_io_ops{cluster="ceph"} 3209
+# HELP ceph_client_io_read_bytes Rate of bytes being read by all clients per second
+# TYPE ceph_client_io_read_bytes gauge
+ceph_client_io_read_bytes{cluster="ceph"} 9.3395736e+07
+# HELP ceph_client_io_read_ops Total client read I/O ops on the cluster measured per second
+# TYPE ceph_client_io_read_ops gauge
+ceph_client_io_read_ops{cluster="ceph"} 2899
+# HELP ceph_client_io_write_bytes Rate of bytes being written by all clients per second
+# TYPE ceph_client_io_write_bytes gauge
+ceph_client_io_write_bytes{cluster="ceph"} 3.456899e+07
+# HELP ceph_client_io_write_ops Total client write I/O ops on the cluster measured per second
+# TYPE ceph_client_io_write_ops gauge
+ceph_client_io_write_ops{cluster="ceph"} 310
+# HELP ceph_cluster_available_bytes Available space within the cluster
+# TYPE ceph_cluster_available_bytes gauge
+ceph_cluster_available_bytes{cluster="ceph"} 5.4194423857152e+13
+# HELP ceph_cluster_capacity_bytes Total capacity of the cluster
+# TYPE ceph_cluster_capacity_bytes gauge
+ceph_cluster_capacity_bytes{cluster="ceph"} 6.2395128168448e+13
+# HELP ceph_cluster_objects No. of rados objects within the cluster
+# TYPE ceph_cluster_objects gauge
+ceph_cluster_objects{cluster="ceph"} 767531
+# HELP ceph_cluster_used_bytes Capacity of the cluster currently in use
+# TYPE ceph_cluster_used_bytes gauge
+ceph_cluster_used_bytes{cluster="ceph"} 8.200704311296e+12
+# HELP ceph_deep_scrubbing_pgs No. of deep scrubbing PGs in the cluster
+# TYPE ceph_deep_scrubbing_pgs gauge
+ceph_deep_scrubbing_pgs{cluster="ceph"} 0
+# HELP ceph_degraded_objects No. of degraded objects across all PGs, includes replicas
+# TYPE ceph_degraded_objects gauge
+ceph_degraded_objects{cluster="ceph"} 0
+# HELP ceph_degraded_pgs No. of PGs in a degraded state
+# TYPE ceph_degraded_pgs gauge
+ceph_degraded_pgs{cluster="ceph"} 0
+# HELP ceph_down_pgs No. of PGs in the cluster in down state
+# TYPE ceph_down_pgs gauge
+ceph_down_pgs{cluster="ceph"} 0
+# HELP ceph_forced_backfill_pgs No. of PGs in the cluster with forced_backfill state
+# TYPE ceph_forced_backfill_pgs gauge
+ceph_forced_backfill_pgs{cluster="ceph"} 0
+# HELP ceph_forced_recovery_pgs No. of PGs in the cluster with forced_recovery state
+# TYPE ceph_forced_recovery_pgs gauge
+ceph_forced_recovery_pgs{cluster="ceph"} 0
+# HELP ceph_health_status Health status of Cluster, can vary only between 3 states (err:2, warn:1, ok:0)
+# TYPE ceph_health_status gauge
+ceph_health_status{cluster="ceph"} 0
+# HELP ceph_health_status_interp Health status of Cluster, can vary only between 4 states (err:3, critical_warn:2, soft_warn:1, ok:0)
+# TYPE ceph_health_status_interp gauge
+ceph_health_status_interp{cluster="ceph"} 0
+# HELP ceph_incomplete_pgs No. of PGs in the cluster in incomplete state
+# TYPE ceph_incomplete_pgs gauge
+ceph_incomplete_pgs{cluster="ceph"} 0
+# HELP ceph_inconsistent_pgs No. of PGs in the cluster in inconsistent state
+# TYPE ceph_inconsistent_pgs gauge
+ceph_inconsistent_pgs{cluster="ceph"} 0
+# HELP ceph_mgrs Total number of mgrs, including standbys
+# TYPE ceph_mgrs gauge
+ceph_mgrs{cluster="ceph"} 2
+# HELP ceph_mgrs_active Count of active mgrs, can be either 0 or 1
+# TYPE ceph_mgrs_active gauge
+ceph_mgrs_active{cluster="ceph"} 1
+# HELP ceph_misplaced_objects No. of misplaced objects across all PGs, includes replicas
+# TYPE ceph_misplaced_objects gauge
+ceph_misplaced_objects{cluster="ceph"} 0
+# HELP ceph_monitor_clock_skew_seconds Clock skew the monitor node is incurring
+# TYPE ceph_monitor_clock_skew_seconds gauge
+ceph_monitor_clock_skew_seconds{cluster="ceph",monitor="compute1"} 0
+ceph_monitor_clock_skew_seconds{cluster="ceph",monitor="compute2"} 0
+ceph_monitor_clock_skew_seconds{cluster="ceph",monitor="controller"} 0
+# HELP ceph_monitor_latency_seconds Latency the monitor node is incurring
+# TYPE ceph_monitor_latency_seconds gauge
+ceph_monitor_latency_seconds{cluster="ceph",monitor="compute1"} 0.000643
+ceph_monitor_latency_seconds{cluster="ceph",monitor="compute2"} 0.000492
+ceph_monitor_latency_seconds{cluster="ceph",monitor="controller"} 0
+# HELP ceph_monitor_quorum_count The total size of the monitor quorum
+# TYPE ceph_monitor_quorum_count gauge
+ceph_monitor_quorum_count{cluster="ceph"} 3
+# HELP ceph_mons_down Count of Mons that are in DOWN state
+# TYPE ceph_mons_down gauge
+ceph_mons_down{cluster="ceph"} 0
+# HELP ceph_new_crash_reports Number of new crash reports available
+# TYPE ceph_new_crash_reports gauge
+ceph_new_crash_reports{cluster="ceph"} 0
+# HELP ceph_osd_avail_bytes OSD Available Storage in Bytes
+# TYPE ceph_osd_avail_bytes gauge
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 1.720736546816e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 3.51193464832e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 3.513094176768e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 1.704239824896e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 1.780260732928e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 1.729766555648e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 1.737561669632e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 1.768463204352e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 1.74937145344e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 1.739153342464e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 3.4415886336e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 1.746724978688e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 3.462111756288e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 1.743542222848e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 1.757857447936e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 1.779710558208e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 1.708395921408e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 1.757628792832e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 1.776153985024e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 3.49791387648e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 3.4621079552e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 9.9812245504e+11
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1.002931683328e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1.02111346688e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1.03101104128e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1.012764049408e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1.02405537792e+12
+ceph_osd_avail_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1.016248795136e+12
+# HELP ceph_osd_average_utilization OSD Average Utilization
+# TYPE ceph_osd_average_utilization gauge
+ceph_osd_average_utilization{cluster="ceph"} 13.142954
+# HELP ceph_osd_backfill_full OSD Backfill Full Status
+# TYPE ceph_osd_backfill_full gauge
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 0
+ceph_osd_backfill_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 0
+# HELP ceph_osd_backfill_full_ratio OSD Backfill Full Ratio Value
+# TYPE ceph_osd_backfill_full_ratio gauge
+ceph_osd_backfill_full_ratio{cluster="ceph"} 0.9
+# HELP ceph_osd_bytes OSD Total Bytes
+# TYPE ceph_osd_bytes gauge
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 4.000787030016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 4.000787030016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 4.000787030016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 4.000787030016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 2.000398934016e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 1.998998994944e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 1.998998994944e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 1.998998994944e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 1.998998994944e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 1.998998994944e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 3.999999721472e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 3.999999721472e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 1.19899947008e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1.19899947008e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1.19899947008e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1.19899947008e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1.19899947008e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1.19899947008e+12
+ceph_osd_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1.19899947008e+12
+# HELP ceph_osd_crush_weight OSD Crush Weight
+# TYPE ceph_osd_crush_weight gauge
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 3.638687
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 3.638687
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 3.638687
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 3.638687
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 1.819397
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 1.8181
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 1.8181
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 1.8181
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 1.8181
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 1.8181
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 1.8181
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 3.637985
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 3.637985
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 1.0905
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1.0905
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1.0905
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1.0905
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1.0905
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1.0905
+ceph_osd_crush_weight{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1.0905
+# HELP ceph_osd_depth OSD Depth
+# TYPE ceph_osd_depth gauge
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 2
+ceph_osd_depth{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 2
+# HELP ceph_osd_down Number of OSDs down in the cluster
+# TYPE ceph_osd_down gauge
+ceph_osd_down{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="default",root="",status="down"} 1
+# HELP ceph_osd_full OSD Full Status
+# TYPE ceph_osd_full gauge
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 0
+ceph_osd_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 0
+# HELP ceph_osd_full_ratio OSD Full Ratio Value
+# TYPE ceph_osd_full_ratio gauge
+ceph_osd_full_ratio{cluster="ceph"} 0.95
+# HELP ceph_osd_in OSD In Status
+# TYPE ceph_osd_in gauge
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1
+ceph_osd_in{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1
+# HELP ceph_osd_near_full OSD Near Full Status
+# TYPE ceph_osd_near_full gauge
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 0
+ceph_osd_near_full{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 0
+# HELP ceph_osd_near_full_ratio OSD Near Full Ratio Value
+# TYPE ceph_osd_near_full_ratio gauge
+ceph_osd_near_full_ratio{cluster="ceph"} 0.85
+# HELP ceph_osd_pg_upmap_items_total OSD PG-Upmap Exception Table Entry Count
+# TYPE ceph_osd_pg_upmap_items_total gauge
+ceph_osd_pg_upmap_items_total{cluster="ceph"} 0
+# HELP ceph_osd_pgs OSD Placement Group Count
+# TYPE ceph_osd_pgs gauge
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 128
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 249
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 256
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 144
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 110
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 129
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 138
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 124
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 125
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 129
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 259
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 131
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 267
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 125
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 121
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 107
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 142
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 130
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 109
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 259
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 281
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 102
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 101
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 86
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 87
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 81
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 87
+ceph_osd_pgs{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 89
+# HELP ceph_osd_reweight OSD Reweight
+# TYPE ceph_osd_reweight gauge
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1
+ceph_osd_reweight{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1
+# HELP ceph_osd_total_avail_bytes OSD Total Available Storage Bytes 
+# TYPE ceph_osd_total_avail_bytes gauge
+ceph_osd_total_avail_bytes{cluster="ceph"} 5.4194565152768e+13
+# HELP ceph_osd_total_bytes OSD Total Storage Bytes
+# TYPE ceph_osd_total_bytes gauge
+ceph_osd_total_bytes{cluster="ceph"} 6.2395128168448e+13
+# HELP ceph_osd_total_used_bytes OSD Total Used Storage Bytes
+# TYPE ceph_osd_total_used_bytes gauge
+ceph_osd_total_used_bytes{cluster="ceph"} 8.20056301568e+12
+# HELP ceph_osd_up OSD Up Status
+# TYPE ceph_osd_up gauge
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1
+ceph_osd_up{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1
+# HELP ceph_osd_used_bytes OSD Used Storage in Bytes
+# TYPE ceph_osd_used_bytes gauge
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 2.796623872e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 4.88852381696e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 4.87692853248e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 2.9615910912e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 2.20138201088e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 2.70632378368e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 2.62837264384e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 2.31935729664e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 2.51027480576e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 2.61245591552e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 5.59198396416e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 2.53673955328e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 5.38675273728e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 2.56856711168e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 2.41141547008e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 2.19288436736e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 2.90603073536e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 2.41370202112e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 2.2284500992e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 5.02085844992e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 5.37891766272e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 2.0087701504e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1.96067786752e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1.778860032e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1.679884288e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1.86235420672e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1.7494409216e+11
+ceph_osd_used_bytes{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1.82750674944e+11
+# HELP ceph_osd_utilization OSD Utilization
+# TYPE ceph_osd_utilization gauge
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 13.980331
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 12.218905
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 12.189923
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 14.805002
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 11.004715
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 13.52892
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 13.139242
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 11.594474
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 12.548871
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 13.059675
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 13.97721
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 12.681168
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 13.464233
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 12.840274
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 12.063115
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 10.969912
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 14.53743
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 12.074553
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 11.14783
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 12.552147
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 13.447295
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 16.75372
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 16.352617
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 14.836204
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 14.010718
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 15.532569
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 14.59084
+ceph_osd_utilization{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 15.241931
+# HELP ceph_osd_variance OSD Variance
+# TYPE ceph_osd_variance gauge
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute1",osd="osd.10",rack="",root="default"} 1.063713
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute1",osd="osd.11",rack="",root="default"} 0.929692
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute1",osd="osd.12",rack="",root="default"} 0.927487
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute1",osd="osd.13",rack="",root="default"} 1.126459
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute1",osd="osd.7",rack="",root="default"} 0.837309
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute1",osd="osd.8",rack="",root="default"} 1.029367
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute1",osd="osd.9",rack="",root="default"} 0.999718
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute2",osd="osd.14",rack="",root="default"} 0.882182
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute2",osd="osd.15",rack="",root="default"} 0.954798
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute2",osd="osd.16",rack="",root="default"} 0.993664
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute2",osd="osd.17",rack="",root="default"} 1.063476
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute2",osd="osd.18",rack="",root="default"} 0.964864
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute2",osd="osd.19",rack="",root="default"} 1.024445
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute2",osd="osd.20",rack="",root="default"} 0.97697
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.21",rack="",root="default"} 0.917839
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.22",rack="",root="default"} 0.834661
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.23",rack="",root="default"} 1.106101
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.24",rack="",root="default"} 0.918709
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.25",rack="",root="default"} 0.848198
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.26",rack="",root="default"} 0
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.27",rack="",root="default"} 0.955048
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="compute3",osd="osd.28",rack="",root="default"} 1.023156
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="controller",osd="osd.0",rack="",root="default"} 1.27473
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="controller",osd="osd.1",rack="",root="default"} 1.244212
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="controller",osd="osd.2",rack="",root="default"} 1.128833
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="controller",osd="osd.3",rack="",root="default"} 1.066025
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="controller",osd="osd.4",rack="",root="default"} 1.181817
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="controller",osd="osd.5",rack="",root="default"} 1.110164
+ceph_osd_variance{cluster="ceph",device_class="hdd",host="controller",osd="osd.6",rack="",root="default"} 1.159704
+# HELP ceph_osdmap_flag_full The cluster is flagged as full and cannot service writes
+# TYPE ceph_osdmap_flag_full gauge
+ceph_osdmap_flag_full{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_nobackfill OSDs will not be backfilled
+# TYPE ceph_osdmap_flag_nobackfill gauge
+ceph_osdmap_flag_nobackfill{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_nodeep_scrub Deep scrubbing is disabled
+# TYPE ceph_osdmap_flag_nodeep_scrub gauge
+ceph_osdmap_flag_nodeep_scrub{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_nodown OSD failure reports are ignored, OSDs will not be marked as down
+# TYPE ceph_osdmap_flag_nodown gauge
+ceph_osdmap_flag_nodown{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_noin OSDs that are out will not be automatically marked in
+# TYPE ceph_osdmap_flag_noin gauge
+ceph_osdmap_flag_noin{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_noout OSDs will not be automatically marked out after the configured interval
+# TYPE ceph_osdmap_flag_noout gauge
+ceph_osdmap_flag_noout{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_norebalance Data rebalancing is suspended
+# TYPE ceph_osdmap_flag_norebalance gauge
+ceph_osdmap_flag_norebalance{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_norecover Recovery is suspended
+# TYPE ceph_osdmap_flag_norecover gauge
+ceph_osdmap_flag_norecover{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_noscrub Scrubbing is disabled
+# TYPE ceph_osdmap_flag_noscrub gauge
+ceph_osdmap_flag_noscrub{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_notieragent Cache tiering activity is suspended
+# TYPE ceph_osdmap_flag_notieragent gauge
+ceph_osdmap_flag_notieragent{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_noup OSDs are not allowed to start
+# TYPE ceph_osdmap_flag_noup gauge
+ceph_osdmap_flag_noup{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_pauserd Reads are paused
+# TYPE ceph_osdmap_flag_pauserd gauge
+ceph_osdmap_flag_pauserd{cluster="ceph"} 0
+# HELP ceph_osdmap_flag_pausewr Writes are paused
+# TYPE ceph_osdmap_flag_pausewr gauge
+ceph_osdmap_flag_pausewr{cluster="ceph"} 0
+# HELP ceph_osds Count of total OSDs in the cluster
+# TYPE ceph_osds gauge
+ceph_osds{cluster="ceph"} 29
+# HELP ceph_osds_down Count of OSDs that are in DOWN state
+# TYPE ceph_osds_down gauge
+ceph_osds_down{cluster="ceph"} 1
+# HELP ceph_osds_in Count of OSDs that are in IN state and available to serve requests
+# TYPE ceph_osds_in gauge
+ceph_osds_in{cluster="ceph"} 28
+# HELP ceph_osds_up Count of OSDs that are in UP state
+# TYPE ceph_osds_up gauge
+ceph_osds_up{cluster="ceph"} 28
+# HELP ceph_peering_pgs No. of peering PGs in the cluster
+# TYPE ceph_peering_pgs gauge
+ceph_peering_pgs{cluster="ceph"} 0
+# HELP ceph_pg_state State of PGs in the cluster
+# TYPE ceph_pg_state gauge
+ceph_pg_state{cluster="ceph",state="active"} 2048
+ceph_pg_state{cluster="ceph",state="backfill_wait"} 0
+ceph_pg_state{cluster="ceph",state="backfilling"} 0
+ceph_pg_state{cluster="ceph",state="deep_scrubbing"} 0
+ceph_pg_state{cluster="ceph",state="degraded"} 0
+ceph_pg_state{cluster="ceph",state="down"} 0
+ceph_pg_state{cluster="ceph",state="forced_backfill"} 0
+ceph_pg_state{cluster="ceph",state="forced_recovery"} 0
+ceph_pg_state{cluster="ceph",state="incomplete"} 0
+ceph_pg_state{cluster="ceph",state="inconsistent"} 0
+ceph_pg_state{cluster="ceph",state="peering"} 0
+ceph_pg_state{cluster="ceph",state="recovering"} 0
+ceph_pg_state{cluster="ceph",state="recovery_wait"} 0
+ceph_pg_state{cluster="ceph",state="scrubbing"} 0
+ceph_pg_state{cluster="ceph",state="stale"} 0
+ceph_pg_state{cluster="ceph",state="unclean"} 0
+ceph_pg_state{cluster="ceph",state="undersized"} 0
+# HELP ceph_pgs_remapped No. of PGs that are remapped and incurring cluster-wide movement
+# TYPE ceph_pgs_remapped gauge
+ceph_pgs_remapped{cluster="ceph"} 0
+# HELP ceph_pool_available_bytes Free space for the pool
+# TYPE ceph_pool_available_bytes gauge
+ceph_pool_available_bytes{cluster="ceph",pool="backups"} 2.5192917106688e+13
+ceph_pool_available_bytes{cluster="ceph",pool="images"} 2.5192917106688e+13
+ceph_pool_available_bytes{cluster="ceph",pool="vms"} 2.5192917106688e+13
+ceph_pool_available_bytes{cluster="ceph",pool="volumes"} 2.5192917106688e+13
+# HELP ceph_pool_dirty_objects_total Total no. of dirty objects in a cache-tier pool
+# TYPE ceph_pool_dirty_objects_total gauge
+ceph_pool_dirty_objects_total{cluster="ceph",pool="backups"} 0
+ceph_pool_dirty_objects_total{cluster="ceph",pool="images"} 239705
+ceph_pool_dirty_objects_total{cluster="ceph",pool="vms"} 214299
+ceph_pool_dirty_objects_total{cluster="ceph",pool="volumes"} 313527
+# HELP ceph_pool_expansion_factor Data expansion multiplier for a pool
+# TYPE ceph_pool_expansion_factor gauge
+ceph_pool_expansion_factor{cluster="ceph",pool="backups",profile="replicated",root="default"} 2
+ceph_pool_expansion_factor{cluster="ceph",pool="images",profile="replicated",root="default"} 2
+ceph_pool_expansion_factor{cluster="ceph",pool="vms",profile="replicated",root="default"} 2
+ceph_pool_expansion_factor{cluster="ceph",pool="volumes",profile="replicated",root="default"} 2
+# HELP ceph_pool_min_size Minimum number of copies or chunks of an object that need to be present for active I/O
+# TYPE ceph_pool_min_size gauge
+ceph_pool_min_size{cluster="ceph",pool="backups",profile="replicated",root="default"} 1
+ceph_pool_min_size{cluster="ceph",pool="images",profile="replicated",root="default"} 1
+ceph_pool_min_size{cluster="ceph",pool="vms",profile="replicated",root="default"} 1
+ceph_pool_min_size{cluster="ceph",pool="volumes",profile="replicated",root="default"} 1
+# HELP ceph_pool_objects_total Total no. of objects allocated within the pool
+# TYPE ceph_pool_objects_total gauge
+ceph_pool_objects_total{cluster="ceph",pool="backups"} 0
+ceph_pool_objects_total{cluster="ceph",pool="images"} 239705
+ceph_pool_objects_total{cluster="ceph",pool="vms"} 214299
+ceph_pool_objects_total{cluster="ceph",pool="volumes"} 313527
+# HELP ceph_pool_percent_used Percentage of the capacity available to this pool that is used by this pool
+# TYPE ceph_pool_percent_used gauge
+ceph_pool_percent_used{cluster="ceph",pool="backups"} 0
+ceph_pool_percent_used{cluster="ceph",pool="images"} 0.062518
+ceph_pool_percent_used{cluster="ceph",pool="vms"} 0.043342
+ceph_pool_percent_used{cluster="ceph",pool="volumes"} 0.048326
+# HELP ceph_pool_pg_num The total count of PGs alotted to a pool
+# TYPE ceph_pool_pg_num gauge
+ceph_pool_pg_num{cluster="ceph",pool="backups",profile="replicated",root="default"} 512
+ceph_pool_pg_num{cluster="ceph",pool="images",profile="replicated",root="default"} 512
+ceph_pool_pg_num{cluster="ceph",pool="vms",profile="replicated",root="default"} 512
+ceph_pool_pg_num{cluster="ceph",pool="volumes",profile="replicated",root="default"} 512
+# HELP ceph_pool_pgp_num The total count of PGs alotted to a pool and used for placements
+# TYPE ceph_pool_pgp_num gauge
+ceph_pool_pgp_num{cluster="ceph",pool="backups",profile="replicated",root="default"} 512
+ceph_pool_pgp_num{cluster="ceph",pool="images",profile="replicated",root="default"} 512
+ceph_pool_pgp_num{cluster="ceph",pool="vms",profile="replicated",root="default"} 512
+ceph_pool_pgp_num{cluster="ceph",pool="volumes",profile="replicated",root="default"} 512
+# HELP ceph_pool_quota_max_bytes Maximum amount of bytes of data allowed in a pool
+# TYPE ceph_pool_quota_max_bytes gauge
+ceph_pool_quota_max_bytes{cluster="ceph",pool="backups",profile="replicated",root="default"} 0
+ceph_pool_quota_max_bytes{cluster="ceph",pool="images",profile="replicated",root="default"} 0
+ceph_pool_quota_max_bytes{cluster="ceph",pool="vms",profile="replicated",root="default"} 0
+ceph_pool_quota_max_bytes{cluster="ceph",pool="volumes",profile="replicated",root="default"} 0
+# HELP ceph_pool_quota_max_objects Maximum amount of RADOS objects allowed in a pool
+# TYPE ceph_pool_quota_max_objects gauge
+ceph_pool_quota_max_objects{cluster="ceph",pool="backups",profile="replicated",root="default"} 0
+ceph_pool_quota_max_objects{cluster="ceph",pool="images",profile="replicated",root="default"} 0
+ceph_pool_quota_max_objects{cluster="ceph",pool="vms",profile="replicated",root="default"} 0
+ceph_pool_quota_max_objects{cluster="ceph",pool="volumes",profile="replicated",root="default"} 0
+# HELP ceph_pool_raw_used_bytes Raw capacity of the pool that is currently under use, this factors in the size
+# TYPE ceph_pool_raw_used_bytes gauge
+ceph_pool_raw_used_bytes{cluster="ceph",pool="backups"} 0
+ceph_pool_raw_used_bytes{cluster="ceph",pool="images"} 1.680042005458e+12
+ceph_pool_raw_used_bytes{cluster="ceph",pool="vms"} 1.141390601759e+12
+ceph_pool_raw_used_bytes{cluster="ceph",pool="volumes"} 1.279283792211e+12
+# HELP ceph_pool_read_bytes_total Total read throughput for the pool
+# TYPE ceph_pool_read_bytes_total gauge
+ceph_pool_read_bytes_total{cluster="ceph",pool="backups"} 0
+ceph_pool_read_bytes_total{cluster="ceph",pool="images"} 2.0333736735744e+13
+ceph_pool_read_bytes_total{cluster="ceph",pool="vms"} 6.486607492096e+12
+ceph_pool_read_bytes_total{cluster="ceph",pool="volumes"} 3.4485349767168e+13
+# HELP ceph_pool_read_total Total read I/O calls for the pool
+# TYPE ceph_pool_read_total gauge
+ceph_pool_read_total{cluster="ceph",pool="backups"} 0
+ceph_pool_read_total{cluster="ceph",pool="images"} 4.94892958e+08
+ceph_pool_read_total{cluster="ceph",pool="vms"} 9.78676093e+08
+ceph_pool_read_total{cluster="ceph",pool="volumes"} 2.098455575e+09
+# HELP ceph_pool_size Total copies or chunks of an object that need to be present for a healthy cluster
+# TYPE ceph_pool_size gauge
+ceph_pool_size{cluster="ceph",pool="backups",profile="replicated",root="default"} 2
+ceph_pool_size{cluster="ceph",pool="images",profile="replicated",root="default"} 2
+ceph_pool_size{cluster="ceph",pool="vms",profile="replicated",root="default"} 2
+ceph_pool_size{cluster="ceph",pool="volumes",profile="replicated",root="default"} 2
+# HELP ceph_pool_stripe_width Stripe width of a RADOS object in a pool
+# TYPE ceph_pool_stripe_width gauge
+ceph_pool_stripe_width{cluster="ceph",pool="backups",profile="replicated",root="default"} 0
+ceph_pool_stripe_width{cluster="ceph",pool="images",profile="replicated",root="default"} 0
+ceph_pool_stripe_width{cluster="ceph",pool="vms",profile="replicated",root="default"} 0
+ceph_pool_stripe_width{cluster="ceph",pool="volumes",profile="replicated",root="default"} 0
+# HELP ceph_pool_unfound_objects_total Total no. of unfound objects for the pool
+# TYPE ceph_pool_unfound_objects_total gauge
+ceph_pool_unfound_objects_total{cluster="ceph",pool="backups"} 0
+ceph_pool_unfound_objects_total{cluster="ceph",pool="images"} 0
+ceph_pool_unfound_objects_total{cluster="ceph",pool="vms"} 0
+ceph_pool_unfound_objects_total{cluster="ceph",pool="volumes"} 0
+# HELP ceph_pool_used_bytes Capacity of the pool that is currently under use
+# TYPE ceph_pool_used_bytes gauge
+ceph_pool_used_bytes{cluster="ceph",pool="backups"} 0
+ceph_pool_used_bytes{cluster="ceph",pool="images"} 0
+ceph_pool_used_bytes{cluster="ceph",pool="vms"} 0
+ceph_pool_used_bytes{cluster="ceph",pool="volumes"} 0
+# HELP ceph_pool_write_bytes_total Total write throughput for the pool
+# TYPE ceph_pool_write_bytes_total gauge
+ceph_pool_write_bytes_total{cluster="ceph",pool="backups"} 0
+ceph_pool_write_bytes_total{cluster="ceph",pool="images"} 2.336143533056e+12
+ceph_pool_write_bytes_total{cluster="ceph",pool="vms"} 2.0845690198528e+14
+ceph_pool_write_bytes_total{cluster="ceph",pool="volumes"} 6.7259023548416e+13
+# HELP ceph_pool_write_total Total write I/O calls for the pool
+# TYPE ceph_pool_write_total gauge
+ceph_pool_write_total{cluster="ceph",pool="backups"} 0
+ceph_pool_write_total{cluster="ceph",pool="images"} 1.526676e+06
+ceph_pool_write_total{cluster="ceph",pool="vms"} 1.815614875e+09
+ceph_pool_write_total{cluster="ceph",pool="volumes"} 1.666792475e+09
+# HELP ceph_recovering_pgs No. of recovering PGs in the cluster
+# TYPE ceph_recovering_pgs gauge
+ceph_recovering_pgs{cluster="ceph"} 0
+# HELP ceph_recovery_io_bytes Rate of bytes being recovered in cluster per second
+# TYPE ceph_recovery_io_bytes gauge
+ceph_recovery_io_bytes{cluster="ceph"} 0
+# HELP ceph_recovery_io_keys Rate of keys being recovered in cluster per second
+# TYPE ceph_recovery_io_keys gauge
+ceph_recovery_io_keys{cluster="ceph"} 0
+# HELP ceph_recovery_io_objects Rate of objects being recovered in cluster per second
+# TYPE ceph_recovery_io_objects gauge
+ceph_recovery_io_objects{cluster="ceph"} 0
+# HELP ceph_recovery_wait_pgs No. of PGs in the cluster with recovery_wait state
+# TYPE ceph_recovery_wait_pgs gauge
+ceph_recovery_wait_pgs{cluster="ceph"} 0
+# HELP ceph_scrubbing_pgs No. of scrubbing PGs in the cluster
+# TYPE ceph_scrubbing_pgs gauge
+ceph_scrubbing_pgs{cluster="ceph"} 0
+# HELP ceph_slow_requests No. of slow requests/slow ops
+# TYPE ceph_slow_requests gauge
+ceph_slow_requests{cluster="ceph"} 0
+# HELP ceph_stale_pgs No. of stale PGs in the cluster
+# TYPE ceph_stale_pgs gauge
+ceph_stale_pgs{cluster="ceph"} 0
+# HELP ceph_stuck_degraded_pgs No. of PGs stuck in a degraded state
+# TYPE ceph_stuck_degraded_pgs gauge
+ceph_stuck_degraded_pgs{cluster="ceph"} 0
+# HELP ceph_stuck_stale_pgs No. of stuck stale PGs in the cluster
+# TYPE ceph_stuck_stale_pgs gauge
+ceph_stuck_stale_pgs{cluster="ceph"} 0
+# HELP ceph_stuck_unclean_pgs No. of PGs stuck in an unclean state
+# TYPE ceph_stuck_unclean_pgs gauge
+ceph_stuck_unclean_pgs{cluster="ceph"} 0
+# HELP ceph_stuck_undersized_pgs No. of stuck undersized PGs in the cluster
+# TYPE ceph_stuck_undersized_pgs gauge
+ceph_stuck_undersized_pgs{cluster="ceph"} 0
+# HELP ceph_total_pgs Total no. of PGs in the cluster
+# TYPE ceph_total_pgs gauge
+ceph_total_pgs{cluster="ceph"} 2048
+# HELP ceph_unclean_pgs No. of PGs in an unclean state
+# TYPE ceph_unclean_pgs gauge
+ceph_unclean_pgs{cluster="ceph"} 0
+# HELP ceph_undersized_pgs No. of undersized PGs in the cluster
+# TYPE ceph_undersized_pgs gauge
+ceph_undersized_pgs{cluster="ceph"} 0
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 5.3308e-05
+go_gc_duration_seconds{quantile="0.25"} 8.9406e-05
+go_gc_duration_seconds{quantile="0.5"} 9.5214e-05
+go_gc_duration_seconds{quantile="0.75"} 0.000104372
+go_gc_duration_seconds{quantile="1"} 0.001208725
+go_gc_duration_seconds_sum 0.001988318
+go_gc_duration_seconds_count 9
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 9
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.15.2"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 4.053136e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 1.9777952e+07
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.449669e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 179142
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 8.337098778248139e-05
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 5.024312e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 4.053136e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 6.012928e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 5.57056e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 22546
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 5.9867136e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 6.569984e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.6154454067027676e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 201688
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 69440
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 81920
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 255680
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 262144
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 5.501072e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 4.012803e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 1.409024e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 1.409024e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 7.7939712e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 34
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 4.94
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 655350
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 10
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 5.1859456e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.61544536658e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 3.470290944e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes -1
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 7
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0

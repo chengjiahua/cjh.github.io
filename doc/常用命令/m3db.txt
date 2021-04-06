@@ -1,0 +1,301 @@
+查看命名空间配置
+curl http://localhost:7201/api/v1/services/m3db/namespace | jq .
+
+查看放置空间
+curl http://127.0.0.1:7201/api/v1/services/m3db/placement
+
+删除命名空间
+curl -X DELETE http://172.20.188.224:7201/api/v1/services/m3db/namespace/default
+
+配置命名空间
+curl -X POST http://127.0.0.1:7201/api/v1/database/create -d '{
+  "type": "cluster",
+  "namespaceName": "default",
+  "numShards": "64",
+  "replicationFactor": "1",
+  "retentionTime": "240h",
+  "blockSize": {
+ "time":"24h",
+ "expectedSeriesDatapointsPerHour":720
+  },
+  "hosts": [
+        {
+            "id": "back",
+            "isolationGroup": "group1",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.13",
+            "port": 9000
+        }
+    ]
+}'
+
+curl -X POST http://localhost:7201/api/v1/database/create -d '{
+  "type": "local",
+  "namespaceName": "default",
+  "retentionTime": "240h"
+}'
+
+
+curl -X POST http://172.20.188.224:7201/api/v1/services/m3db/namespace -d '{
+  "name": "default",
+  "options": {
+    "bootstrapEnabled": true,
+    "flushEnabled": true,
+    "writesToCommitLog": true,
+    "cleanupEnabled": true,
+    "snapshotEnabled": true,
+    "repairEnabled": false,
+    "retentionOptions": {
+      "retentionPeriodDuration": "240h",
+      "blockSizeDuration": "10m",
+      "bufferFutureDuration": "5m",
+      "bufferPastDuration": "5m",
+      "blockDataExpiry": true,
+      "blockDataExpiryAfterNotAccessPeriodDuration": "5m"
+    },
+    "indexOptions": {
+      "enabled": true,
+      "blockSizeDuration": "10m"
+    },
+    "aggregationOptions": {
+      "aggregations": [
+        { "aggregated": false }
+      ]
+    }
+  }
+}'
+
+curl -X POST http://172.20.42.15:7201/api/v1/services/m3db/namespace/ready -d '{
+  "name": "default"
+}'
+
+检测节点状态：
+curl -sSf localhost:9002/health
+
+集群迁移：
+分片数量
+复制因子
+命名空间配置
+
+内存大小影响因素：
+1.blockSizeTime的值（数据在内存的时间） 
+2.缓存策略（目前是lru缓存）
+3.buffer大小（间接降低内存的消耗）
+
+
+创建集群
+curl -X POST http://172.20.188.224:7201/api/v1/database/create -d '{
+  "type": "cluster",
+  "namespaceName": "default",
+  "retentionTime": "240h",
+  "numShards": "8",
+  "replicationFactor": "1",
+  "hosts": [
+        {
+            "id": "back",
+            "isolationGroup": "group1",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.13",
+            "port": 9000
+        }
+    ]
+}'
+
+
+更换节点(先删除在添加)
+curl -X POST http://172.20.42.15:7201/api/v1/services/m3db/placement/replace -d '{
+    "leavingInstanceIDs": ["node4"],
+    "candidates": [
+        {
+			"id": "node2",
+			"isolationGroup": "172.20.42.16",
+			"zone": "embedded",
+			"weight": 100,
+			"endpoint": "172.20.42.16:9000",
+			"hostname": "172.20.42.16",
+			"port": 9000
+        }
+    ]
+}'
+
+
+
+添加节点步骤：
+1.添加为etcd节点（可用于查询的节点）
+ETCDCTL_API=3 etcdctl member add back --peer-urls http://172.20.42.13:2380
+
+
+2.添加为m3db的存储节点（存储数据的节点,通过api）
+curl -X POST http://172.20.42.16:7201/api/v1/services/m3db/placement -d '{
+  "instances": [
+	{
+	  "id": "node0",
+	  "isolationGroup": "172.20.42.14",
+	  "zone": "embedded",
+	  "weight": 300,
+	  "endpoint": "172.20.42.14:9000",
+	  "hostname": "172.20.42.14",
+	  "port": 9000
+	}
+  ]
+}'
+
+3.添加的节点back，服务起来
+initialCluster:
+  - hostID: host4
+    clusterState: existing 
+    endpoint: http://1.1.1.4:2380
+
+
+
+
+删除节点
+curl -X DELETE http://172.20.42.16:7201/api/v1/services/m3db/placement/back
+
+
+etcd操作
+
+ETCDCTL_API=3 etcdctl member add node2 --peer-urls http://172.20.42.16:2380
+ETCDCTL_API=3 etcdctl member remove $NODE_ID
+ETCDCTL_API=3 etcdctl member list
+
+
+权重影响：
+shards的分配受权重影响，但至多一个节点上拥有一套完整的shards（即一份完整的数据）。
+
+
+隔离组影响：
+一个隔离组至多拥有一套完整的shards,组内shards分配及组与组之间的shards受权重影响。
+
+隔离组数 >= 副本数
+节点数 >= 副本数
+
+shards的分配影响优先级：
+隔离组影响 > 权重影响：
+
+先根据隔离组数分配shards总数，每个组内部shards分配，受权重影响，每个节点上的shards数必须为非负整数
+
+测试：
+若隔离组数大于副本数，即每个隔离组分配到shards小于一套完成shards的前提下，shards分配给隔离组是否受权重影响？
+
+结论：受权重影响
+
+预期结果：
+node0 一套副本  64个shards
+node1，node2，node3分剩下的两套副本，128个shards
+分区结果为42 43 43
+至于每个节点分得的是42  还是43  随机。
+
+curl -X POST http://172.20.42.15:7201/api/v1/database/create -d '{
+  "type": "cluster",
+  "namespaceName": "default",
+  "numShards": "64",
+  "replicationFactor": "3",
+  "retentionTime": "240h",
+  "blockSize": {
+ "time":"2h",
+ "expectedSeriesDatapointsPerHour":720
+  },
+  "hosts": [
+		{
+            "id": "node0",
+            "isolationGroup": "test",
+            "zone": "embedded",
+            "weight": 300,
+            "address": "172.20.42.14",
+            "port": 9000
+        },
+        {
+            "id": "node1",
+            "isolationGroup": "compared1",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.15",
+            "port": 9000
+        },
+        {
+            "id": "node2",
+            "isolationGroup": "compared2",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.16",
+            "port": 9000
+        },
+        {
+            "id": "node3",
+            "isolationGroup": "compared3",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.17",
+            "port": 9000
+        }
+    ]
+}'
+
+实验结果：
+节点	实验组		shards数
+node0	test		64
+node1	compared2	43
+node2	compared2	42
+node3	compared2	43
+
+
+
+默认的缓存策略
+DefaultCachePolicy = CacheLRU
+
+lru缓存
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+curl -X POST http://172.20.42.15:7201/api/v1/database/create -d '{
+  "type": "cluster",
+  "namespaceName": "default",
+  "numShards": "64",
+  "replicationFactor": "3",
+  "retentionTime": "240h",
+  "blockSize": {
+ "time":"2h",
+ "expectedSeriesDatapointsPerHour":720
+  },
+  "hosts": [
+        {
+            "id": "node1",
+            "isolationGroup": "compared1",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.15",
+            "port": 9002
+        },
+        {
+            "id": "node2",
+            "isolationGroup": "compared2",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.16",
+            "port": 9002
+        },
+        {
+            "id": "node3",
+            "isolationGroup": "compared3",
+            "zone": "embedded",
+            "weight": 100,
+            "address": "172.20.42.17",
+            "port": 9002
+        }
+    ]
+}'

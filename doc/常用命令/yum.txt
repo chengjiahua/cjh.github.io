@@ -1,0 +1,28 @@
+cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-7.repo 
+yum clean all  
+yum makecache 
+
+
+cp /etc/yum.repos.d/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo.bak
+备份原始的更新源
+
+wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+下载并设置更新源为aliyun
+
+wget -P /etc/yum.repos.d/ http://mirrors.aliyun.com/repo/epel-7.repo
+下载并设置EPEL源,此源中包含更多的软件
+
+yum clean all
+清理yum缓存
+
+yum makecache
+创建yum缓存
+
+
+安装gcc
+yum install gcc-c++
+
+安装ifconfig netstat
+yum install net-tools

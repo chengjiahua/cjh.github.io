@@ -1,0 +1,1951 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 4.056e-05
+go_gc_duration_seconds{quantile="0.25"} 4.2301e-05
+go_gc_duration_seconds{quantile="0.5"} 0.0001019
+go_gc_duration_seconds{quantile="0.75"} 0.00011252
+go_gc_duration_seconds{quantile="1"} 0.00011252
+go_gc_duration_seconds_sum 0.000297281
+go_gc_duration_seconds_count 4
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 8
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.14.4"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.2698e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 7.719656e+06
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.445999e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 66299
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 2.1889157179626293e-06
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 3.881224e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 1.2698e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 6.4208896e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 2.408448e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 2021
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 6.1587456e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 6.6617344e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.6001716317127805e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 68320
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 6944
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 75208
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 81920
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 1.259401e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 491520
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 491520
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 7.3793792e+07
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 7
+# HELP haproxy_backend_bytes_in_total Current total of incoming bytes.
+# TYPE haproxy_backend_bytes_in_total counter
+haproxy_backend_bytes_in_total{backend="cinder_api"} 81282
+haproxy_backend_bytes_in_total{backend="elasticsearch"} 0
+haproxy_backend_bytes_in_total{backend="glance_api"} 81282
+haproxy_backend_bytes_in_total{backend="glance_registry"} 0
+haproxy_backend_bytes_in_total{backend="influxdb_admin"} 0
+haproxy_backend_bytes_in_total{backend="influxdb_http"} 1.8597056e+07
+haproxy_backend_bytes_in_total{backend="kcmp"} 0
+haproxy_backend_bytes_in_total{backend="keystone_admin"} 3.651056e+06
+haproxy_backend_bytes_in_total{backend="keystone_internal"} 0
+haproxy_backend_bytes_in_total{backend="khatch"} 0
+haproxy_backend_bytes_in_total{backend="khatch-ui"} 0
+haproxy_backend_bytes_in_total{backend="mariadb"} 6.4448175e+07
+haproxy_backend_bytes_in_total{backend="memcached"} 0
+haproxy_backend_bytes_in_total{backend="monasca_api"} 1.9443694e+07
+haproxy_backend_bytes_in_total{backend="neutron_server"} 81282
+haproxy_backend_bytes_in_total{backend="nova_api"} 83030
+haproxy_backend_bytes_in_total{backend="nova_metadata"} 0
+haproxy_backend_bytes_in_total{backend="nova_novncproxy"} 0
+haproxy_backend_bytes_in_total{backend="placement_api"} 0
+haproxy_backend_bytes_in_total{backend="rabbitmq_management"} 0
+haproxy_backend_bytes_in_total{backend="stats"} 609
+# HELP haproxy_backend_bytes_out_total Current total of outgoing bytes.
+# TYPE haproxy_backend_bytes_out_total counter
+haproxy_backend_bytes_out_total{backend="cinder_api"} 443992
+haproxy_backend_bytes_out_total{backend="elasticsearch"} 0
+haproxy_backend_bytes_out_total{backend="glance_api"} 480700
+haproxy_backend_bytes_out_total{backend="glance_registry"} 0
+haproxy_backend_bytes_out_total{backend="influxdb_admin"} 0
+haproxy_backend_bytes_out_total{backend="influxdb_http"} 1.08197e+06
+haproxy_backend_bytes_out_total{backend="kcmp"} 0
+haproxy_backend_bytes_out_total{backend="keystone_admin"} 3.716262e+07
+haproxy_backend_bytes_out_total{backend="keystone_internal"} 0
+haproxy_backend_bytes_out_total{backend="khatch"} 0
+haproxy_backend_bytes_out_total{backend="khatch-ui"} 0
+haproxy_backend_bytes_out_total{backend="mariadb"} 5.2813623e+07
+haproxy_backend_bytes_out_total{backend="memcached"} 0
+haproxy_backend_bytes_out_total{backend="monasca_api"} 1.462704e+06
+haproxy_backend_bytes_out_total{backend="neutron_server"} 92644
+haproxy_backend_bytes_out_total{backend="nova_api"} 250838
+haproxy_backend_bytes_out_total{backend="nova_metadata"} 0
+haproxy_backend_bytes_out_total{backend="nova_novncproxy"} 0
+haproxy_backend_bytes_out_total{backend="placement_api"} 0
+haproxy_backend_bytes_out_total{backend="rabbitmq_management"} 0
+haproxy_backend_bytes_out_total{backend="stats"} 27591
+# HELP haproxy_backend_client_aborts_total Total number of data transfers aborted by the client.
+# TYPE haproxy_backend_client_aborts_total counter
+haproxy_backend_client_aborts_total{backend="cinder_api"} 0
+haproxy_backend_client_aborts_total{backend="elasticsearch"} 0
+haproxy_backend_client_aborts_total{backend="glance_api"} 0
+haproxy_backend_client_aborts_total{backend="glance_registry"} 0
+haproxy_backend_client_aborts_total{backend="influxdb_admin"} 0
+haproxy_backend_client_aborts_total{backend="influxdb_http"} 0
+haproxy_backend_client_aborts_total{backend="kcmp"} 0
+haproxy_backend_client_aborts_total{backend="keystone_admin"} 0
+haproxy_backend_client_aborts_total{backend="keystone_internal"} 0
+haproxy_backend_client_aborts_total{backend="khatch"} 0
+haproxy_backend_client_aborts_total{backend="khatch-ui"} 0
+haproxy_backend_client_aborts_total{backend="mariadb"} 33
+haproxy_backend_client_aborts_total{backend="memcached"} 0
+haproxy_backend_client_aborts_total{backend="monasca_api"} 0
+haproxy_backend_client_aborts_total{backend="neutron_server"} 0
+haproxy_backend_client_aborts_total{backend="nova_api"} 0
+haproxy_backend_client_aborts_total{backend="nova_metadata"} 0
+haproxy_backend_client_aborts_total{backend="nova_novncproxy"} 0
+haproxy_backend_client_aborts_total{backend="placement_api"} 0
+haproxy_backend_client_aborts_total{backend="rabbitmq_management"} 0
+haproxy_backend_client_aborts_total{backend="stats"} 0
+# HELP haproxy_backend_compressor_bytes_bypassed_total Number of bytes that bypassed the HTTP compressor
+# TYPE haproxy_backend_compressor_bytes_bypassed_total counter
+haproxy_backend_compressor_bytes_bypassed_total{backend="cinder_api"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="elasticsearch"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="glance_api"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="glance_registry"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="influxdb_admin"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="influxdb_http"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="kcmp"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="keystone_admin"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="keystone_internal"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="khatch"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="khatch-ui"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="mariadb"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="memcached"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="monasca_api"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="neutron_server"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="nova_api"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="nova_metadata"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="nova_novncproxy"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="placement_api"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="rabbitmq_management"} 0
+haproxy_backend_compressor_bytes_bypassed_total{backend="stats"} 0
+# HELP haproxy_backend_compressor_bytes_in_total Number of HTTP response bytes fed to the compressor
+# TYPE haproxy_backend_compressor_bytes_in_total counter
+haproxy_backend_compressor_bytes_in_total{backend="cinder_api"} 0
+haproxy_backend_compressor_bytes_in_total{backend="elasticsearch"} 0
+haproxy_backend_compressor_bytes_in_total{backend="glance_api"} 0
+haproxy_backend_compressor_bytes_in_total{backend="glance_registry"} 0
+haproxy_backend_compressor_bytes_in_total{backend="influxdb_admin"} 0
+haproxy_backend_compressor_bytes_in_total{backend="influxdb_http"} 0
+haproxy_backend_compressor_bytes_in_total{backend="kcmp"} 0
+haproxy_backend_compressor_bytes_in_total{backend="keystone_admin"} 0
+haproxy_backend_compressor_bytes_in_total{backend="keystone_internal"} 0
+haproxy_backend_compressor_bytes_in_total{backend="khatch"} 0
+haproxy_backend_compressor_bytes_in_total{backend="khatch-ui"} 0
+haproxy_backend_compressor_bytes_in_total{backend="mariadb"} 0
+haproxy_backend_compressor_bytes_in_total{backend="memcached"} 0
+haproxy_backend_compressor_bytes_in_total{backend="monasca_api"} 0
+haproxy_backend_compressor_bytes_in_total{backend="neutron_server"} 0
+haproxy_backend_compressor_bytes_in_total{backend="nova_api"} 0
+haproxy_backend_compressor_bytes_in_total{backend="nova_metadata"} 0
+haproxy_backend_compressor_bytes_in_total{backend="nova_novncproxy"} 0
+haproxy_backend_compressor_bytes_in_total{backend="placement_api"} 0
+haproxy_backend_compressor_bytes_in_total{backend="rabbitmq_management"} 0
+haproxy_backend_compressor_bytes_in_total{backend="stats"} 0
+# HELP haproxy_backend_compressor_bytes_out_total Number of HTTP response bytes emitted by the compressor
+# TYPE haproxy_backend_compressor_bytes_out_total counter
+haproxy_backend_compressor_bytes_out_total{backend="cinder_api"} 0
+haproxy_backend_compressor_bytes_out_total{backend="elasticsearch"} 0
+haproxy_backend_compressor_bytes_out_total{backend="glance_api"} 0
+haproxy_backend_compressor_bytes_out_total{backend="glance_registry"} 0
+haproxy_backend_compressor_bytes_out_total{backend="influxdb_admin"} 0
+haproxy_backend_compressor_bytes_out_total{backend="influxdb_http"} 0
+haproxy_backend_compressor_bytes_out_total{backend="kcmp"} 0
+haproxy_backend_compressor_bytes_out_total{backend="keystone_admin"} 0
+haproxy_backend_compressor_bytes_out_total{backend="keystone_internal"} 0
+haproxy_backend_compressor_bytes_out_total{backend="khatch"} 0
+haproxy_backend_compressor_bytes_out_total{backend="khatch-ui"} 0
+haproxy_backend_compressor_bytes_out_total{backend="mariadb"} 0
+haproxy_backend_compressor_bytes_out_total{backend="memcached"} 0
+haproxy_backend_compressor_bytes_out_total{backend="monasca_api"} 0
+haproxy_backend_compressor_bytes_out_total{backend="neutron_server"} 0
+haproxy_backend_compressor_bytes_out_total{backend="nova_api"} 0
+haproxy_backend_compressor_bytes_out_total{backend="nova_metadata"} 0
+haproxy_backend_compressor_bytes_out_total{backend="nova_novncproxy"} 0
+haproxy_backend_compressor_bytes_out_total{backend="placement_api"} 0
+haproxy_backend_compressor_bytes_out_total{backend="rabbitmq_management"} 0
+haproxy_backend_compressor_bytes_out_total{backend="stats"} 0
+# HELP haproxy_backend_connection_errors_total Total of connection errors.
+# TYPE haproxy_backend_connection_errors_total counter
+haproxy_backend_connection_errors_total{backend="cinder_api"} 0
+haproxy_backend_connection_errors_total{backend="elasticsearch"} 0
+haproxy_backend_connection_errors_total{backend="glance_api"} 0
+haproxy_backend_connection_errors_total{backend="glance_registry"} 0
+haproxy_backend_connection_errors_total{backend="influxdb_admin"} 0
+haproxy_backend_connection_errors_total{backend="influxdb_http"} 0
+haproxy_backend_connection_errors_total{backend="kcmp"} 0
+haproxy_backend_connection_errors_total{backend="keystone_admin"} 0
+haproxy_backend_connection_errors_total{backend="keystone_internal"} 0
+haproxy_backend_connection_errors_total{backend="khatch"} 0
+haproxy_backend_connection_errors_total{backend="khatch-ui"} 0
+haproxy_backend_connection_errors_total{backend="mariadb"} 1
+haproxy_backend_connection_errors_total{backend="memcached"} 0
+haproxy_backend_connection_errors_total{backend="monasca_api"} 0
+haproxy_backend_connection_errors_total{backend="neutron_server"} 437
+haproxy_backend_connection_errors_total{backend="nova_api"} 0
+haproxy_backend_connection_errors_total{backend="nova_metadata"} 0
+haproxy_backend_connection_errors_total{backend="nova_novncproxy"} 0
+haproxy_backend_connection_errors_total{backend="placement_api"} 0
+haproxy_backend_connection_errors_total{backend="rabbitmq_management"} 0
+haproxy_backend_connection_errors_total{backend="stats"} 0
+# HELP haproxy_backend_current_queue Current number of queued requests not assigned to any server.
+# TYPE haproxy_backend_current_queue gauge
+haproxy_backend_current_queue{backend="cinder_api"} 0
+haproxy_backend_current_queue{backend="elasticsearch"} 0
+haproxy_backend_current_queue{backend="glance_api"} 0
+haproxy_backend_current_queue{backend="glance_registry"} 0
+haproxy_backend_current_queue{backend="influxdb_admin"} 0
+haproxy_backend_current_queue{backend="influxdb_http"} 0
+haproxy_backend_current_queue{backend="kcmp"} 0
+haproxy_backend_current_queue{backend="keystone_admin"} 0
+haproxy_backend_current_queue{backend="keystone_internal"} 0
+haproxy_backend_current_queue{backend="khatch"} 0
+haproxy_backend_current_queue{backend="khatch-ui"} 0
+haproxy_backend_current_queue{backend="mariadb"} 0
+haproxy_backend_current_queue{backend="memcached"} 0
+haproxy_backend_current_queue{backend="monasca_api"} 0
+haproxy_backend_current_queue{backend="neutron_server"} 0
+haproxy_backend_current_queue{backend="nova_api"} 0
+haproxy_backend_current_queue{backend="nova_metadata"} 0
+haproxy_backend_current_queue{backend="nova_novncproxy"} 0
+haproxy_backend_current_queue{backend="placement_api"} 0
+haproxy_backend_current_queue{backend="rabbitmq_management"} 0
+haproxy_backend_current_queue{backend="stats"} 0
+# HELP haproxy_backend_current_server Current number of active servers
+# TYPE haproxy_backend_current_server gauge
+haproxy_backend_current_server{backend="cinder_api"} 1
+haproxy_backend_current_server{backend="elasticsearch"} 1
+haproxy_backend_current_server{backend="glance_api"} 1
+haproxy_backend_current_server{backend="glance_registry"} 1
+haproxy_backend_current_server{backend="influxdb_admin"} 1
+haproxy_backend_current_server{backend="influxdb_http"} 1
+haproxy_backend_current_server{backend="kcmp"} 0
+haproxy_backend_current_server{backend="keystone_admin"} 1
+haproxy_backend_current_server{backend="keystone_internal"} 1
+haproxy_backend_current_server{backend="khatch"} 1
+haproxy_backend_current_server{backend="khatch-ui"} 1
+haproxy_backend_current_server{backend="mariadb"} 1
+haproxy_backend_current_server{backend="memcached"} 1
+haproxy_backend_current_server{backend="monasca_api"} 1
+haproxy_backend_current_server{backend="neutron_server"} 0
+haproxy_backend_current_server{backend="nova_api"} 1
+haproxy_backend_current_server{backend="nova_metadata"} 1
+haproxy_backend_current_server{backend="nova_novncproxy"} 1
+haproxy_backend_current_server{backend="placement_api"} 1
+haproxy_backend_current_server{backend="rabbitmq_management"} 0
+haproxy_backend_current_server{backend="stats"} 0
+# HELP haproxy_backend_current_session_rate Current number of sessions per second over last elapsed second.
+# TYPE haproxy_backend_current_session_rate gauge
+haproxy_backend_current_session_rate{backend="cinder_api"} 0
+haproxy_backend_current_session_rate{backend="elasticsearch"} 0
+haproxy_backend_current_session_rate{backend="glance_api"} 0
+haproxy_backend_current_session_rate{backend="glance_registry"} 0
+haproxy_backend_current_session_rate{backend="influxdb_admin"} 0
+haproxy_backend_current_session_rate{backend="influxdb_http"} 0
+haproxy_backend_current_session_rate{backend="kcmp"} 0
+haproxy_backend_current_session_rate{backend="keystone_admin"} 0
+haproxy_backend_current_session_rate{backend="keystone_internal"} 0
+haproxy_backend_current_session_rate{backend="khatch"} 0
+haproxy_backend_current_session_rate{backend="khatch-ui"} 0
+haproxy_backend_current_session_rate{backend="mariadb"} 0
+haproxy_backend_current_session_rate{backend="memcached"} 0
+haproxy_backend_current_session_rate{backend="monasca_api"} 0
+haproxy_backend_current_session_rate{backend="neutron_server"} 0
+haproxy_backend_current_session_rate{backend="nova_api"} 0
+haproxy_backend_current_session_rate{backend="nova_metadata"} 0
+haproxy_backend_current_session_rate{backend="nova_novncproxy"} 0
+haproxy_backend_current_session_rate{backend="placement_api"} 0
+haproxy_backend_current_session_rate{backend="rabbitmq_management"} 0
+haproxy_backend_current_session_rate{backend="stats"} 0
+# HELP haproxy_backend_current_sessions Current number of active sessions.
+# TYPE haproxy_backend_current_sessions gauge
+haproxy_backend_current_sessions{backend="cinder_api"} 0
+haproxy_backend_current_sessions{backend="elasticsearch"} 0
+haproxy_backend_current_sessions{backend="glance_api"} 0
+haproxy_backend_current_sessions{backend="glance_registry"} 0
+haproxy_backend_current_sessions{backend="influxdb_admin"} 0
+haproxy_backend_current_sessions{backend="influxdb_http"} 0
+haproxy_backend_current_sessions{backend="kcmp"} 0
+haproxy_backend_current_sessions{backend="keystone_admin"} 0
+haproxy_backend_current_sessions{backend="keystone_internal"} 0
+haproxy_backend_current_sessions{backend="khatch"} 0
+haproxy_backend_current_sessions{backend="khatch-ui"} 0
+haproxy_backend_current_sessions{backend="mariadb"} 5
+haproxy_backend_current_sessions{backend="memcached"} 0
+haproxy_backend_current_sessions{backend="monasca_api"} 0
+haproxy_backend_current_sessions{backend="neutron_server"} 0
+haproxy_backend_current_sessions{backend="nova_api"} 0
+haproxy_backend_current_sessions{backend="nova_metadata"} 0
+haproxy_backend_current_sessions{backend="nova_novncproxy"} 0
+haproxy_backend_current_sessions{backend="placement_api"} 0
+haproxy_backend_current_sessions{backend="rabbitmq_management"} 0
+haproxy_backend_current_sessions{backend="stats"} 0
+# HELP haproxy_backend_http_connect_time_average_seconds Avg. HTTP connect time for last 1024 successful connections.
+# TYPE haproxy_backend_http_connect_time_average_seconds gauge
+haproxy_backend_http_connect_time_average_seconds{backend="cinder_api"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="elasticsearch"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="glance_api"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="glance_registry"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="influxdb_admin"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="influxdb_http"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="kcmp"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="keystone_admin"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="keystone_internal"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="khatch"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="khatch-ui"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="mariadb"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="memcached"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="monasca_api"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="neutron_server"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="nova_api"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="nova_metadata"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="nova_novncproxy"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="placement_api"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="rabbitmq_management"} 0
+haproxy_backend_http_connect_time_average_seconds{backend="stats"} 0
+# HELP haproxy_backend_http_queue_time_average_seconds Avg. HTTP queue time for last 1024 successful connections.
+# TYPE haproxy_backend_http_queue_time_average_seconds gauge
+haproxy_backend_http_queue_time_average_seconds{backend="cinder_api"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="elasticsearch"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="glance_api"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="glance_registry"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="influxdb_admin"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="influxdb_http"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="kcmp"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="keystone_admin"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="keystone_internal"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="khatch"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="khatch-ui"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="mariadb"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="memcached"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="monasca_api"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="neutron_server"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="nova_api"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="nova_metadata"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="nova_novncproxy"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="placement_api"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="rabbitmq_management"} 0
+haproxy_backend_http_queue_time_average_seconds{backend="stats"} 0
+# HELP haproxy_backend_http_response_time_average_seconds Avg. HTTP response time for last 1024 successful connections.
+# TYPE haproxy_backend_http_response_time_average_seconds gauge
+haproxy_backend_http_response_time_average_seconds{backend="cinder_api"} 0.043
+haproxy_backend_http_response_time_average_seconds{backend="elasticsearch"} 0
+haproxy_backend_http_response_time_average_seconds{backend="glance_api"} 0.006
+haproxy_backend_http_response_time_average_seconds{backend="glance_registry"} 0
+haproxy_backend_http_response_time_average_seconds{backend="influxdb_admin"} 0
+haproxy_backend_http_response_time_average_seconds{backend="influxdb_http"} 0.015
+haproxy_backend_http_response_time_average_seconds{backend="kcmp"} 0
+haproxy_backend_http_response_time_average_seconds{backend="keystone_admin"} 0.201
+haproxy_backend_http_response_time_average_seconds{backend="keystone_internal"} 0
+haproxy_backend_http_response_time_average_seconds{backend="khatch"} 0
+haproxy_backend_http_response_time_average_seconds{backend="khatch-ui"} 0
+haproxy_backend_http_response_time_average_seconds{backend="mariadb"} 0
+haproxy_backend_http_response_time_average_seconds{backend="memcached"} 0
+haproxy_backend_http_response_time_average_seconds{backend="monasca_api"} 0.043
+haproxy_backend_http_response_time_average_seconds{backend="neutron_server"} 0
+haproxy_backend_http_response_time_average_seconds{backend="nova_api"} 0.006
+haproxy_backend_http_response_time_average_seconds{backend="nova_metadata"} 0
+haproxy_backend_http_response_time_average_seconds{backend="nova_novncproxy"} 0
+haproxy_backend_http_response_time_average_seconds{backend="placement_api"} 0
+haproxy_backend_http_response_time_average_seconds{backend="rabbitmq_management"} 0
+haproxy_backend_http_response_time_average_seconds{backend="stats"} 0
+# HELP haproxy_backend_http_responses_compressed_total Number of HTTP responses that were compressed
+# TYPE haproxy_backend_http_responses_compressed_total counter
+haproxy_backend_http_responses_compressed_total{backend="cinder_api"} 0
+haproxy_backend_http_responses_compressed_total{backend="elasticsearch"} 0
+haproxy_backend_http_responses_compressed_total{backend="glance_api"} 0
+haproxy_backend_http_responses_compressed_total{backend="glance_registry"} 0
+haproxy_backend_http_responses_compressed_total{backend="influxdb_admin"} 0
+haproxy_backend_http_responses_compressed_total{backend="influxdb_http"} 0
+haproxy_backend_http_responses_compressed_total{backend="kcmp"} 0
+haproxy_backend_http_responses_compressed_total{backend="keystone_admin"} 0
+haproxy_backend_http_responses_compressed_total{backend="keystone_internal"} 0
+haproxy_backend_http_responses_compressed_total{backend="khatch"} 0
+haproxy_backend_http_responses_compressed_total{backend="khatch-ui"} 0
+haproxy_backend_http_responses_compressed_total{backend="mariadb"} 0
+haproxy_backend_http_responses_compressed_total{backend="memcached"} 0
+haproxy_backend_http_responses_compressed_total{backend="monasca_api"} 0
+haproxy_backend_http_responses_compressed_total{backend="neutron_server"} 0
+haproxy_backend_http_responses_compressed_total{backend="nova_api"} 0
+haproxy_backend_http_responses_compressed_total{backend="nova_metadata"} 0
+haproxy_backend_http_responses_compressed_total{backend="nova_novncproxy"} 0
+haproxy_backend_http_responses_compressed_total{backend="placement_api"} 0
+haproxy_backend_http_responses_compressed_total{backend="rabbitmq_management"} 0
+haproxy_backend_http_responses_compressed_total{backend="stats"} 0
+# HELP haproxy_backend_http_responses_total Total of HTTP responses.
+# TYPE haproxy_backend_http_responses_total counter
+haproxy_backend_http_responses_total{backend="cinder_api",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="cinder_api",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="cinder_api",code="3xx"} 437
+haproxy_backend_http_responses_total{backend="cinder_api",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="cinder_api",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="cinder_api",code="other"} 0
+haproxy_backend_http_responses_total{backend="elasticsearch",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="elasticsearch",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="elasticsearch",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="elasticsearch",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="elasticsearch",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="elasticsearch",code="other"} 0
+haproxy_backend_http_responses_total{backend="glance_api",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="glance_api",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="glance_api",code="3xx"} 437
+haproxy_backend_http_responses_total{backend="glance_api",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="glance_api",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="glance_api",code="other"} 0
+haproxy_backend_http_responses_total{backend="glance_registry",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="glance_registry",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="glance_registry",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="glance_registry",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="glance_registry",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="glance_registry",code="other"} 0
+haproxy_backend_http_responses_total{backend="influxdb_admin",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_admin",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_admin",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_admin",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_admin",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_admin",code="other"} 0
+haproxy_backend_http_responses_total{backend="influxdb_http",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_http",code="2xx"} 6434
+haproxy_backend_http_responses_total{backend="influxdb_http",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_http",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_http",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="influxdb_http",code="other"} 0
+haproxy_backend_http_responses_total{backend="kcmp",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="kcmp",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="kcmp",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="kcmp",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="kcmp",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="kcmp",code="other"} 0
+haproxy_backend_http_responses_total{backend="keystone_admin",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_admin",code="2xx"} 9784
+haproxy_backend_http_responses_total{backend="keystone_admin",code="3xx"} 5
+haproxy_backend_http_responses_total{backend="keystone_admin",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_admin",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_admin",code="other"} 0
+haproxy_backend_http_responses_total{backend="keystone_internal",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_internal",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_internal",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_internal",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_internal",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="keystone_internal",code="other"} 0
+haproxy_backend_http_responses_total{backend="khatch",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="khatch",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="khatch",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="khatch",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="khatch",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="khatch",code="other"} 0
+haproxy_backend_http_responses_total{backend="khatch-ui",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="khatch-ui",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="khatch-ui",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="khatch-ui",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="khatch-ui",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="khatch-ui",code="other"} 0
+haproxy_backend_http_responses_total{backend="monasca_api",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="monasca_api",code="2xx"} 5898
+haproxy_backend_http_responses_total{backend="monasca_api",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="monasca_api",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="monasca_api",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="monasca_api",code="other"} 0
+haproxy_backend_http_responses_total{backend="neutron_server",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="neutron_server",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="neutron_server",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="neutron_server",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="neutron_server",code="5xx"} 437
+haproxy_backend_http_responses_total{backend="neutron_server",code="other"} 0
+haproxy_backend_http_responses_total{backend="nova_api",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="nova_api",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="nova_api",code="3xx"} 437
+haproxy_backend_http_responses_total{backend="nova_api",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="nova_api",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="nova_api",code="other"} 0
+haproxy_backend_http_responses_total{backend="nova_metadata",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="nova_metadata",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="nova_metadata",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="nova_metadata",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="nova_metadata",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="nova_metadata",code="other"} 0
+haproxy_backend_http_responses_total{backend="nova_novncproxy",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="nova_novncproxy",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="nova_novncproxy",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="nova_novncproxy",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="nova_novncproxy",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="nova_novncproxy",code="other"} 0
+haproxy_backend_http_responses_total{backend="placement_api",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="placement_api",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="placement_api",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="placement_api",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="placement_api",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="placement_api",code="other"} 0
+haproxy_backend_http_responses_total{backend="rabbitmq_management",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="rabbitmq_management",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="rabbitmq_management",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="rabbitmq_management",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="rabbitmq_management",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="rabbitmq_management",code="other"} 0
+haproxy_backend_http_responses_total{backend="stats",code="1xx"} 0
+haproxy_backend_http_responses_total{backend="stats",code="2xx"} 0
+haproxy_backend_http_responses_total{backend="stats",code="3xx"} 0
+haproxy_backend_http_responses_total{backend="stats",code="4xx"} 0
+haproxy_backend_http_responses_total{backend="stats",code="5xx"} 0
+haproxy_backend_http_responses_total{backend="stats",code="other"} 0
+# HELP haproxy_backend_http_total_time_average_seconds Avg. HTTP total time for last 1024 successful connections.
+# TYPE haproxy_backend_http_total_time_average_seconds gauge
+haproxy_backend_http_total_time_average_seconds{backend="cinder_api"} 0.043
+haproxy_backend_http_total_time_average_seconds{backend="elasticsearch"} 0
+haproxy_backend_http_total_time_average_seconds{backend="glance_api"} 0.006
+haproxy_backend_http_total_time_average_seconds{backend="glance_registry"} 0
+haproxy_backend_http_total_time_average_seconds{backend="influxdb_admin"} 0
+haproxy_backend_http_total_time_average_seconds{backend="influxdb_http"} 0.015
+haproxy_backend_http_total_time_average_seconds{backend="kcmp"} 0
+haproxy_backend_http_total_time_average_seconds{backend="keystone_admin"} 0.206
+haproxy_backend_http_total_time_average_seconds{backend="keystone_internal"} 0
+haproxy_backend_http_total_time_average_seconds{backend="khatch"} 0
+haproxy_backend_http_total_time_average_seconds{backend="khatch-ui"} 0
+haproxy_backend_http_total_time_average_seconds{backend="mariadb"} 14.63
+haproxy_backend_http_total_time_average_seconds{backend="memcached"} 0
+haproxy_backend_http_total_time_average_seconds{backend="monasca_api"} 1.358
+haproxy_backend_http_total_time_average_seconds{backend="neutron_server"} 0
+haproxy_backend_http_total_time_average_seconds{backend="nova_api"} 0.006
+haproxy_backend_http_total_time_average_seconds{backend="nova_metadata"} 0
+haproxy_backend_http_total_time_average_seconds{backend="nova_novncproxy"} 0
+haproxy_backend_http_total_time_average_seconds{backend="placement_api"} 0
+haproxy_backend_http_total_time_average_seconds{backend="rabbitmq_management"} 0
+haproxy_backend_http_total_time_average_seconds{backend="stats"} 0.002
+# HELP haproxy_backend_limit_sessions Configured session limit.
+# TYPE haproxy_backend_limit_sessions gauge
+haproxy_backend_limit_sessions{backend="cinder_api"} 200
+haproxy_backend_limit_sessions{backend="elasticsearch"} 200
+haproxy_backend_limit_sessions{backend="glance_api"} 200
+haproxy_backend_limit_sessions{backend="glance_registry"} 200
+haproxy_backend_limit_sessions{backend="influxdb_admin"} 200
+haproxy_backend_limit_sessions{backend="influxdb_http"} 200
+haproxy_backend_limit_sessions{backend="kcmp"} 200
+haproxy_backend_limit_sessions{backend="keystone_admin"} 200
+haproxy_backend_limit_sessions{backend="keystone_internal"} 200
+haproxy_backend_limit_sessions{backend="khatch"} 200
+haproxy_backend_limit_sessions{backend="khatch-ui"} 200
+haproxy_backend_limit_sessions{backend="mariadb"} 200
+haproxy_backend_limit_sessions{backend="memcached"} 200
+haproxy_backend_limit_sessions{backend="monasca_api"} 200
+haproxy_backend_limit_sessions{backend="neutron_server"} 200
+haproxy_backend_limit_sessions{backend="nova_api"} 200
+haproxy_backend_limit_sessions{backend="nova_metadata"} 200
+haproxy_backend_limit_sessions{backend="nova_novncproxy"} 200
+haproxy_backend_limit_sessions{backend="placement_api"} 200
+haproxy_backend_limit_sessions{backend="rabbitmq_management"} 200
+haproxy_backend_limit_sessions{backend="stats"} 200
+# HELP haproxy_backend_max_queue Maximum observed number of queued requests not assigned to any server.
+# TYPE haproxy_backend_max_queue gauge
+haproxy_backend_max_queue{backend="cinder_api"} 0
+haproxy_backend_max_queue{backend="elasticsearch"} 0
+haproxy_backend_max_queue{backend="glance_api"} 0
+haproxy_backend_max_queue{backend="glance_registry"} 0
+haproxy_backend_max_queue{backend="influxdb_admin"} 0
+haproxy_backend_max_queue{backend="influxdb_http"} 0
+haproxy_backend_max_queue{backend="kcmp"} 0
+haproxy_backend_max_queue{backend="keystone_admin"} 0
+haproxy_backend_max_queue{backend="keystone_internal"} 0
+haproxy_backend_max_queue{backend="khatch"} 0
+haproxy_backend_max_queue{backend="khatch-ui"} 0
+haproxy_backend_max_queue{backend="mariadb"} 0
+haproxy_backend_max_queue{backend="memcached"} 0
+haproxy_backend_max_queue{backend="monasca_api"} 0
+haproxy_backend_max_queue{backend="neutron_server"} 0
+haproxy_backend_max_queue{backend="nova_api"} 0
+haproxy_backend_max_queue{backend="nova_metadata"} 0
+haproxy_backend_max_queue{backend="nova_novncproxy"} 0
+haproxy_backend_max_queue{backend="placement_api"} 0
+haproxy_backend_max_queue{backend="rabbitmq_management"} 0
+haproxy_backend_max_queue{backend="stats"} 0
+# HELP haproxy_backend_max_session_rate Maximum number of sessions per second.
+# TYPE haproxy_backend_max_session_rate gauge
+haproxy_backend_max_session_rate{backend="cinder_api"} 1
+haproxy_backend_max_session_rate{backend="elasticsearch"} 0
+haproxy_backend_max_session_rate{backend="glance_api"} 1
+haproxy_backend_max_session_rate{backend="glance_registry"} 0
+haproxy_backend_max_session_rate{backend="influxdb_admin"} 0
+haproxy_backend_max_session_rate{backend="influxdb_http"} 4
+haproxy_backend_max_session_rate{backend="kcmp"} 0
+haproxy_backend_max_session_rate{backend="keystone_admin"} 21
+haproxy_backend_max_session_rate{backend="keystone_internal"} 0
+haproxy_backend_max_session_rate{backend="khatch"} 0
+haproxy_backend_max_session_rate{backend="khatch-ui"} 0
+haproxy_backend_max_session_rate{backend="mariadb"} 6
+haproxy_backend_max_session_rate{backend="memcached"} 0
+haproxy_backend_max_session_rate{backend="monasca_api"} 1
+haproxy_backend_max_session_rate{backend="neutron_server"} 1
+haproxy_backend_max_session_rate{backend="nova_api"} 1
+haproxy_backend_max_session_rate{backend="nova_metadata"} 0
+haproxy_backend_max_session_rate{backend="nova_novncproxy"} 0
+haproxy_backend_max_session_rate{backend="placement_api"} 0
+haproxy_backend_max_session_rate{backend="rabbitmq_management"} 0
+haproxy_backend_max_session_rate{backend="stats"} 0
+# HELP haproxy_backend_max_sessions Maximum observed number of active sessions.
+# TYPE haproxy_backend_max_sessions gauge
+haproxy_backend_max_sessions{backend="cinder_api"} 1
+haproxy_backend_max_sessions{backend="elasticsearch"} 0
+haproxy_backend_max_sessions{backend="glance_api"} 1
+haproxy_backend_max_sessions{backend="glance_registry"} 0
+haproxy_backend_max_sessions{backend="influxdb_admin"} 0
+haproxy_backend_max_sessions{backend="influxdb_http"} 1
+haproxy_backend_max_sessions{backend="kcmp"} 0
+haproxy_backend_max_sessions{backend="keystone_admin"} 5
+haproxy_backend_max_sessions{backend="keystone_internal"} 0
+haproxy_backend_max_sessions{backend="khatch"} 0
+haproxy_backend_max_sessions{backend="khatch-ui"} 0
+haproxy_backend_max_sessions{backend="mariadb"} 39
+haproxy_backend_max_sessions{backend="memcached"} 0
+haproxy_backend_max_sessions{backend="monasca_api"} 2
+haproxy_backend_max_sessions{backend="neutron_server"} 1
+haproxy_backend_max_sessions{backend="nova_api"} 1
+haproxy_backend_max_sessions{backend="nova_metadata"} 0
+haproxy_backend_max_sessions{backend="nova_novncproxy"} 0
+haproxy_backend_max_sessions{backend="placement_api"} 0
+haproxy_backend_max_sessions{backend="rabbitmq_management"} 0
+haproxy_backend_max_sessions{backend="stats"} 0
+# HELP haproxy_backend_redispatch_warnings_total Total of redispatch warnings.
+# TYPE haproxy_backend_redispatch_warnings_total counter
+haproxy_backend_redispatch_warnings_total{backend="cinder_api"} 0
+haproxy_backend_redispatch_warnings_total{backend="elasticsearch"} 0
+haproxy_backend_redispatch_warnings_total{backend="glance_api"} 0
+haproxy_backend_redispatch_warnings_total{backend="glance_registry"} 0
+haproxy_backend_redispatch_warnings_total{backend="influxdb_admin"} 0
+haproxy_backend_redispatch_warnings_total{backend="influxdb_http"} 0
+haproxy_backend_redispatch_warnings_total{backend="kcmp"} 0
+haproxy_backend_redispatch_warnings_total{backend="keystone_admin"} 0
+haproxy_backend_redispatch_warnings_total{backend="keystone_internal"} 0
+haproxy_backend_redispatch_warnings_total{backend="khatch"} 0
+haproxy_backend_redispatch_warnings_total{backend="khatch-ui"} 0
+haproxy_backend_redispatch_warnings_total{backend="mariadb"} 0
+haproxy_backend_redispatch_warnings_total{backend="memcached"} 0
+haproxy_backend_redispatch_warnings_total{backend="monasca_api"} 0
+haproxy_backend_redispatch_warnings_total{backend="neutron_server"} 0
+haproxy_backend_redispatch_warnings_total{backend="nova_api"} 0
+haproxy_backend_redispatch_warnings_total{backend="nova_metadata"} 0
+haproxy_backend_redispatch_warnings_total{backend="nova_novncproxy"} 0
+haproxy_backend_redispatch_warnings_total{backend="placement_api"} 0
+haproxy_backend_redispatch_warnings_total{backend="rabbitmq_management"} 0
+haproxy_backend_redispatch_warnings_total{backend="stats"} 0
+# HELP haproxy_backend_response_errors_total Total of response errors.
+# TYPE haproxy_backend_response_errors_total counter
+haproxy_backend_response_errors_total{backend="cinder_api"} 0
+haproxy_backend_response_errors_total{backend="elasticsearch"} 0
+haproxy_backend_response_errors_total{backend="glance_api"} 0
+haproxy_backend_response_errors_total{backend="glance_registry"} 0
+haproxy_backend_response_errors_total{backend="influxdb_admin"} 0
+haproxy_backend_response_errors_total{backend="influxdb_http"} 0
+haproxy_backend_response_errors_total{backend="kcmp"} 0
+haproxy_backend_response_errors_total{backend="keystone_admin"} 0
+haproxy_backend_response_errors_total{backend="keystone_internal"} 0
+haproxy_backend_response_errors_total{backend="khatch"} 0
+haproxy_backend_response_errors_total{backend="khatch-ui"} 0
+haproxy_backend_response_errors_total{backend="mariadb"} 0
+haproxy_backend_response_errors_total{backend="memcached"} 0
+haproxy_backend_response_errors_total{backend="monasca_api"} 0
+haproxy_backend_response_errors_total{backend="neutron_server"} 0
+haproxy_backend_response_errors_total{backend="nova_api"} 0
+haproxy_backend_response_errors_total{backend="nova_metadata"} 0
+haproxy_backend_response_errors_total{backend="nova_novncproxy"} 0
+haproxy_backend_response_errors_total{backend="placement_api"} 0
+haproxy_backend_response_errors_total{backend="rabbitmq_management"} 0
+haproxy_backend_response_errors_total{backend="stats"} 0
+# HELP haproxy_backend_retry_warnings_total Total of retry warnings.
+# TYPE haproxy_backend_retry_warnings_total counter
+haproxy_backend_retry_warnings_total{backend="cinder_api"} 0
+haproxy_backend_retry_warnings_total{backend="elasticsearch"} 0
+haproxy_backend_retry_warnings_total{backend="glance_api"} 0
+haproxy_backend_retry_warnings_total{backend="glance_registry"} 0
+haproxy_backend_retry_warnings_total{backend="influxdb_admin"} 0
+haproxy_backend_retry_warnings_total{backend="influxdb_http"} 0
+haproxy_backend_retry_warnings_total{backend="kcmp"} 0
+haproxy_backend_retry_warnings_total{backend="keystone_admin"} 0
+haproxy_backend_retry_warnings_total{backend="keystone_internal"} 0
+haproxy_backend_retry_warnings_total{backend="khatch"} 0
+haproxy_backend_retry_warnings_total{backend="khatch-ui"} 0
+haproxy_backend_retry_warnings_total{backend="mariadb"} 0
+haproxy_backend_retry_warnings_total{backend="memcached"} 0
+haproxy_backend_retry_warnings_total{backend="monasca_api"} 0
+haproxy_backend_retry_warnings_total{backend="neutron_server"} 0
+haproxy_backend_retry_warnings_total{backend="nova_api"} 0
+haproxy_backend_retry_warnings_total{backend="nova_metadata"} 0
+haproxy_backend_retry_warnings_total{backend="nova_novncproxy"} 0
+haproxy_backend_retry_warnings_total{backend="placement_api"} 0
+haproxy_backend_retry_warnings_total{backend="rabbitmq_management"} 0
+haproxy_backend_retry_warnings_total{backend="stats"} 0
+# HELP haproxy_backend_server_aborts_total Total number of data transfers aborted by the server.
+# TYPE haproxy_backend_server_aborts_total counter
+haproxy_backend_server_aborts_total{backend="cinder_api"} 0
+haproxy_backend_server_aborts_total{backend="elasticsearch"} 0
+haproxy_backend_server_aborts_total{backend="glance_api"} 0
+haproxy_backend_server_aborts_total{backend="glance_registry"} 0
+haproxy_backend_server_aborts_total{backend="influxdb_admin"} 0
+haproxy_backend_server_aborts_total{backend="influxdb_http"} 0
+haproxy_backend_server_aborts_total{backend="kcmp"} 0
+haproxy_backend_server_aborts_total{backend="keystone_admin"} 0
+haproxy_backend_server_aborts_total{backend="keystone_internal"} 0
+haproxy_backend_server_aborts_total{backend="khatch"} 0
+haproxy_backend_server_aborts_total{backend="khatch-ui"} 0
+haproxy_backend_server_aborts_total{backend="mariadb"} 0
+haproxy_backend_server_aborts_total{backend="memcached"} 0
+haproxy_backend_server_aborts_total{backend="monasca_api"} 0
+haproxy_backend_server_aborts_total{backend="neutron_server"} 0
+haproxy_backend_server_aborts_total{backend="nova_api"} 0
+haproxy_backend_server_aborts_total{backend="nova_metadata"} 0
+haproxy_backend_server_aborts_total{backend="nova_novncproxy"} 0
+haproxy_backend_server_aborts_total{backend="placement_api"} 0
+haproxy_backend_server_aborts_total{backend="rabbitmq_management"} 0
+haproxy_backend_server_aborts_total{backend="stats"} 0
+# HELP haproxy_backend_server_selected_total Total number of times a server was selected, either for new sessions, or when re-dispatching.
+# TYPE haproxy_backend_server_selected_total counter
+haproxy_backend_server_selected_total{backend="cinder_api"} 437
+haproxy_backend_server_selected_total{backend="elasticsearch"} 0
+haproxy_backend_server_selected_total{backend="glance_api"} 437
+haproxy_backend_server_selected_total{backend="glance_registry"} 0
+haproxy_backend_server_selected_total{backend="influxdb_admin"} 0
+haproxy_backend_server_selected_total{backend="influxdb_http"} 6434
+haproxy_backend_server_selected_total{backend="kcmp"} 0
+haproxy_backend_server_selected_total{backend="keystone_admin"} 9789
+haproxy_backend_server_selected_total{backend="keystone_internal"} 0
+haproxy_backend_server_selected_total{backend="khatch"} 0
+haproxy_backend_server_selected_total{backend="khatch-ui"} 0
+haproxy_backend_server_selected_total{backend="mariadb"} 1100
+haproxy_backend_server_selected_total{backend="memcached"} 0
+haproxy_backend_server_selected_total{backend="monasca_api"} 5898
+haproxy_backend_server_selected_total{backend="neutron_server"} 0
+haproxy_backend_server_selected_total{backend="nova_api"} 437
+haproxy_backend_server_selected_total{backend="nova_metadata"} 0
+haproxy_backend_server_selected_total{backend="nova_novncproxy"} 0
+haproxy_backend_server_selected_total{backend="placement_api"} 0
+haproxy_backend_server_selected_total{backend="rabbitmq_management"} 0
+haproxy_backend_server_selected_total{backend="stats"} 0
+# HELP haproxy_backend_sessions_total Total number of sessions.
+# TYPE haproxy_backend_sessions_total counter
+haproxy_backend_sessions_total{backend="cinder_api"} 437
+haproxy_backend_sessions_total{backend="elasticsearch"} 0
+haproxy_backend_sessions_total{backend="glance_api"} 437
+haproxy_backend_sessions_total{backend="glance_registry"} 0
+haproxy_backend_sessions_total{backend="influxdb_admin"} 0
+haproxy_backend_sessions_total{backend="influxdb_http"} 6434
+haproxy_backend_sessions_total{backend="kcmp"} 0
+haproxy_backend_sessions_total{backend="keystone_admin"} 9789
+haproxy_backend_sessions_total{backend="keystone_internal"} 0
+haproxy_backend_sessions_total{backend="khatch"} 0
+haproxy_backend_sessions_total{backend="khatch-ui"} 0
+haproxy_backend_sessions_total{backend="mariadb"} 1101
+haproxy_backend_sessions_total{backend="memcached"} 0
+haproxy_backend_sessions_total{backend="monasca_api"} 5898
+haproxy_backend_sessions_total{backend="neutron_server"} 437
+haproxy_backend_sessions_total{backend="nova_api"} 437
+haproxy_backend_sessions_total{backend="nova_metadata"} 0
+haproxy_backend_sessions_total{backend="nova_novncproxy"} 0
+haproxy_backend_sessions_total{backend="placement_api"} 0
+haproxy_backend_sessions_total{backend="rabbitmq_management"} 0
+haproxy_backend_sessions_total{backend="stats"} 0
+# HELP haproxy_backend_up Current health status of the backend (1 = UP, 0 = DOWN).
+# TYPE haproxy_backend_up gauge
+haproxy_backend_up{backend="cinder_api"} 1
+haproxy_backend_up{backend="elasticsearch"} 1
+haproxy_backend_up{backend="glance_api"} 1
+haproxy_backend_up{backend="glance_registry"} 1
+haproxy_backend_up{backend="influxdb_admin"} 1
+haproxy_backend_up{backend="influxdb_http"} 1
+haproxy_backend_up{backend="kcmp"} 0
+haproxy_backend_up{backend="keystone_admin"} 1
+haproxy_backend_up{backend="keystone_internal"} 1
+haproxy_backend_up{backend="khatch"} 1
+haproxy_backend_up{backend="khatch-ui"} 1
+haproxy_backend_up{backend="mariadb"} 1
+haproxy_backend_up{backend="memcached"} 1
+haproxy_backend_up{backend="monasca_api"} 1
+haproxy_backend_up{backend="neutron_server"} 0
+haproxy_backend_up{backend="nova_api"} 1
+haproxy_backend_up{backend="nova_metadata"} 1
+haproxy_backend_up{backend="nova_novncproxy"} 1
+haproxy_backend_up{backend="placement_api"} 1
+haproxy_backend_up{backend="rabbitmq_management"} 0
+haproxy_backend_up{backend="stats"} 1
+# HELP haproxy_backend_weight Total weight of the servers in the backend.
+# TYPE haproxy_backend_weight gauge
+haproxy_backend_weight{backend="cinder_api"} 1
+haproxy_backend_weight{backend="elasticsearch"} 1
+haproxy_backend_weight{backend="glance_api"} 1
+haproxy_backend_weight{backend="glance_registry"} 1
+haproxy_backend_weight{backend="influxdb_admin"} 1
+haproxy_backend_weight{backend="influxdb_http"} 1
+haproxy_backend_weight{backend="kcmp"} 0
+haproxy_backend_weight{backend="keystone_admin"} 1
+haproxy_backend_weight{backend="keystone_internal"} 1
+haproxy_backend_weight{backend="khatch"} 1
+haproxy_backend_weight{backend="khatch-ui"} 1
+haproxy_backend_weight{backend="mariadb"} 1
+haproxy_backend_weight{backend="memcached"} 1
+haproxy_backend_weight{backend="monasca_api"} 1
+haproxy_backend_weight{backend="neutron_server"} 0
+haproxy_backend_weight{backend="nova_api"} 1
+haproxy_backend_weight{backend="nova_metadata"} 1
+haproxy_backend_weight{backend="nova_novncproxy"} 1
+haproxy_backend_weight{backend="placement_api"} 1
+haproxy_backend_weight{backend="rabbitmq_management"} 0
+haproxy_backend_weight{backend="stats"} 0
+# HELP haproxy_exporter_build_info A metric with a constant '1' value labeled by version, revision, branch, and goversion from which haproxy_exporter was built.
+# TYPE haproxy_exporter_build_info gauge
+haproxy_exporter_build_info{branch="HEAD",goversion="go1.14.4",revision="9f51ea5d56d5b8134ee2623189e1dfab89fa2ce8",version="0.11.0"} 1
+# HELP haproxy_exporter_csv_parse_failures_total Number of errors while parsing CSV.
+# TYPE haproxy_exporter_csv_parse_failures_total counter
+haproxy_exporter_csv_parse_failures_total 0
+# HELP haproxy_exporter_scrapes_total Current total HAProxy scrapes.
+# TYPE haproxy_exporter_scrapes_total counter
+haproxy_exporter_scrapes_total 7
+# HELP haproxy_frontend_bytes_in_total Current total of incoming bytes.
+# TYPE haproxy_frontend_bytes_in_total counter
+haproxy_frontend_bytes_in_total{frontend="cinder_api"} 81282
+haproxy_frontend_bytes_in_total{frontend="elasticsearch"} 0
+haproxy_frontend_bytes_in_total{frontend="glance_api"} 81282
+haproxy_frontend_bytes_in_total{frontend="glance_registry"} 0
+haproxy_frontend_bytes_in_total{frontend="influxdb_admin"} 0
+haproxy_frontend_bytes_in_total{frontend="influxdb_http"} 1.8597056e+07
+haproxy_frontend_bytes_in_total{frontend="kcmp"} 0
+haproxy_frontend_bytes_in_total{frontend="keystone_admin"} 3.651056e+06
+haproxy_frontend_bytes_in_total{frontend="keystone_internal"} 0
+haproxy_frontend_bytes_in_total{frontend="khatch"} 0
+haproxy_frontend_bytes_in_total{frontend="khatch-ui"} 0
+haproxy_frontend_bytes_in_total{frontend="mariadb"} 6.4448175e+07
+haproxy_frontend_bytes_in_total{frontend="memcached"} 0
+haproxy_frontend_bytes_in_total{frontend="monasca_api"} 1.9443694e+07
+haproxy_frontend_bytes_in_total{frontend="neutron_server"} 81282
+haproxy_frontend_bytes_in_total{frontend="nova_api"} 83030
+haproxy_frontend_bytes_in_total{frontend="nova_metadata"} 0
+haproxy_frontend_bytes_in_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_bytes_in_total{frontend="placement_api"} 0
+haproxy_frontend_bytes_in_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_bytes_in_total{frontend="stats"} 609
+# HELP haproxy_frontend_bytes_out_total Current total of outgoing bytes.
+# TYPE haproxy_frontend_bytes_out_total counter
+haproxy_frontend_bytes_out_total{frontend="cinder_api"} 443992
+haproxy_frontend_bytes_out_total{frontend="elasticsearch"} 0
+haproxy_frontend_bytes_out_total{frontend="glance_api"} 480700
+haproxy_frontend_bytes_out_total{frontend="glance_registry"} 0
+haproxy_frontend_bytes_out_total{frontend="influxdb_admin"} 0
+haproxy_frontend_bytes_out_total{frontend="influxdb_http"} 1.08197e+06
+haproxy_frontend_bytes_out_total{frontend="kcmp"} 0
+haproxy_frontend_bytes_out_total{frontend="keystone_admin"} 3.716262e+07
+haproxy_frontend_bytes_out_total{frontend="keystone_internal"} 0
+haproxy_frontend_bytes_out_total{frontend="khatch"} 0
+haproxy_frontend_bytes_out_total{frontend="khatch-ui"} 0
+haproxy_frontend_bytes_out_total{frontend="mariadb"} 5.2813623e+07
+haproxy_frontend_bytes_out_total{frontend="memcached"} 0
+haproxy_frontend_bytes_out_total{frontend="monasca_api"} 1.462704e+06
+haproxy_frontend_bytes_out_total{frontend="neutron_server"} 92644
+haproxy_frontend_bytes_out_total{frontend="nova_api"} 250838
+haproxy_frontend_bytes_out_total{frontend="nova_metadata"} 0
+haproxy_frontend_bytes_out_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_bytes_out_total{frontend="placement_api"} 0
+haproxy_frontend_bytes_out_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_bytes_out_total{frontend="stats"} 27591
+# HELP haproxy_frontend_compressor_bytes_bypassed_total Number of bytes that bypassed the HTTP compressor
+# TYPE haproxy_frontend_compressor_bytes_bypassed_total counter
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="cinder_api"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="elasticsearch"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="glance_api"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="glance_registry"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="influxdb_admin"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="influxdb_http"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="kcmp"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="keystone_admin"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="keystone_internal"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="khatch"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="khatch-ui"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="mariadb"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="memcached"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="monasca_api"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="neutron_server"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="nova_api"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="nova_metadata"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="placement_api"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_compressor_bytes_bypassed_total{frontend="stats"} 0
+# HELP haproxy_frontend_compressor_bytes_in_total Number of HTTP response bytes fed to the compressor
+# TYPE haproxy_frontend_compressor_bytes_in_total counter
+haproxy_frontend_compressor_bytes_in_total{frontend="cinder_api"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="elasticsearch"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="glance_api"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="glance_registry"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="influxdb_admin"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="influxdb_http"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="kcmp"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="keystone_admin"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="keystone_internal"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="khatch"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="khatch-ui"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="mariadb"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="memcached"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="monasca_api"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="neutron_server"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="nova_api"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="nova_metadata"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="placement_api"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_compressor_bytes_in_total{frontend="stats"} 0
+# HELP haproxy_frontend_compressor_bytes_out_total Number of HTTP response bytes emitted by the compressor
+# TYPE haproxy_frontend_compressor_bytes_out_total counter
+haproxy_frontend_compressor_bytes_out_total{frontend="cinder_api"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="elasticsearch"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="glance_api"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="glance_registry"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="influxdb_admin"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="influxdb_http"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="kcmp"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="keystone_admin"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="keystone_internal"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="khatch"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="khatch-ui"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="mariadb"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="memcached"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="monasca_api"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="neutron_server"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="nova_api"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="nova_metadata"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="placement_api"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_compressor_bytes_out_total{frontend="stats"} 0
+# HELP haproxy_frontend_current_session_rate Current number of sessions per second over last elapsed second.
+# TYPE haproxy_frontend_current_session_rate gauge
+haproxy_frontend_current_session_rate{frontend="cinder_api"} 0
+haproxy_frontend_current_session_rate{frontend="elasticsearch"} 0
+haproxy_frontend_current_session_rate{frontend="glance_api"} 0
+haproxy_frontend_current_session_rate{frontend="glance_registry"} 0
+haproxy_frontend_current_session_rate{frontend="influxdb_admin"} 0
+haproxy_frontend_current_session_rate{frontend="influxdb_http"} 0
+haproxy_frontend_current_session_rate{frontend="kcmp"} 0
+haproxy_frontend_current_session_rate{frontend="keystone_admin"} 0
+haproxy_frontend_current_session_rate{frontend="keystone_internal"} 0
+haproxy_frontend_current_session_rate{frontend="khatch"} 0
+haproxy_frontend_current_session_rate{frontend="khatch-ui"} 0
+haproxy_frontend_current_session_rate{frontend="mariadb"} 0
+haproxy_frontend_current_session_rate{frontend="memcached"} 0
+haproxy_frontend_current_session_rate{frontend="monasca_api"} 0
+haproxy_frontend_current_session_rate{frontend="neutron_server"} 0
+haproxy_frontend_current_session_rate{frontend="nova_api"} 0
+haproxy_frontend_current_session_rate{frontend="nova_metadata"} 0
+haproxy_frontend_current_session_rate{frontend="nova_novncproxy"} 0
+haproxy_frontend_current_session_rate{frontend="placement_api"} 0
+haproxy_frontend_current_session_rate{frontend="rabbitmq_management"} 0
+haproxy_frontend_current_session_rate{frontend="stats"} 1
+# HELP haproxy_frontend_current_sessions Current number of active sessions.
+# TYPE haproxy_frontend_current_sessions gauge
+haproxy_frontend_current_sessions{frontend="cinder_api"} 0
+haproxy_frontend_current_sessions{frontend="elasticsearch"} 0
+haproxy_frontend_current_sessions{frontend="glance_api"} 0
+haproxy_frontend_current_sessions{frontend="glance_registry"} 0
+haproxy_frontend_current_sessions{frontend="influxdb_admin"} 0
+haproxy_frontend_current_sessions{frontend="influxdb_http"} 0
+haproxy_frontend_current_sessions{frontend="kcmp"} 0
+haproxy_frontend_current_sessions{frontend="keystone_admin"} 0
+haproxy_frontend_current_sessions{frontend="keystone_internal"} 0
+haproxy_frontend_current_sessions{frontend="khatch"} 0
+haproxy_frontend_current_sessions{frontend="khatch-ui"} 0
+haproxy_frontend_current_sessions{frontend="mariadb"} 5
+haproxy_frontend_current_sessions{frontend="memcached"} 0
+haproxy_frontend_current_sessions{frontend="monasca_api"} 0
+haproxy_frontend_current_sessions{frontend="neutron_server"} 0
+haproxy_frontend_current_sessions{frontend="nova_api"} 0
+haproxy_frontend_current_sessions{frontend="nova_metadata"} 0
+haproxy_frontend_current_sessions{frontend="nova_novncproxy"} 0
+haproxy_frontend_current_sessions{frontend="placement_api"} 0
+haproxy_frontend_current_sessions{frontend="rabbitmq_management"} 0
+haproxy_frontend_current_sessions{frontend="stats"} 1
+# HELP haproxy_frontend_http_requests_total Total HTTP requests.
+# TYPE haproxy_frontend_http_requests_total counter
+haproxy_frontend_http_requests_total{frontend="cinder_api"} 437
+haproxy_frontend_http_requests_total{frontend="elasticsearch"} 0
+haproxy_frontend_http_requests_total{frontend="glance_api"} 437
+haproxy_frontend_http_requests_total{frontend="glance_registry"} 0
+haproxy_frontend_http_requests_total{frontend="influxdb_admin"} 0
+haproxy_frontend_http_requests_total{frontend="influxdb_http"} 6434
+haproxy_frontend_http_requests_total{frontend="kcmp"} 0
+haproxy_frontend_http_requests_total{frontend="keystone_admin"} 9789
+haproxy_frontend_http_requests_total{frontend="keystone_internal"} 0
+haproxy_frontend_http_requests_total{frontend="khatch"} 0
+haproxy_frontend_http_requests_total{frontend="khatch-ui"} 0
+haproxy_frontend_http_requests_total{frontend="mariadb"} 0
+haproxy_frontend_http_requests_total{frontend="memcached"} 0
+haproxy_frontend_http_requests_total{frontend="monasca_api"} 5898
+haproxy_frontend_http_requests_total{frontend="neutron_server"} 437
+haproxy_frontend_http_requests_total{frontend="nova_api"} 437
+haproxy_frontend_http_requests_total{frontend="nova_metadata"} 0
+haproxy_frontend_http_requests_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_http_requests_total{frontend="placement_api"} 0
+haproxy_frontend_http_requests_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_http_requests_total{frontend="stats"} 4
+# HELP haproxy_frontend_http_responses_compressed_total Number of HTTP responses that were compressed
+# TYPE haproxy_frontend_http_responses_compressed_total counter
+haproxy_frontend_http_responses_compressed_total{frontend="cinder_api"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="elasticsearch"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="glance_api"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="glance_registry"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="influxdb_admin"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="influxdb_http"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="kcmp"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="keystone_admin"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="keystone_internal"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="khatch"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="khatch-ui"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="mariadb"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="memcached"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="monasca_api"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="neutron_server"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="nova_api"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="nova_metadata"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="placement_api"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_http_responses_compressed_total{frontend="stats"} 0
+# HELP haproxy_frontend_http_responses_total Total of HTTP responses.
+# TYPE haproxy_frontend_http_responses_total counter
+haproxy_frontend_http_responses_total{code="1xx",frontend="cinder_api"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="elasticsearch"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="glance_api"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="glance_registry"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="influxdb_admin"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="influxdb_http"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="kcmp"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="keystone_admin"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="keystone_internal"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="khatch"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="khatch-ui"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="monasca_api"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="neutron_server"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="nova_api"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="nova_metadata"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="nova_novncproxy"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="placement_api"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="rabbitmq_management"} 0
+haproxy_frontend_http_responses_total{code="1xx",frontend="stats"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="cinder_api"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="elasticsearch"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="glance_api"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="glance_registry"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="influxdb_admin"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="influxdb_http"} 6434
+haproxy_frontend_http_responses_total{code="2xx",frontend="kcmp"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="keystone_admin"} 9784
+haproxy_frontend_http_responses_total{code="2xx",frontend="keystone_internal"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="khatch"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="khatch-ui"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="monasca_api"} 5898
+haproxy_frontend_http_responses_total{code="2xx",frontend="neutron_server"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="nova_api"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="nova_metadata"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="nova_novncproxy"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="placement_api"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="rabbitmq_management"} 0
+haproxy_frontend_http_responses_total{code="2xx",frontend="stats"} 3
+haproxy_frontend_http_responses_total{code="3xx",frontend="cinder_api"} 437
+haproxy_frontend_http_responses_total{code="3xx",frontend="elasticsearch"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="glance_api"} 437
+haproxy_frontend_http_responses_total{code="3xx",frontend="glance_registry"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="influxdb_admin"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="influxdb_http"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="kcmp"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="keystone_admin"} 5
+haproxy_frontend_http_responses_total{code="3xx",frontend="keystone_internal"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="khatch"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="khatch-ui"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="monasca_api"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="neutron_server"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="nova_api"} 437
+haproxy_frontend_http_responses_total{code="3xx",frontend="nova_metadata"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="nova_novncproxy"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="placement_api"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="rabbitmq_management"} 0
+haproxy_frontend_http_responses_total{code="3xx",frontend="stats"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="cinder_api"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="elasticsearch"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="glance_api"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="glance_registry"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="influxdb_admin"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="influxdb_http"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="kcmp"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="keystone_admin"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="keystone_internal"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="khatch"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="khatch-ui"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="monasca_api"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="neutron_server"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="nova_api"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="nova_metadata"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="nova_novncproxy"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="placement_api"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="rabbitmq_management"} 0
+haproxy_frontend_http_responses_total{code="4xx",frontend="stats"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="cinder_api"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="elasticsearch"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="glance_api"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="glance_registry"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="influxdb_admin"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="influxdb_http"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="kcmp"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="keystone_admin"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="keystone_internal"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="khatch"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="khatch-ui"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="monasca_api"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="neutron_server"} 437
+haproxy_frontend_http_responses_total{code="5xx",frontend="nova_api"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="nova_metadata"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="nova_novncproxy"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="placement_api"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="rabbitmq_management"} 0
+haproxy_frontend_http_responses_total{code="5xx",frontend="stats"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="cinder_api"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="elasticsearch"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="glance_api"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="glance_registry"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="influxdb_admin"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="influxdb_http"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="kcmp"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="keystone_admin"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="keystone_internal"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="khatch"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="khatch-ui"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="monasca_api"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="neutron_server"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="nova_api"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="nova_metadata"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="nova_novncproxy"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="placement_api"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="rabbitmq_management"} 0
+haproxy_frontend_http_responses_total{code="other",frontend="stats"} 0
+# HELP haproxy_frontend_limit_session_rate Configured limit on new sessions per second.
+# TYPE haproxy_frontend_limit_session_rate gauge
+haproxy_frontend_limit_session_rate{frontend="cinder_api"} 0
+haproxy_frontend_limit_session_rate{frontend="elasticsearch"} 0
+haproxy_frontend_limit_session_rate{frontend="glance_api"} 0
+haproxy_frontend_limit_session_rate{frontend="glance_registry"} 0
+haproxy_frontend_limit_session_rate{frontend="influxdb_admin"} 0
+haproxy_frontend_limit_session_rate{frontend="influxdb_http"} 0
+haproxy_frontend_limit_session_rate{frontend="kcmp"} 0
+haproxy_frontend_limit_session_rate{frontend="keystone_admin"} 0
+haproxy_frontend_limit_session_rate{frontend="keystone_internal"} 0
+haproxy_frontend_limit_session_rate{frontend="khatch"} 0
+haproxy_frontend_limit_session_rate{frontend="khatch-ui"} 0
+haproxy_frontend_limit_session_rate{frontend="mariadb"} 0
+haproxy_frontend_limit_session_rate{frontend="memcached"} 0
+haproxy_frontend_limit_session_rate{frontend="monasca_api"} 0
+haproxy_frontend_limit_session_rate{frontend="neutron_server"} 0
+haproxy_frontend_limit_session_rate{frontend="nova_api"} 0
+haproxy_frontend_limit_session_rate{frontend="nova_metadata"} 0
+haproxy_frontend_limit_session_rate{frontend="nova_novncproxy"} 0
+haproxy_frontend_limit_session_rate{frontend="placement_api"} 0
+haproxy_frontend_limit_session_rate{frontend="rabbitmq_management"} 0
+haproxy_frontend_limit_session_rate{frontend="stats"} 0
+# HELP haproxy_frontend_limit_sessions Configured session limit.
+# TYPE haproxy_frontend_limit_sessions gauge
+haproxy_frontend_limit_sessions{frontend="cinder_api"} 2000
+haproxy_frontend_limit_sessions{frontend="elasticsearch"} 2000
+haproxy_frontend_limit_sessions{frontend="glance_api"} 2000
+haproxy_frontend_limit_sessions{frontend="glance_registry"} 2000
+haproxy_frontend_limit_sessions{frontend="influxdb_admin"} 2000
+haproxy_frontend_limit_sessions{frontend="influxdb_http"} 2000
+haproxy_frontend_limit_sessions{frontend="kcmp"} 2000
+haproxy_frontend_limit_sessions{frontend="keystone_admin"} 2000
+haproxy_frontend_limit_sessions{frontend="keystone_internal"} 2000
+haproxy_frontend_limit_sessions{frontend="khatch"} 2000
+haproxy_frontend_limit_sessions{frontend="khatch-ui"} 2000
+haproxy_frontend_limit_sessions{frontend="mariadb"} 2000
+haproxy_frontend_limit_sessions{frontend="memcached"} 2000
+haproxy_frontend_limit_sessions{frontend="monasca_api"} 2000
+haproxy_frontend_limit_sessions{frontend="neutron_server"} 2000
+haproxy_frontend_limit_sessions{frontend="nova_api"} 2000
+haproxy_frontend_limit_sessions{frontend="nova_metadata"} 2000
+haproxy_frontend_limit_sessions{frontend="nova_novncproxy"} 2000
+haproxy_frontend_limit_sessions{frontend="placement_api"} 2000
+haproxy_frontend_limit_sessions{frontend="rabbitmq_management"} 2000
+haproxy_frontend_limit_sessions{frontend="stats"} 2000
+# HELP haproxy_frontend_max_session_rate Maximum observed number of sessions per second.
+# TYPE haproxy_frontend_max_session_rate gauge
+haproxy_frontend_max_session_rate{frontend="cinder_api"} 1
+haproxy_frontend_max_session_rate{frontend="elasticsearch"} 0
+haproxy_frontend_max_session_rate{frontend="glance_api"} 1
+haproxy_frontend_max_session_rate{frontend="glance_registry"} 0
+haproxy_frontend_max_session_rate{frontend="influxdb_admin"} 0
+haproxy_frontend_max_session_rate{frontend="influxdb_http"} 4
+haproxy_frontend_max_session_rate{frontend="kcmp"} 0
+haproxy_frontend_max_session_rate{frontend="keystone_admin"} 6
+haproxy_frontend_max_session_rate{frontend="keystone_internal"} 0
+haproxy_frontend_max_session_rate{frontend="khatch"} 0
+haproxy_frontend_max_session_rate{frontend="khatch-ui"} 0
+haproxy_frontend_max_session_rate{frontend="mariadb"} 6
+haproxy_frontend_max_session_rate{frontend="memcached"} 0
+haproxy_frontend_max_session_rate{frontend="monasca_api"} 1
+haproxy_frontend_max_session_rate{frontend="neutron_server"} 1
+haproxy_frontend_max_session_rate{frontend="nova_api"} 1
+haproxy_frontend_max_session_rate{frontend="nova_metadata"} 0
+haproxy_frontend_max_session_rate{frontend="nova_novncproxy"} 0
+haproxy_frontend_max_session_rate{frontend="placement_api"} 0
+haproxy_frontend_max_session_rate{frontend="rabbitmq_management"} 0
+haproxy_frontend_max_session_rate{frontend="stats"} 1
+# HELP haproxy_frontend_max_sessions Maximum observed number of active sessions.
+# TYPE haproxy_frontend_max_sessions gauge
+haproxy_frontend_max_sessions{frontend="cinder_api"} 1
+haproxy_frontend_max_sessions{frontend="elasticsearch"} 0
+haproxy_frontend_max_sessions{frontend="glance_api"} 1
+haproxy_frontend_max_sessions{frontend="glance_registry"} 0
+haproxy_frontend_max_sessions{frontend="influxdb_admin"} 0
+haproxy_frontend_max_sessions{frontend="influxdb_http"} 14
+haproxy_frontend_max_sessions{frontend="kcmp"} 0
+haproxy_frontend_max_sessions{frontend="keystone_admin"} 6
+haproxy_frontend_max_sessions{frontend="keystone_internal"} 0
+haproxy_frontend_max_sessions{frontend="khatch"} 0
+haproxy_frontend_max_sessions{frontend="khatch-ui"} 0
+haproxy_frontend_max_sessions{frontend="mariadb"} 39
+haproxy_frontend_max_sessions{frontend="memcached"} 0
+haproxy_frontend_max_sessions{frontend="monasca_api"} 2
+haproxy_frontend_max_sessions{frontend="neutron_server"} 1
+haproxy_frontend_max_sessions{frontend="nova_api"} 1
+haproxy_frontend_max_sessions{frontend="nova_metadata"} 0
+haproxy_frontend_max_sessions{frontend="nova_novncproxy"} 0
+haproxy_frontend_max_sessions{frontend="placement_api"} 0
+haproxy_frontend_max_sessions{frontend="rabbitmq_management"} 0
+haproxy_frontend_max_sessions{frontend="stats"} 1
+# HELP haproxy_frontend_request_errors_total Total of request errors.
+# TYPE haproxy_frontend_request_errors_total counter
+haproxy_frontend_request_errors_total{frontend="cinder_api"} 0
+haproxy_frontend_request_errors_total{frontend="elasticsearch"} 0
+haproxy_frontend_request_errors_total{frontend="glance_api"} 0
+haproxy_frontend_request_errors_total{frontend="glance_registry"} 0
+haproxy_frontend_request_errors_total{frontend="influxdb_admin"} 0
+haproxy_frontend_request_errors_total{frontend="influxdb_http"} 0
+haproxy_frontend_request_errors_total{frontend="kcmp"} 0
+haproxy_frontend_request_errors_total{frontend="keystone_admin"} 0
+haproxy_frontend_request_errors_total{frontend="keystone_internal"} 0
+haproxy_frontend_request_errors_total{frontend="khatch"} 0
+haproxy_frontend_request_errors_total{frontend="khatch-ui"} 0
+haproxy_frontend_request_errors_total{frontend="mariadb"} 0
+haproxy_frontend_request_errors_total{frontend="memcached"} 0
+haproxy_frontend_request_errors_total{frontend="monasca_api"} 0
+haproxy_frontend_request_errors_total{frontend="neutron_server"} 0
+haproxy_frontend_request_errors_total{frontend="nova_api"} 0
+haproxy_frontend_request_errors_total{frontend="nova_metadata"} 0
+haproxy_frontend_request_errors_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_request_errors_total{frontend="placement_api"} 0
+haproxy_frontend_request_errors_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_request_errors_total{frontend="stats"} 0
+# HELP haproxy_frontend_requests_denied_total Total of requests denied for security.
+# TYPE haproxy_frontend_requests_denied_total counter
+haproxy_frontend_requests_denied_total{frontend="cinder_api"} 0
+haproxy_frontend_requests_denied_total{frontend="elasticsearch"} 0
+haproxy_frontend_requests_denied_total{frontend="glance_api"} 0
+haproxy_frontend_requests_denied_total{frontend="glance_registry"} 0
+haproxy_frontend_requests_denied_total{frontend="influxdb_admin"} 0
+haproxy_frontend_requests_denied_total{frontend="influxdb_http"} 0
+haproxy_frontend_requests_denied_total{frontend="kcmp"} 0
+haproxy_frontend_requests_denied_total{frontend="keystone_admin"} 0
+haproxy_frontend_requests_denied_total{frontend="keystone_internal"} 0
+haproxy_frontend_requests_denied_total{frontend="khatch"} 0
+haproxy_frontend_requests_denied_total{frontend="khatch-ui"} 0
+haproxy_frontend_requests_denied_total{frontend="mariadb"} 0
+haproxy_frontend_requests_denied_total{frontend="memcached"} 0
+haproxy_frontend_requests_denied_total{frontend="monasca_api"} 0
+haproxy_frontend_requests_denied_total{frontend="neutron_server"} 0
+haproxy_frontend_requests_denied_total{frontend="nova_api"} 0
+haproxy_frontend_requests_denied_total{frontend="nova_metadata"} 0
+haproxy_frontend_requests_denied_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_requests_denied_total{frontend="placement_api"} 0
+haproxy_frontend_requests_denied_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_requests_denied_total{frontend="stats"} 0
+# HELP haproxy_frontend_sessions_total Total number of sessions.
+# TYPE haproxy_frontend_sessions_total counter
+haproxy_frontend_sessions_total{frontend="cinder_api"} 437
+haproxy_frontend_sessions_total{frontend="elasticsearch"} 0
+haproxy_frontend_sessions_total{frontend="glance_api"} 437
+haproxy_frontend_sessions_total{frontend="glance_registry"} 0
+haproxy_frontend_sessions_total{frontend="influxdb_admin"} 0
+haproxy_frontend_sessions_total{frontend="influxdb_http"} 6434
+haproxy_frontend_sessions_total{frontend="kcmp"} 0
+haproxy_frontend_sessions_total{frontend="keystone_admin"} 3092
+haproxy_frontend_sessions_total{frontend="keystone_internal"} 0
+haproxy_frontend_sessions_total{frontend="khatch"} 0
+haproxy_frontend_sessions_total{frontend="khatch-ui"} 0
+haproxy_frontend_sessions_total{frontend="mariadb"} 1101
+haproxy_frontend_sessions_total{frontend="memcached"} 0
+haproxy_frontend_sessions_total{frontend="monasca_api"} 4993
+haproxy_frontend_sessions_total{frontend="neutron_server"} 437
+haproxy_frontend_sessions_total{frontend="nova_api"} 437
+haproxy_frontend_sessions_total{frontend="nova_metadata"} 0
+haproxy_frontend_sessions_total{frontend="nova_novncproxy"} 0
+haproxy_frontend_sessions_total{frontend="placement_api"} 0
+haproxy_frontend_sessions_total{frontend="rabbitmq_management"} 0
+haproxy_frontend_sessions_total{frontend="stats"} 3
+# HELP haproxy_server_bytes_in_total Current total of incoming bytes.
+# TYPE haproxy_server_bytes_in_total counter
+haproxy_server_bytes_in_total{backend="cinder_api",server="ctr1"} 81282
+haproxy_server_bytes_in_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="glance_api",server="ctr1"} 81282
+haproxy_server_bytes_in_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="influxdb_http",server="ctr1"} 1.8597056e+07
+haproxy_server_bytes_in_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="keystone_admin",server="ctr1"} 3.651056e+06
+haproxy_server_bytes_in_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="khatch",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="mariadb",server="ctr1"} 6.4448175e+07
+haproxy_server_bytes_in_total{backend="memcached",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="monasca_api",server="ctr1"} 1.9443694e+07
+haproxy_server_bytes_in_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="nova_api",server="ctr1"} 83030
+haproxy_server_bytes_in_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_bytes_in_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_bytes_out_total Current total of outgoing bytes.
+# TYPE haproxy_server_bytes_out_total counter
+haproxy_server_bytes_out_total{backend="cinder_api",server="ctr1"} 443992
+haproxy_server_bytes_out_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="glance_api",server="ctr1"} 480700
+haproxy_server_bytes_out_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="influxdb_http",server="ctr1"} 1.08197e+06
+haproxy_server_bytes_out_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="keystone_admin",server="ctr1"} 3.716262e+07
+haproxy_server_bytes_out_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="khatch",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="mariadb",server="ctr1"} 5.2813623e+07
+haproxy_server_bytes_out_total{backend="memcached",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="monasca_api",server="ctr1"} 1.462704e+06
+haproxy_server_bytes_out_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="nova_api",server="ctr1"} 250838
+haproxy_server_bytes_out_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_bytes_out_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_check_duration_seconds Previously run health check duration, in seconds
+# TYPE haproxy_server_check_duration_seconds gauge
+haproxy_server_check_duration_seconds{backend="cinder_api",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="glance_api",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="glance_registry",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="kcmp",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="khatch",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="mariadb",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="memcached",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="monasca_api",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="neutron_server",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="nova_api",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="placement_api",server="ctr1"} 0
+haproxy_server_check_duration_seconds{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_check_failures_total Total number of failed health checks.
+# TYPE haproxy_server_check_failures_total counter
+haproxy_server_check_failures_total{backend="cinder_api",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="elasticsearch",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="glance_api",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="glance_registry",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="influxdb_admin",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="influxdb_http",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="kcmp",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="keystone_admin",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="keystone_internal",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="khatch",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="khatch-ui",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="mariadb",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="memcached",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="monasca_api",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="neutron_server",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="nova_api",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="nova_metadata",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="nova_novncproxy",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="placement_api",server="ctr1"} 1
+haproxy_server_check_failures_total{backend="rabbitmq_management",server="ctr1"} 1
+# HELP haproxy_server_client_aborts_total Total number of data transfers aborted by the client.
+# TYPE haproxy_server_client_aborts_total counter
+haproxy_server_client_aborts_total{backend="cinder_api",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="glance_api",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="khatch",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="mariadb",server="ctr1"} 33
+haproxy_server_client_aborts_total{backend="memcached",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="monasca_api",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="nova_api",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_client_aborts_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_connection_errors_total Total of connection errors.
+# TYPE haproxy_server_connection_errors_total counter
+haproxy_server_connection_errors_total{backend="cinder_api",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="glance_api",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="khatch",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="mariadb",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="memcached",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="monasca_api",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="nova_api",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_connection_errors_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_current_queue Current number of queued requests assigned to this server.
+# TYPE haproxy_server_current_queue gauge
+haproxy_server_current_queue{backend="cinder_api",server="ctr1"} 0
+haproxy_server_current_queue{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_current_queue{backend="glance_api",server="ctr1"} 0
+haproxy_server_current_queue{backend="glance_registry",server="ctr1"} 0
+haproxy_server_current_queue{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_current_queue{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_current_queue{backend="kcmp",server="ctr1"} 0
+haproxy_server_current_queue{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_current_queue{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_current_queue{backend="khatch",server="ctr1"} 0
+haproxy_server_current_queue{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_current_queue{backend="mariadb",server="ctr1"} 0
+haproxy_server_current_queue{backend="memcached",server="ctr1"} 0
+haproxy_server_current_queue{backend="monasca_api",server="ctr1"} 0
+haproxy_server_current_queue{backend="neutron_server",server="ctr1"} 0
+haproxy_server_current_queue{backend="nova_api",server="ctr1"} 0
+haproxy_server_current_queue{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_current_queue{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_current_queue{backend="placement_api",server="ctr1"} 0
+haproxy_server_current_queue{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_current_session_rate Current number of sessions per second over last elapsed second.
+# TYPE haproxy_server_current_session_rate gauge
+haproxy_server_current_session_rate{backend="cinder_api",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="glance_api",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="glance_registry",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="kcmp",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="khatch",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="mariadb",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="memcached",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="monasca_api",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="neutron_server",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="nova_api",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="placement_api",server="ctr1"} 0
+haproxy_server_current_session_rate{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_current_sessions Current number of active sessions.
+# TYPE haproxy_server_current_sessions gauge
+haproxy_server_current_sessions{backend="cinder_api",server="ctr1"} 0
+haproxy_server_current_sessions{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_current_sessions{backend="glance_api",server="ctr1"} 0
+haproxy_server_current_sessions{backend="glance_registry",server="ctr1"} 0
+haproxy_server_current_sessions{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_current_sessions{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_current_sessions{backend="kcmp",server="ctr1"} 0
+haproxy_server_current_sessions{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_current_sessions{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_current_sessions{backend="khatch",server="ctr1"} 0
+haproxy_server_current_sessions{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_current_sessions{backend="mariadb",server="ctr1"} 5
+haproxy_server_current_sessions{backend="memcached",server="ctr1"} 0
+haproxy_server_current_sessions{backend="monasca_api",server="ctr1"} 0
+haproxy_server_current_sessions{backend="neutron_server",server="ctr1"} 0
+haproxy_server_current_sessions{backend="nova_api",server="ctr1"} 0
+haproxy_server_current_sessions{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_current_sessions{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_current_sessions{backend="placement_api",server="ctr1"} 0
+haproxy_server_current_sessions{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_downtime_seconds_total Total downtime in seconds.
+# TYPE haproxy_server_downtime_seconds_total counter
+haproxy_server_downtime_seconds_total{backend="cinder_api",server="ctr1"} 6
+haproxy_server_downtime_seconds_total{backend="elasticsearch",server="ctr1"} 166
+haproxy_server_downtime_seconds_total{backend="glance_api",server="ctr1"} 68
+haproxy_server_downtime_seconds_total{backend="glance_registry",server="ctr1"} 24
+haproxy_server_downtime_seconds_total{backend="influxdb_admin",server="ctr1"} 50
+haproxy_server_downtime_seconds_total{backend="influxdb_http",server="ctr1"} 50
+haproxy_server_downtime_seconds_total{backend="kcmp",server="ctr1"} 126525
+haproxy_server_downtime_seconds_total{backend="keystone_admin",server="ctr1"} 32
+haproxy_server_downtime_seconds_total{backend="keystone_internal",server="ctr1"} 32
+haproxy_server_downtime_seconds_total{backend="khatch",server="ctr1"} 6
+haproxy_server_downtime_seconds_total{backend="khatch-ui",server="ctr1"} 26
+haproxy_server_downtime_seconds_total{backend="mariadb",server="ctr1"} 46
+haproxy_server_downtime_seconds_total{backend="memcached",server="ctr1"} 4
+haproxy_server_downtime_seconds_total{backend="monasca_api",server="ctr1"} 12
+haproxy_server_downtime_seconds_total{backend="neutron_server",server="ctr1"} 126525
+haproxy_server_downtime_seconds_total{backend="nova_api",server="ctr1"} 88
+haproxy_server_downtime_seconds_total{backend="nova_metadata",server="ctr1"} 88
+haproxy_server_downtime_seconds_total{backend="nova_novncproxy",server="ctr1"} 62
+haproxy_server_downtime_seconds_total{backend="placement_api",server="ctr1"} 4
+haproxy_server_downtime_seconds_total{backend="rabbitmq_management",server="ctr1"} 126526
+# HELP haproxy_server_http_responses_total Total of HTTP responses.
+# TYPE haproxy_server_http_responses_total counter
+haproxy_server_http_responses_total{backend="cinder_api",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="cinder_api",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="cinder_api",code="3xx",server="ctr1"} 437
+haproxy_server_http_responses_total{backend="cinder_api",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="cinder_api",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="cinder_api",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="elasticsearch",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="elasticsearch",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="elasticsearch",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="elasticsearch",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="elasticsearch",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="elasticsearch",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_api",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_api",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_api",code="3xx",server="ctr1"} 437
+haproxy_server_http_responses_total{backend="glance_api",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_api",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_api",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_registry",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_registry",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_registry",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_registry",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_registry",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="glance_registry",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_admin",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_admin",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_admin",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_admin",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_admin",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_admin",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_http",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_http",code="2xx",server="ctr1"} 6434
+haproxy_server_http_responses_total{backend="influxdb_http",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_http",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_http",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="influxdb_http",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="kcmp",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="kcmp",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="kcmp",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="kcmp",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="kcmp",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="kcmp",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_admin",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_admin",code="2xx",server="ctr1"} 9784
+haproxy_server_http_responses_total{backend="keystone_admin",code="3xx",server="ctr1"} 5
+haproxy_server_http_responses_total{backend="keystone_admin",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_admin",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_admin",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_internal",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_internal",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_internal",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_internal",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_internal",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="keystone_internal",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch-ui",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch-ui",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch-ui",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch-ui",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch-ui",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="khatch-ui",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="monasca_api",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="monasca_api",code="2xx",server="ctr1"} 5898
+haproxy_server_http_responses_total{backend="monasca_api",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="monasca_api",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="monasca_api",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="monasca_api",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="neutron_server",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="neutron_server",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="neutron_server",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="neutron_server",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="neutron_server",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="neutron_server",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_api",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_api",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_api",code="3xx",server="ctr1"} 437
+haproxy_server_http_responses_total{backend="nova_api",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_api",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_api",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_metadata",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_metadata",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_metadata",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_metadata",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_metadata",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_metadata",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_novncproxy",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_novncproxy",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_novncproxy",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_novncproxy",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_novncproxy",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="nova_novncproxy",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="placement_api",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="placement_api",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="placement_api",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="placement_api",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="placement_api",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="placement_api",code="other",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="rabbitmq_management",code="1xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="rabbitmq_management",code="2xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="rabbitmq_management",code="3xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="rabbitmq_management",code="4xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="rabbitmq_management",code="5xx",server="ctr1"} 0
+haproxy_server_http_responses_total{backend="rabbitmq_management",code="other",server="ctr1"} 0
+# HELP haproxy_server_max_queue Maximum observed number of queued requests assigned to this server.
+# TYPE haproxy_server_max_queue gauge
+haproxy_server_max_queue{backend="cinder_api",server="ctr1"} 0
+haproxy_server_max_queue{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_max_queue{backend="glance_api",server="ctr1"} 0
+haproxy_server_max_queue{backend="glance_registry",server="ctr1"} 0
+haproxy_server_max_queue{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_max_queue{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_max_queue{backend="kcmp",server="ctr1"} 0
+haproxy_server_max_queue{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_max_queue{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_max_queue{backend="khatch",server="ctr1"} 0
+haproxy_server_max_queue{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_max_queue{backend="mariadb",server="ctr1"} 0
+haproxy_server_max_queue{backend="memcached",server="ctr1"} 0
+haproxy_server_max_queue{backend="monasca_api",server="ctr1"} 0
+haproxy_server_max_queue{backend="neutron_server",server="ctr1"} 0
+haproxy_server_max_queue{backend="nova_api",server="ctr1"} 0
+haproxy_server_max_queue{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_max_queue{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_max_queue{backend="placement_api",server="ctr1"} 0
+haproxy_server_max_queue{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_max_session_rate Maximum observed number of sessions per second.
+# TYPE haproxy_server_max_session_rate gauge
+haproxy_server_max_session_rate{backend="cinder_api",server="ctr1"} 1
+haproxy_server_max_session_rate{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="glance_api",server="ctr1"} 1
+haproxy_server_max_session_rate{backend="glance_registry",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="influxdb_http",server="ctr1"} 4
+haproxy_server_max_session_rate{backend="kcmp",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="keystone_admin",server="ctr1"} 21
+haproxy_server_max_session_rate{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="khatch",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="mariadb",server="ctr1"} 6
+haproxy_server_max_session_rate{backend="memcached",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="monasca_api",server="ctr1"} 1
+haproxy_server_max_session_rate{backend="neutron_server",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="nova_api",server="ctr1"} 1
+haproxy_server_max_session_rate{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="placement_api",server="ctr1"} 0
+haproxy_server_max_session_rate{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_max_sessions Maximum observed number of active sessions.
+# TYPE haproxy_server_max_sessions gauge
+haproxy_server_max_sessions{backend="cinder_api",server="ctr1"} 1
+haproxy_server_max_sessions{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_max_sessions{backend="glance_api",server="ctr1"} 1
+haproxy_server_max_sessions{backend="glance_registry",server="ctr1"} 0
+haproxy_server_max_sessions{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_max_sessions{backend="influxdb_http",server="ctr1"} 1
+haproxy_server_max_sessions{backend="kcmp",server="ctr1"} 0
+haproxy_server_max_sessions{backend="keystone_admin",server="ctr1"} 5
+haproxy_server_max_sessions{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_max_sessions{backend="khatch",server="ctr1"} 0
+haproxy_server_max_sessions{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_max_sessions{backend="mariadb",server="ctr1"} 39
+haproxy_server_max_sessions{backend="memcached",server="ctr1"} 0
+haproxy_server_max_sessions{backend="monasca_api",server="ctr1"} 2
+haproxy_server_max_sessions{backend="neutron_server",server="ctr1"} 0
+haproxy_server_max_sessions{backend="nova_api",server="ctr1"} 1
+haproxy_server_max_sessions{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_max_sessions{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_max_sessions{backend="placement_api",server="ctr1"} 0
+haproxy_server_max_sessions{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_redispatch_warnings_total Total of redispatch warnings.
+# TYPE haproxy_server_redispatch_warnings_total counter
+haproxy_server_redispatch_warnings_total{backend="cinder_api",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="glance_api",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="khatch",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="mariadb",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="memcached",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="monasca_api",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="nova_api",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_redispatch_warnings_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_response_errors_total Total of response errors.
+# TYPE haproxy_server_response_errors_total counter
+haproxy_server_response_errors_total{backend="cinder_api",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="glance_api",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="khatch",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="mariadb",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="memcached",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="monasca_api",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="nova_api",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_response_errors_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_retry_warnings_total Total of retry warnings.
+# TYPE haproxy_server_retry_warnings_total counter
+haproxy_server_retry_warnings_total{backend="cinder_api",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="glance_api",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="khatch",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="mariadb",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="memcached",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="monasca_api",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="nova_api",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_retry_warnings_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_server_aborts_total Total number of data transfers aborted by the server.
+# TYPE haproxy_server_server_aborts_total counter
+haproxy_server_server_aborts_total{backend="cinder_api",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="glance_api",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="influxdb_http",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="keystone_admin",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="khatch",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="mariadb",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="memcached",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="monasca_api",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="nova_api",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_server_aborts_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_server_selected_total Total number of times a server was selected, either for new sessions, or when re-dispatching.
+# TYPE haproxy_server_server_selected_total counter
+haproxy_server_server_selected_total{backend="cinder_api",server="ctr1"} 437
+haproxy_server_server_selected_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="glance_api",server="ctr1"} 437
+haproxy_server_server_selected_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="influxdb_http",server="ctr1"} 6434
+haproxy_server_server_selected_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="keystone_admin",server="ctr1"} 9789
+haproxy_server_server_selected_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="khatch",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="mariadb",server="ctr1"} 1100
+haproxy_server_server_selected_total{backend="memcached",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="monasca_api",server="ctr1"} 5898
+haproxy_server_server_selected_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="nova_api",server="ctr1"} 437
+haproxy_server_server_selected_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_server_selected_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_sessions_total Total number of sessions.
+# TYPE haproxy_server_sessions_total counter
+haproxy_server_sessions_total{backend="cinder_api",server="ctr1"} 437
+haproxy_server_sessions_total{backend="elasticsearch",server="ctr1"} 0
+haproxy_server_sessions_total{backend="glance_api",server="ctr1"} 437
+haproxy_server_sessions_total{backend="glance_registry",server="ctr1"} 0
+haproxy_server_sessions_total{backend="influxdb_admin",server="ctr1"} 0
+haproxy_server_sessions_total{backend="influxdb_http",server="ctr1"} 6434
+haproxy_server_sessions_total{backend="kcmp",server="ctr1"} 0
+haproxy_server_sessions_total{backend="keystone_admin",server="ctr1"} 9789
+haproxy_server_sessions_total{backend="keystone_internal",server="ctr1"} 0
+haproxy_server_sessions_total{backend="khatch",server="ctr1"} 0
+haproxy_server_sessions_total{backend="khatch-ui",server="ctr1"} 0
+haproxy_server_sessions_total{backend="mariadb",server="ctr1"} 1100
+haproxy_server_sessions_total{backend="memcached",server="ctr1"} 0
+haproxy_server_sessions_total{backend="monasca_api",server="ctr1"} 5898
+haproxy_server_sessions_total{backend="neutron_server",server="ctr1"} 0
+haproxy_server_sessions_total{backend="nova_api",server="ctr1"} 437
+haproxy_server_sessions_total{backend="nova_metadata",server="ctr1"} 0
+haproxy_server_sessions_total{backend="nova_novncproxy",server="ctr1"} 0
+haproxy_server_sessions_total{backend="placement_api",server="ctr1"} 0
+haproxy_server_sessions_total{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_up Current health status of the server (1 = UP, 0 = DOWN).
+# TYPE haproxy_server_up gauge
+haproxy_server_up{backend="cinder_api",server="ctr1"} 1
+haproxy_server_up{backend="elasticsearch",server="ctr1"} 1
+haproxy_server_up{backend="glance_api",server="ctr1"} 1
+haproxy_server_up{backend="glance_registry",server="ctr1"} 1
+haproxy_server_up{backend="influxdb_admin",server="ctr1"} 1
+haproxy_server_up{backend="influxdb_http",server="ctr1"} 1
+haproxy_server_up{backend="kcmp",server="ctr1"} 0
+haproxy_server_up{backend="keystone_admin",server="ctr1"} 1
+haproxy_server_up{backend="keystone_internal",server="ctr1"} 1
+haproxy_server_up{backend="khatch",server="ctr1"} 1
+haproxy_server_up{backend="khatch-ui",server="ctr1"} 1
+haproxy_server_up{backend="mariadb",server="ctr1"} 1
+haproxy_server_up{backend="memcached",server="ctr1"} 1
+haproxy_server_up{backend="monasca_api",server="ctr1"} 1
+haproxy_server_up{backend="neutron_server",server="ctr1"} 0
+haproxy_server_up{backend="nova_api",server="ctr1"} 1
+haproxy_server_up{backend="nova_metadata",server="ctr1"} 1
+haproxy_server_up{backend="nova_novncproxy",server="ctr1"} 1
+haproxy_server_up{backend="placement_api",server="ctr1"} 1
+haproxy_server_up{backend="rabbitmq_management",server="ctr1"} 0
+# HELP haproxy_server_weight Current weight of the server.
+# TYPE haproxy_server_weight gauge
+haproxy_server_weight{backend="cinder_api",server="ctr1"} 1
+haproxy_server_weight{backend="elasticsearch",server="ctr1"} 1
+haproxy_server_weight{backend="glance_api",server="ctr1"} 1
+haproxy_server_weight{backend="glance_registry",server="ctr1"} 1
+haproxy_server_weight{backend="influxdb_admin",server="ctr1"} 1
+haproxy_server_weight{backend="influxdb_http",server="ctr1"} 1
+haproxy_server_weight{backend="kcmp",server="ctr1"} 1
+haproxy_server_weight{backend="keystone_admin",server="ctr1"} 1
+haproxy_server_weight{backend="keystone_internal",server="ctr1"} 1
+haproxy_server_weight{backend="khatch",server="ctr1"} 1
+haproxy_server_weight{backend="khatch-ui",server="ctr1"} 1
+haproxy_server_weight{backend="mariadb",server="ctr1"} 1
+haproxy_server_weight{backend="memcached",server="ctr1"} 1
+haproxy_server_weight{backend="monasca_api",server="ctr1"} 1
+haproxy_server_weight{backend="neutron_server",server="ctr1"} 1
+haproxy_server_weight{backend="nova_api",server="ctr1"} 1
+haproxy_server_weight{backend="nova_metadata",server="ctr1"} 1
+haproxy_server_weight{backend="nova_novncproxy",server="ctr1"} 1
+haproxy_server_weight{backend="placement_api",server="ctr1"} 1
+haproxy_server_weight{backend="rabbitmq_management",server="ctr1"} 1
+# HELP haproxy_up Was the last scrape of HAProxy successful.
+# TYPE haproxy_up gauge
+haproxy_up 1
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.11
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1024
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 11
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 9.371648e+06
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.60017094105e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 7.3170944e+08
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes -1
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 6
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
+
+
+
+

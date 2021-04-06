@@ -1,0 +1,56 @@
+docker操作
+1.停止所有的container，这样才能够删除其中的images：
+
+docker stop $(docker ps -a -q)
+
+如果想要删除所有container的话再加一个指令：
+
+docker rm $(docker ps -a -q)
+
+2.查看当前有些什么images
+
+docker images
+
+3.删除images，通过image的id来指定删除谁
+
+docker rmi <image id>
+
+想要删除untagged images，也就是那些id为<None>的image的话可以用
+
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+
+要删除全部image的话
+
+docker rmi $(docker images -q)
+
+
+docker compose 一键式启动容器
+docker-compose up --build -d
+
+dockerfiles制作镜像
+docker build -t container-name  -f Dockerfile-Path
+
+docker导出镜像
+docker save -o my_ubuntu_v3.tar runoob/ubuntu:v3
+
+docker导入镜像
+docker load < busybox.tar.gz
+
+修改docker0 默认ip方法
+1.systemctl stop docker
+
+2.vim /etc/docker/daemon.json
+
+{
+	"bip": "172.18.0.1/16"
+}
+
+3. ip link set dev docker0 down
+4.systemctl start docker
+
+
+
+# systemctl stop docker
+
+# brctl delbr docker0
+# systemctl start docker

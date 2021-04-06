@@ -1,0 +1,898 @@
+
+# HELP ceph_bluestore_state_aio_wait_lat_sum Average aio_wait state latency Total
+# TYPE ceph_bluestore_state_aio_wait_lat_sum counter
+ceph_bluestore_state_aio_wait_lat_sum{ceph_daemon="osd.3"} 15.211163143
+ceph_bluestore_state_aio_wait_lat_sum{ceph_daemon="osd.1"} 7.262504912
+ceph_bluestore_state_aio_wait_lat_sum{ceph_daemon="osd.2"} 0.001351026
+ceph_bluestore_state_aio_wait_lat_sum{ceph_daemon="osd.0"} 0.002734865
+# HELP ceph_paxos_store_state_latency_sum Storing state latency Total
+# TYPE ceph_paxos_store_state_latency_sum counter
+ceph_paxos_store_state_latency_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_out_bytes Client operations total read size
+# TYPE ceph_osd_op_out_bytes counter
+ceph_osd_op_out_bytes{ceph_daemon="osd.3"} 332755434.0
+ceph_osd_op_out_bytes{ceph_daemon="osd.1"} 169653498.0
+ceph_osd_op_out_bytes{ceph_daemon="osd.2"} 210766.0
+ceph_osd_op_out_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_pg_incomplete PG incomplete
+# TYPE ceph_pg_incomplete gauge
+ceph_pg_incomplete 0.0
+# HELP ceph_bluestore_submit_lat_sum Average submit latency Total
+# TYPE ceph_bluestore_submit_lat_sum counter
+ceph_bluestore_submit_lat_sum{ceph_daemon="osd.3"} 3.24612732
+ceph_bluestore_submit_lat_sum{ceph_daemon="osd.1"} 1.472562838
+ceph_bluestore_submit_lat_sum{ceph_daemon="osd.2"} 1.05350089
+ceph_bluestore_submit_lat_sum{ceph_daemon="osd.0"} 1.975057524
+# HELP ceph_paxos_new_pn New proposal number queries
+# TYPE ceph_paxos_new_pn counter
+ceph_paxos_new_pn{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_paxos_commit Commits
+# TYPE ceph_paxos_commit counter
+ceph_paxos_commit{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_paxos_new_pn_latency_count New proposal number getting latency Count
+# TYPE ceph_paxos_new_pn_latency_count counter
+ceph_paxos_new_pn_latency_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_r_process_latency_count Latency of read operation (excluding queue time) Count
+# TYPE ceph_osd_op_r_process_latency_count counter
+ceph_osd_op_r_process_latency_count{ceph_daemon="osd.3"} 367926.0
+ceph_osd_op_r_process_latency_count{ceph_daemon="osd.1"} 129368.0
+ceph_osd_op_r_process_latency_count{ceph_daemon="osd.2"} 12398.0
+ceph_osd_op_r_process_latency_count{ceph_daemon="osd.0"} 0.0
+# HELP ceph_osd_flag_norebalance OSD Flag norebalance
+# TYPE ceph_osd_flag_norebalance untyped
+ceph_osd_flag_norebalance 0.0
+# HELP ceph_paxos_begin_bytes_sum Data in transaction on begin Total
+# TYPE ceph_paxos_begin_bytes_sum counter
+ceph_paxos_begin_bytes_sum{ceph_daemon="mon.controller1"} 12264798882.0
+# HELP ceph_osd_in OSD status in
+# TYPE ceph_osd_in untyped
+ceph_osd_in{ceph_daemon="osd.3"} 1.0
+ceph_osd_in{ceph_daemon="osd.1"} 1.0
+ceph_osd_in{ceph_daemon="osd.2"} 1.0
+ceph_osd_in{ceph_daemon="osd.0"} 1.0
+# HELP ceph_paxos_collect_keys_sum Keys in transaction on peon collect Total
+# TYPE ceph_paxos_collect_keys_sum counter
+ceph_paxos_collect_keys_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_paxos_accept_timeout Accept timeouts
+# TYPE ceph_paxos_accept_timeout counter
+ceph_paxos_accept_timeout{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_paxos_begin_latency_count Latency of begin operation Count
+# TYPE ceph_paxos_begin_latency_count counter
+ceph_paxos_begin_latency_count{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_bluefs_wal_total_bytes Total bytes (wal device)
+# TYPE ceph_bluefs_wal_total_bytes gauge
+ceph_bluefs_wal_total_bytes{ceph_daemon="osd.3"} 0.0
+ceph_bluefs_wal_total_bytes{ceph_daemon="osd.1"} 0.0
+ceph_bluefs_wal_total_bytes{ceph_daemon="osd.2"} 0.0
+ceph_bluefs_wal_total_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_osd_flag_nobackfill OSD Flag nobackfill
+# TYPE ceph_osd_flag_nobackfill untyped
+ceph_osd_flag_nobackfill 0.0
+# HELP ceph_paxos_refresh Refreshes
+# TYPE ceph_paxos_refresh counter
+ceph_paxos_refresh{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_bluestore_read_lat_count Average read latency Count
+# TYPE ceph_bluestore_read_lat_count counter
+ceph_bluestore_read_lat_count{ceph_daemon="osd.3"} 50819.0
+ceph_bluestore_read_lat_count{ceph_daemon="osd.1"} 20829.0
+ceph_bluestore_read_lat_count{ceph_daemon="osd.2"} 7977.0
+ceph_bluestore_read_lat_count{ceph_daemon="osd.0"} 3944.0
+# HELP ceph_pg_degraded PG degraded
+# TYPE ceph_pg_degraded gauge
+ceph_pg_degraded 0.0
+# HELP ceph_mon_num_sessions Open sessions
+# TYPE ceph_mon_num_sessions gauge
+ceph_mon_num_sessions{ceph_daemon="mon.controller1"} 12.0
+# HELP ceph_bluefs_bytes_written_wal Bytes written to WAL
+# TYPE ceph_bluefs_bytes_written_wal counter
+ceph_bluefs_bytes_written_wal{ceph_daemon="osd.3"} 1447609662.0
+ceph_bluefs_bytes_written_wal{ceph_daemon="osd.1"} 1376599678.0
+ceph_bluefs_bytes_written_wal{ceph_daemon="osd.2"} 442774144.0
+ceph_bluefs_bytes_written_wal{ceph_daemon="osd.0"} 448258108.0
+# HELP ceph_mon_num_elections Elections participated in
+# TYPE ceph_mon_num_elections counter
+ceph_mon_num_elections{ceph_daemon="mon.controller1"} 1.0
+# HELP ceph_rocksdb_compact Compactions
+# TYPE ceph_rocksdb_compact counter
+ceph_rocksdb_compact{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_process_latency_count Latency of client operations (excluding queue time) Count
+# TYPE ceph_osd_op_process_latency_count counter
+ceph_osd_op_process_latency_count{ceph_daemon="osd.3"} 380158.0
+ceph_osd_op_process_latency_count{ceph_daemon="osd.1"} 136484.0
+ceph_osd_op_process_latency_count{ceph_daemon="osd.2"} 15698.0
+ceph_osd_op_process_latency_count{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_fs_metadata FS Metadata
+# TYPE ceph_fs_metadata untyped
+# HELP ceph_osd_op_w_prepare_latency_count Latency of write operations (excluding queue time and wait for finished) Count
+# TYPE ceph_osd_op_w_prepare_latency_count counter
+ceph_osd_op_w_prepare_latency_count{ceph_daemon="osd.3"} 10994.0
+ceph_osd_op_w_prepare_latency_count{ceph_daemon="osd.1"} 7100.0
+ceph_osd_op_w_prepare_latency_count{ceph_daemon="osd.2"} 3300.0
+ceph_osd_op_w_prepare_latency_count{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_paxos_share_state_bytes_count Data in shared state Count
+# TYPE ceph_paxos_share_state_bytes_count counter
+ceph_paxos_share_state_bytes_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_objecter_op_active Operations active
+# TYPE ceph_objecter_op_active gauge
+ceph_objecter_op_active{ceph_daemon="osd.3"} 0.0
+ceph_objecter_op_active{ceph_daemon="osd.1"} 0.0
+ceph_objecter_op_active{ceph_daemon="osd.2"} 0.0
+ceph_objecter_op_active{ceph_daemon="osd.0"} 0.0
+# HELP ceph_pg_backfill_unfound PG backfill_unfound
+# TYPE ceph_pg_backfill_unfound gauge
+ceph_pg_backfill_unfound 0.0
+# HELP ceph_num_objects_degraded Number of degraded objects
+# TYPE ceph_num_objects_degraded gauge
+ceph_num_objects_degraded 0.0
+# HELP ceph_osd_flag_nodeep_scrub OSD Flag nodeep-scrub
+# TYPE ceph_osd_flag_nodeep_scrub untyped
+ceph_osd_flag_nodeep_scrub 0.0
+# HELP ceph_osd_apply_latency_ms OSD stat apply_latency_ms
+# TYPE ceph_osd_apply_latency_ms gauge
+ceph_osd_apply_latency_ms{ceph_daemon="osd.3"} 0.0
+ceph_osd_apply_latency_ms{ceph_daemon="osd.1"} 0.0
+ceph_osd_apply_latency_ms{ceph_daemon="osd.2"} 0.0
+ceph_osd_apply_latency_ms{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_begin_latency_sum Latency of begin operation Total
+# TYPE ceph_paxos_begin_latency_sum counter
+ceph_paxos_begin_latency_sum{ceph_daemon="mon.controller1"} 2356.146
+# HELP ceph_osd_flag_noin OSD Flag noin
+# TYPE ceph_osd_flag_noin untyped
+ceph_osd_flag_noin 0.0
+# HELP ceph_osd_op_r Client read operations
+# TYPE ceph_osd_op_r counter
+ceph_osd_op_r{ceph_daemon="osd.3"} 367926.0
+ceph_osd_op_r{ceph_daemon="osd.1"} 129368.0
+ceph_osd_op_r{ceph_daemon="osd.2"} 12398.0
+ceph_osd_op_r{ceph_daemon="osd.0"} 0.0
+# HELP ceph_bluestore_kv_lat_sum Average kv_thread sync latency Total
+# TYPE ceph_bluestore_kv_lat_sum counter
+ceph_bluestore_kv_lat_sum{ceph_daemon="osd.3"} 2690.211742398
+ceph_bluestore_kv_lat_sum{ceph_daemon="osd.1"} 2587.035389629
+ceph_bluestore_kv_lat_sum{ceph_daemon="osd.2"} 388.450563107
+ceph_bluestore_kv_lat_sum{ceph_daemon="osd.0"} 377.231131146
+# HELP ceph_pool_max_avail DF pool max_avail
+# TYPE ceph_pool_max_avail gauge
+ceph_pool_max_avail{pool_id="2"} 380579086336.0
+ceph_pool_max_avail{pool_id="3"} 380579086336.0
+ceph_pool_max_avail{pool_id="1"} 380579086336.0
+# HELP ceph_pool_rd DF pool rd
+# TYPE ceph_pool_rd gauge
+ceph_pool_rd{pool_id="2"} 17181.0
+ceph_pool_rd{pool_id="3"} 613978.0
+ceph_pool_rd{pool_id="1"} 3262528.0
+# HELP ceph_paxos_commit_latency_count Commit latency Count
+# TYPE ceph_paxos_commit_latency_count counter
+ceph_paxos_commit_latency_count{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_bluestore_throttle_lat_count Average submit throttle latency Count
+# TYPE ceph_bluestore_throttle_lat_count counter
+ceph_bluestore_throttle_lat_count{ceph_daemon="osd.3"} 13553.0
+ceph_bluestore_throttle_lat_count{ceph_daemon="osd.1"} 7931.0
+ceph_bluestore_throttle_lat_count{ceph_daemon="osd.2"} 3986.0
+ceph_bluestore_throttle_lat_count{ceph_daemon="osd.0"} 5342.0
+# HELP ceph_paxos_lease_ack_timeout Lease acknowledgement timeouts
+# TYPE ceph_paxos_lease_ack_timeout counter
+ceph_paxos_lease_ack_timeout{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_bluestore_commit_lat_sum Average commit latency Total
+# TYPE ceph_bluestore_commit_lat_sum counter
+ceph_bluestore_commit_lat_sum{ceph_daemon="osd.3"} 262.18834124
+ceph_bluestore_commit_lat_sum{ceph_daemon="osd.1"} 139.28855815
+ceph_bluestore_commit_lat_sum{ceph_daemon="osd.2"} 20.448698436
+ceph_bluestore_commit_lat_sum{ceph_daemon="osd.0"} 28.127917936
+# HELP ceph_paxos_collect_bytes_sum Data in transaction on peon collect Total
+# TYPE ceph_paxos_collect_bytes_sum counter
+ceph_paxos_collect_bytes_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pg_stale PG stale
+# TYPE ceph_pg_stale gauge
+ceph_pg_stale 0.0
+# HELP ceph_health_status Cluster health status
+# TYPE ceph_health_status untyped
+ceph_health_status 1.0
+# HELP ceph_pool_wr_bytes DF pool wr_bytes
+# TYPE ceph_pool_wr_bytes gauge
+ceph_pool_wr_bytes{pool_id="2"} 6329196544.0
+ceph_pool_wr_bytes{pool_id="3"} 48578372608.0
+ceph_pool_wr_bytes{pool_id="1"} 3360139264.0
+# HELP ceph_osd_op_rw_latency_count Latency of read-modify-write operation (including queue time) Count
+# TYPE ceph_osd_op_rw_latency_count counter
+ceph_osd_op_rw_latency_count{ceph_daemon="osd.3"} 1238.0
+ceph_osd_op_rw_latency_count{ceph_daemon="osd.1"} 16.0
+ceph_osd_op_rw_latency_count{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_latency_count{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_collect_uncommitted Uncommitted values in started and handled collects
+# TYPE ceph_paxos_collect_uncommitted counter
+ceph_paxos_collect_uncommitted{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_rw_latency_sum Latency of read-modify-write operation (including queue time) Total
+# TYPE ceph_osd_op_rw_latency_sum counter
+ceph_osd_op_rw_latency_sum{ceph_daemon="osd.3"} 106.531215605
+ceph_osd_op_rw_latency_sum{ceph_daemon="osd.1"} 0.122825417
+ceph_osd_op_rw_latency_sum{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_latency_sum{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_share_state Sharings of state
+# TYPE ceph_paxos_share_state counter
+ceph_paxos_share_state{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_r_prepare_latency_sum Latency of read operations (excluding queue time and wait for finished) Total
+# TYPE ceph_osd_op_r_prepare_latency_sum counter
+ceph_osd_op_r_prepare_latency_sum{ceph_daemon="osd.3"} 56.706107562
+ceph_osd_op_r_prepare_latency_sum{ceph_daemon="osd.1"} 22.526184541
+ceph_osd_op_r_prepare_latency_sum{ceph_daemon="osd.2"} 3.343132965
+ceph_osd_op_r_prepare_latency_sum{ceph_daemon="osd.0"} 0.0
+# HELP ceph_bluestore_kv_flush_lat_sum Average kv_thread flush latency Total
+# TYPE ceph_bluestore_kv_flush_lat_sum counter
+ceph_bluestore_kv_flush_lat_sum{ceph_daemon="osd.3"} 13.698952842
+ceph_bluestore_kv_flush_lat_sum{ceph_daemon="osd.1"} 10.555845288
+ceph_bluestore_kv_flush_lat_sum{ceph_daemon="osd.2"} 1.15059365
+ceph_bluestore_kv_flush_lat_sum{ceph_daemon="osd.0"} 1.279622785
+# HELP ceph_osd_op_rw_process_latency_sum Latency of read-modify-write operation (excluding queue time) Total
+# TYPE ceph_osd_op_rw_process_latency_sum counter
+ceph_osd_op_rw_process_latency_sum{ceph_daemon="osd.3"} 23.634482241
+ceph_osd_op_rw_process_latency_sum{ceph_daemon="osd.1"} 0.120962588
+ceph_osd_op_rw_process_latency_sum{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_process_latency_sum{ceph_daemon="osd.0"} 0.0
+# HELP ceph_osd_metadata OSD Metadata
+# TYPE ceph_osd_metadata untyped
+ceph_osd_metadata{ceph_daemon="osd.0",cluster_addr="10.13.10.2",device_class="hdd",hostname="compute1",public_addr="10.10.10.3",ceph_version="ceph version 13.2.5 (cbff874f9007f1869bfd3821b7e33b2a6ffd4988) mimic (stable)"} 1.0
+ceph_osd_metadata{ceph_daemon="osd.1",cluster_addr="10.13.10.1",device_class="hdd",hostname="compute4",public_addr="10.10.10.2",ceph_version="ceph version 13.2.5 (cbff874f9007f1869bfd3821b7e33b2a6ffd4988) mimic (stable)"} 1.0
+ceph_osd_metadata{ceph_daemon="osd.3",cluster_addr="10.13.10.1",device_class="hdd",hostname="compute4",public_addr="10.10.10.2",ceph_version="ceph version 13.2.5 (cbff874f9007f1869bfd3821b7e33b2a6ffd4988) mimic (stable)"} 1.0
+ceph_osd_metadata{ceph_daemon="osd.2",cluster_addr="10.13.10.2",device_class="hdd",hostname="compute1",public_addr="10.10.10.3",ceph_version="ceph version 13.2.5 (cbff874f9007f1869bfd3821b7e33b2a6ffd4988) mimic (stable)"} 1.0
+# HELP ceph_rocksdb_rocksdb_write_memtable_time_count Rocksdb write memtable time Count
+# TYPE ceph_rocksdb_rocksdb_write_memtable_time_count counter
+ceph_rocksdb_rocksdb_write_memtable_time_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_paxos_collect_latency_count Peon collect latency Count
+# TYPE ceph_paxos_collect_latency_count counter
+ceph_paxos_collect_latency_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pg_undersized PG undersized
+# TYPE ceph_pg_undersized gauge
+ceph_pg_undersized 0.0
+# HELP ceph_osd_op_r_out_bytes Client data read
+# TYPE ceph_osd_op_r_out_bytes counter
+ceph_osd_op_r_out_bytes{ceph_daemon="osd.3"} 332755434.0
+ceph_osd_op_r_out_bytes{ceph_daemon="osd.1"} 169653498.0
+ceph_osd_op_r_out_bytes{ceph_daemon="osd.2"} 210766.0
+ceph_osd_op_r_out_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_collect_latency_sum Peon collect latency Total
+# TYPE ceph_paxos_collect_latency_sum counter
+ceph_paxos_collect_latency_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_rocksdb_rocksdb_write_delay_time_count Rocksdb write delay time Count
+# TYPE ceph_rocksdb_rocksdb_write_delay_time_count counter
+ceph_rocksdb_rocksdb_write_delay_time_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_objecter_op_rmw Read-modify-write operations
+# TYPE ceph_objecter_op_rmw counter
+ceph_objecter_op_rmw{ceph_daemon="osd.3"} 0.0
+ceph_objecter_op_rmw{ceph_daemon="osd.1"} 0.0
+ceph_objecter_op_rmw{ceph_daemon="osd.2"} 0.0
+ceph_objecter_op_rmw{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_begin_keys_sum Keys in transaction on begin Total
+# TYPE ceph_paxos_begin_keys_sum counter
+ceph_paxos_begin_keys_sum{ceph_daemon="mon.controller1"} 3268800.0
+# HELP ceph_pg_peering PG peering
+# TYPE ceph_pg_peering gauge
+ceph_pg_peering 0.0
+# HELP ceph_osd_numpg Placement groups
+# TYPE ceph_osd_numpg gauge
+ceph_osd_numpg{ceph_daemon="osd.3"} 62.0
+ceph_osd_numpg{ceph_daemon="osd.1"} 36.0
+ceph_osd_numpg{ceph_daemon="osd.2"} 42.0
+ceph_osd_numpg{ceph_daemon="osd.0"} 52.0
+# HELP ceph_osd_flag_noout OSD Flag noout
+# TYPE ceph_osd_flag_noout untyped
+ceph_osd_flag_noout 0.0
+# HELP ceph_pg_inconsistent PG inconsistent
+# TYPE ceph_pg_inconsistent gauge
+ceph_pg_inconsistent 0.0
+# HELP ceph_cluster_total_objects DF total_objects
+# TYPE ceph_cluster_total_objects gauge
+ceph_cluster_total_objects 2422.0
+# HELP ceph_osd_stat_bytes OSD size
+# TYPE ceph_osd_stat_bytes gauge
+ceph_osd_stat_bytes{ceph_daemon="osd.3"} 107374182400.0
+ceph_osd_stat_bytes{ceph_daemon="osd.1"} 107374182400.0
+ceph_osd_stat_bytes{ceph_daemon="osd.2"} 107374182400.0
+ceph_osd_stat_bytes{ceph_daemon="osd.0"} 107374182400.0
+# HELP ceph_rocksdb_submit_sync_latency_sum Submit Sync Latency Total
+# TYPE ceph_rocksdb_submit_sync_latency_sum counter
+ceph_rocksdb_submit_sync_latency_sum{ceph_daemon="mon.controller1"} 3904.165865968
+# HELP ceph_rocksdb_compact_queue_merge Mergings of ranges in compaction queue
+# TYPE ceph_rocksdb_compact_queue_merge counter
+ceph_rocksdb_compact_queue_merge{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_paxos_collect_bytes_count Data in transaction on peon collect Count
+# TYPE ceph_paxos_collect_bytes_count counter
+ceph_paxos_collect_bytes_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op Client operations
+# TYPE ceph_osd_op counter
+ceph_osd_op{ceph_daemon="osd.3"} 380158.0
+ceph_osd_op{ceph_daemon="osd.1"} 136484.0
+ceph_osd_op{ceph_daemon="osd.2"} 15698.0
+ceph_osd_op{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_paxos_commit_keys_sum Keys in transaction on commit Total
+# TYPE ceph_paxos_commit_keys_sum counter
+ceph_paxos_commit_keys_sum{ceph_daemon="mon.controller1"} 7202825.0
+# HELP ceph_osd_op_rw_in_bytes Client read-modify-write operations write in
+# TYPE ceph_osd_op_rw_in_bytes counter
+ceph_osd_op_rw_in_bytes{ceph_daemon="osd.3"} 3968434.0
+ceph_osd_op_rw_in_bytes{ceph_daemon="osd.1"} 0.0
+ceph_osd_op_rw_in_bytes{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_in_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_osd_op_rw_out_bytes Client read-modify-write operations read out 
+# TYPE ceph_osd_op_rw_out_bytes counter
+ceph_osd_op_rw_out_bytes{ceph_daemon="osd.3"} 0.0
+ceph_osd_op_rw_out_bytes{ceph_daemon="osd.1"} 0.0
+ceph_osd_op_rw_out_bytes{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_out_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_bluefs_wal_used_bytes Used bytes (wal device)
+# TYPE ceph_bluefs_wal_used_bytes gauge
+ceph_bluefs_wal_used_bytes{ceph_daemon="osd.3"} 0.0
+ceph_bluefs_wal_used_bytes{ceph_daemon="osd.1"} 0.0
+ceph_bluefs_wal_used_bytes{ceph_daemon="osd.2"} 0.0
+ceph_bluefs_wal_used_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_bluefs_bytes_written_sst Bytes written to SSTs
+# TYPE ceph_bluefs_bytes_written_sst counter
+ceph_bluefs_bytes_written_sst{ceph_daemon="osd.3"} 16596534.0
+ceph_bluefs_bytes_written_sst{ceph_daemon="osd.1"} 2399906.0
+ceph_bluefs_bytes_written_sst{ceph_daemon="osd.2"} 16823516.0
+ceph_bluefs_bytes_written_sst{ceph_daemon="osd.0"} 3177508.0
+# HELP ceph_osd_op_rw_process_latency_count Latency of read-modify-write operation (excluding queue time) Count
+# TYPE ceph_osd_op_rw_process_latency_count counter
+ceph_osd_op_rw_process_latency_count{ceph_daemon="osd.3"} 1238.0
+ceph_osd_op_rw_process_latency_count{ceph_daemon="osd.1"} 16.0
+ceph_osd_op_rw_process_latency_count{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_process_latency_count{ceph_daemon="osd.0"} 0.0
+# HELP ceph_rocksdb_compact_queue_len Length of compaction queue
+# TYPE ceph_rocksdb_compact_queue_len gauge
+ceph_rocksdb_compact_queue_len{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pool_wr DF pool wr
+# TYPE ceph_pool_wr gauge
+ceph_pool_wr{pool_id="2"} 3832.0
+ceph_pool_wr{pool_id="3"} 174463.0
+ceph_pool_wr{pool_id="1"} 51063.0
+# HELP ceph_bluestore_throttle_lat_sum Average submit throttle latency Total
+# TYPE ceph_bluestore_throttle_lat_sum counter
+ceph_bluestore_throttle_lat_sum{ceph_daemon="osd.3"} 0.030164399
+ceph_bluestore_throttle_lat_sum{ceph_daemon="osd.1"} 0.101457385
+ceph_bluestore_throttle_lat_sum{ceph_daemon="osd.2"} 0.009640272
+ceph_bluestore_throttle_lat_sum{ceph_daemon="osd.0"} 0.019583386
+# HELP ceph_bluefs_slow_used_bytes Used bytes (slow device)
+# TYPE ceph_bluefs_slow_used_bytes gauge
+ceph_bluefs_slow_used_bytes{ceph_daemon="osd.3"} 0.0
+ceph_bluefs_slow_used_bytes{ceph_daemon="osd.1"} 0.0
+ceph_bluefs_slow_used_bytes{ceph_daemon="osd.2"} 0.0
+ceph_bluefs_slow_used_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_osd_op_r_latency_sum Latency of read operation (including queue time) Total
+# TYPE ceph_osd_op_r_latency_sum counter
+ceph_osd_op_r_latency_sum{ceph_daemon="osd.3"} 81.202716037
+ceph_osd_op_r_latency_sum{ceph_daemon="osd.1"} 33.487585651
+ceph_osd_op_r_latency_sum{ceph_daemon="osd.2"} 6.214929974
+ceph_osd_op_r_latency_sum{ceph_daemon="osd.0"} 0.0
+# HELP ceph_bluestore_kv_flush_lat_count Average kv_thread flush latency Count
+# TYPE ceph_bluestore_kv_flush_lat_count counter
+ceph_bluestore_kv_flush_lat_count{ceph_daemon="osd.3"} 627242.0
+ceph_bluestore_kv_flush_lat_count{ceph_daemon="osd.1"} 625272.0
+ceph_bluestore_kv_flush_lat_count{ceph_daemon="osd.2"} 196566.0
+ceph_bluestore_kv_flush_lat_count{ceph_daemon="osd.0"} 197739.0
+# HELP ceph_rocksdb_compact_range Compactions by range
+# TYPE ceph_rocksdb_compact_range counter
+ceph_rocksdb_compact_range{ceph_daemon="mon.controller1"} 13149.0
+# HELP ceph_osd_op_latency_sum Latency of client operations (including queue time) Total
+# TYPE ceph_osd_op_latency_sum counter
+ceph_osd_op_latency_sum{ceph_daemon="osd.3"} 435.2842033
+ceph_osd_op_latency_sum{ceph_daemon="osd.1"} 226.587575896
+ceph_osd_op_latency_sum{ceph_daemon="osd.2"} 24.171816104
+ceph_osd_op_latency_sum{ceph_daemon="osd.0"} 25.310572503
+# HELP ceph_mon_session_add Created sessions
+# TYPE ceph_mon_session_add counter
+ceph_mon_session_add{ceph_daemon="mon.controller1"} 983161.0
+# HELP ceph_paxos_share_state_keys_count Keys in shared state Count
+# TYPE ceph_paxos_share_state_keys_count counter
+ceph_paxos_share_state_keys_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_num_objects_misplaced Number of misplaced objects
+# TYPE ceph_num_objects_misplaced gauge
+ceph_num_objects_misplaced 0.0
+# HELP ceph_paxos_collect Peon collects
+# TYPE ceph_paxos_collect counter
+ceph_paxos_collect{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_w_in_bytes Client data written
+# TYPE ceph_osd_op_w_in_bytes counter
+ceph_osd_op_w_in_bytes{ceph_daemon="osd.3"} 1707437568.0
+ceph_osd_op_w_in_bytes{ceph_daemon="osd.1"} 809207296.0
+ceph_osd_op_w_in_bytes{ceph_daemon="osd.2"} 21769216.0
+ceph_osd_op_w_in_bytes{ceph_daemon="osd.0"} 21466624.0
+# HELP ceph_osd_op_r_process_latency_sum Latency of read operation (excluding queue time) Total
+# TYPE ceph_osd_op_r_process_latency_sum counter
+ceph_osd_op_r_process_latency_sum{ceph_daemon="osd.3"} 39.639772732
+ceph_osd_op_r_process_latency_sum{ceph_daemon="osd.1"} 14.33684104
+ceph_osd_op_r_process_latency_sum{ceph_daemon="osd.2"} 2.365445448
+ceph_osd_op_r_process_latency_sum{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_start_peon Starts in peon role
+# TYPE ceph_paxos_start_peon counter
+ceph_paxos_start_peon{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_cluster_total_bytes DF total_bytes
+# TYPE ceph_cluster_total_bytes gauge
+ceph_cluster_total_bytes 429496729600.0
+# HELP ceph_mon_session_trim Trimmed sessions
+# TYPE ceph_mon_session_trim counter
+ceph_mon_session_trim{ceph_daemon="mon.controller1"} 8.0
+# HELP ceph_pg_recovery_wait PG recovery_wait
+# TYPE ceph_pg_recovery_wait gauge
+ceph_pg_recovery_wait 0.0
+# HELP ceph_rocksdb_get_latency_sum Get latency Total
+# TYPE ceph_rocksdb_get_latency_sum counter
+ceph_rocksdb_get_latency_sum{ceph_daemon="mon.controller1"} 294.134654654
+# HELP ceph_rocksdb_submit_transaction_sync Submit transactions sync
+# TYPE ceph_rocksdb_submit_transaction_sync counter
+ceph_rocksdb_submit_transaction_sync{ceph_daemon="mon.controller1"} 2179267.0
+# HELP ceph_osd_op_rw Client read-modify-write operations
+# TYPE ceph_osd_op_rw counter
+ceph_osd_op_rw{ceph_daemon="osd.3"} 1238.0
+ceph_osd_op_rw{ceph_daemon="osd.1"} 16.0
+ceph_osd_op_rw{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_store_state_keys_count Keys in transaction in stored state Count
+# TYPE ceph_paxos_store_state_keys_count counter
+ceph_paxos_store_state_keys_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_rocksdb_rocksdb_write_delay_time_sum Rocksdb write delay time Total
+# TYPE ceph_rocksdb_rocksdb_write_delay_time_sum counter
+ceph_rocksdb_rocksdb_write_delay_time_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pool_objects DF pool objects
+# TYPE ceph_pool_objects gauge
+ceph_pool_objects{pool_id="2"} 773.0
+ceph_pool_objects{pool_id="3"} 1249.0
+ceph_pool_objects{pool_id="1"} 400.0
+# HELP ceph_pg_backfill_wait PG backfill_wait
+# TYPE ceph_pg_backfill_wait gauge
+ceph_pg_backfill_wait 0.0
+# HELP ceph_osd_recovery_ops Started recovery operations
+# TYPE ceph_osd_recovery_ops counter
+ceph_osd_recovery_ops{ceph_daemon="osd.3"} 0.0
+ceph_osd_recovery_ops{ceph_daemon="osd.1"} 0.0
+ceph_osd_recovery_ops{ceph_daemon="osd.2"} 0.0
+ceph_osd_recovery_ops{ceph_daemon="osd.0"} 0.0
+# HELP ceph_bluefs_logged_bytes Bytes written to the metadata log
+# TYPE ceph_bluefs_logged_bytes counter
+ceph_bluefs_logged_bytes{ceph_daemon="osd.3"} 2571300864.0
+ceph_bluefs_logged_bytes{ceph_daemon="osd.1"} 2562932736.0
+ceph_bluefs_logged_bytes{ceph_daemon="osd.2"} 805158912.0
+ceph_bluefs_logged_bytes{ceph_daemon="osd.0"} 809963520.0
+# HELP ceph_rocksdb_get Gets
+# TYPE ceph_rocksdb_get counter
+ceph_rocksdb_get{ceph_daemon="mon.controller1"} 41042112.0
+# HELP ceph_pool_metadata POOL Metadata
+# TYPE ceph_pool_metadata untyped
+ceph_pool_metadata{pool_id="2",name="images"} 1.0
+ceph_pool_metadata{pool_id="1",name="volumes"} 1.0
+ceph_pool_metadata{pool_id="3",name="vms"} 1.0
+# HELP ceph_bluefs_db_total_bytes Total bytes (main db device)
+# TYPE ceph_bluefs_db_total_bytes gauge
+ceph_bluefs_db_total_bytes{ceph_daemon="osd.3"} 21206401024.0
+ceph_bluefs_db_total_bytes{ceph_daemon="osd.1"} 21364736000.0
+ceph_bluefs_db_total_bytes{ceph_daemon="osd.2"} 14281605120.0
+ceph_bluefs_db_total_bytes{ceph_daemon="osd.0"} 14255390720.0
+# HELP ceph_pg_recovery_toofull PG recovery_toofull
+# TYPE ceph_pg_recovery_toofull gauge
+ceph_pg_recovery_toofull 0.0
+# HELP ceph_osd_op_w_latency_count Latency of write operation (including queue time) Count
+# TYPE ceph_osd_op_w_latency_count counter
+ceph_osd_op_w_latency_count{ceph_daemon="osd.3"} 10994.0
+ceph_osd_op_w_latency_count{ceph_daemon="osd.1"} 7100.0
+ceph_osd_op_w_latency_count{ceph_daemon="osd.2"} 3300.0
+ceph_osd_op_w_latency_count{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_mon_metadata MON Metadata
+# TYPE ceph_mon_metadata untyped
+ceph_mon_metadata{ceph_daemon="mon.controller1",hostname="controller1",public_addr="10.10.10.4",rank="0",ceph_version="ceph version 13.2.5 (cbff874f9007f1869bfd3821b7e33b2a6ffd4988) mimic (stable)"} 1.0
+# HELP ceph_bluestore_commit_lat_count Average commit latency Count
+# TYPE ceph_bluestore_commit_lat_count counter
+ceph_bluestore_commit_lat_count{ceph_daemon="osd.3"} 13553.0
+ceph_bluestore_commit_lat_count{ceph_daemon="osd.1"} 7931.0
+ceph_bluestore_commit_lat_count{ceph_daemon="osd.2"} 3986.0
+ceph_bluestore_commit_lat_count{ceph_daemon="osd.0"} 5342.0
+# HELP ceph_bluestore_state_aio_wait_lat_count Average aio_wait state latency Count
+# TYPE ceph_bluestore_state_aio_wait_lat_count counter
+ceph_bluestore_state_aio_wait_lat_count{ceph_daemon="osd.3"} 13553.0
+ceph_bluestore_state_aio_wait_lat_count{ceph_daemon="osd.1"} 7931.0
+ceph_bluestore_state_aio_wait_lat_count{ceph_daemon="osd.2"} 3986.0
+ceph_bluestore_state_aio_wait_lat_count{ceph_daemon="osd.0"} 5342.0
+# HELP ceph_pg_unknown PG unknown
+# TYPE ceph_pg_unknown gauge
+ceph_pg_unknown 0.0
+# HELP ceph_paxos_begin_bytes_count Data in transaction on begin Count
+# TYPE ceph_paxos_begin_bytes_count counter
+ceph_paxos_begin_bytes_count{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_pg_recovery_unfound PG recovery_unfound
+# TYPE ceph_pg_recovery_unfound gauge
+ceph_pg_recovery_unfound 0.0
+# HELP ceph_pool_quota_bytes DF pool quota_bytes
+# TYPE ceph_pool_quota_bytes gauge
+ceph_pool_quota_bytes{pool_id="2"} 0.0
+ceph_pool_quota_bytes{pool_id="3"} 0.0
+ceph_pool_quota_bytes{pool_id="1"} 0.0
+# HELP ceph_pg_snaptrim_wait PG snaptrim_wait
+# TYPE ceph_pg_snaptrim_wait gauge
+ceph_pg_snaptrim_wait 0.0
+# HELP ceph_paxos_start_leader Starts in leader role
+# TYPE ceph_paxos_start_leader counter
+ceph_paxos_start_leader{ceph_daemon="mon.controller1"} 1.0
+# HELP ceph_pg_creating PG creating
+# TYPE ceph_pg_creating gauge
+ceph_pg_creating 0.0
+# HELP ceph_mon_election_call Elections started
+# TYPE ceph_mon_election_call counter
+ceph_mon_election_call{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_rocksdb_rocksdb_write_pre_and_post_time_count total time spent on writing a record, excluding write process Count
+# TYPE ceph_rocksdb_rocksdb_write_pre_and_post_time_count counter
+ceph_rocksdb_rocksdb_write_pre_and_post_time_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_mon_session_rm Removed sessions
+# TYPE ceph_mon_session_rm counter
+ceph_mon_session_rm{ceph_daemon="mon.controller1"} 983149.0
+# HELP ceph_cluster_total_used_bytes DF total_used_bytes
+# TYPE ceph_cluster_total_used_bytes gauge
+ceph_cluster_total_used_bytes 20834156544.0
+# HELP ceph_pg_active PG active
+# TYPE ceph_pg_active gauge
+ceph_pg_active 192.0
+# HELP ceph_paxos_store_state Store a shared state on disk
+# TYPE ceph_paxos_store_state counter
+ceph_paxos_store_state{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pg_activating PG activating
+# TYPE ceph_pg_activating gauge
+ceph_pg_activating 0.0
+# HELP ceph_paxos_store_state_bytes_count Data in transaction in stored state Count
+# TYPE ceph_paxos_store_state_bytes_count counter
+ceph_paxos_store_state_bytes_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_w_latency_sum Latency of write operation (including queue time) Total
+# TYPE ceph_osd_op_w_latency_sum counter
+ceph_osd_op_w_latency_sum{ceph_daemon="osd.3"} 247.550271658
+ceph_osd_op_w_latency_sum{ceph_daemon="osd.1"} 192.977164828
+ceph_osd_op_w_latency_sum{ceph_daemon="osd.2"} 17.95688613
+ceph_osd_op_w_latency_sum{ceph_daemon="osd.0"} 25.310572503
+# HELP ceph_rocksdb_get_latency_count Get latency Count
+# TYPE ceph_rocksdb_get_latency_count counter
+ceph_rocksdb_get_latency_count{ceph_daemon="mon.controller1"} 41042112.0
+# HELP ceph_rocksdb_submit_latency_count Submit Latency Count
+# TYPE ceph_rocksdb_submit_latency_count counter
+ceph_rocksdb_submit_latency_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pool_dirty DF pool dirty
+# TYPE ceph_pool_dirty gauge
+ceph_pool_dirty{pool_id="2"} 773.0
+ceph_pool_dirty{pool_id="3"} 1249.0
+ceph_pool_dirty{pool_id="1"} 400.0
+# HELP ceph_paxos_commit_latency_sum Commit latency Total
+# TYPE ceph_paxos_commit_latency_sum counter
+ceph_paxos_commit_latency_sum{ceph_daemon="mon.controller1"} 1647.789982476
+# HELP ceph_rocksdb_rocksdb_write_memtable_time_sum Rocksdb write memtable time Total
+# TYPE ceph_rocksdb_rocksdb_write_memtable_time_sum counter
+ceph_rocksdb_rocksdb_write_memtable_time_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_rgw_metadata RGW Metadata
+# TYPE ceph_rgw_metadata untyped
+# HELP ceph_paxos_share_state_bytes_sum Data in shared state Total
+# TYPE ceph_paxos_share_state_bytes_sum counter
+ceph_paxos_share_state_bytes_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_process_latency_sum Latency of client operations (excluding queue time) Total
+# TYPE ceph_osd_op_process_latency_sum counter
+ceph_osd_op_process_latency_sum{ceph_daemon="osd.3"} 244.85166921
+ceph_osd_op_process_latency_sum{ceph_daemon="osd.1"} 147.784322201
+ceph_osd_op_process_latency_sum{ceph_daemon="osd.2"} 18.324866505
+ceph_osd_op_process_latency_sum{ceph_daemon="osd.0"} 21.286772529
+# HELP ceph_pg_snaptrim_error PG snaptrim_error
+# TYPE ceph_pg_snaptrim_error gauge
+ceph_pg_snaptrim_error 0.0
+# HELP ceph_pg_backfilling PG backfilling
+# TYPE ceph_pg_backfilling gauge
+ceph_pg_backfilling 0.0
+# HELP ceph_rocksdb_rocksdb_write_pre_and_post_time_sum total time spent on writing a record, excluding write process Total
+# TYPE ceph_rocksdb_rocksdb_write_pre_and_post_time_sum counter
+ceph_rocksdb_rocksdb_write_pre_and_post_time_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_bluestore_kv_lat_count Average kv_thread sync latency Count
+# TYPE ceph_bluestore_kv_lat_count counter
+ceph_bluestore_kv_lat_count{ceph_daemon="osd.3"} 627242.0
+ceph_bluestore_kv_lat_count{ceph_daemon="osd.1"} 625272.0
+ceph_bluestore_kv_lat_count{ceph_daemon="osd.2"} 196566.0
+ceph_bluestore_kv_lat_count{ceph_daemon="osd.0"} 197739.0
+# HELP ceph_pool_rd_bytes DF pool rd_bytes
+# TYPE ceph_pool_rd_bytes gauge
+ceph_pool_rd_bytes{pool_id="2"} 2299692032.0
+ceph_pool_rd_bytes{pool_id="3"} 11321784320.0
+ceph_pool_rd_bytes{pool_id="1"} 2978447360.0
+# HELP ceph_pg_deep PG deep
+# TYPE ceph_pg_deep gauge
+ceph_pg_deep 0.0
+# HELP ceph_rocksdb_rocksdb_write_wal_time_sum Rocksdb write wal time Total
+# TYPE ceph_rocksdb_rocksdb_write_wal_time_sum counter
+ceph_rocksdb_rocksdb_write_wal_time_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_wip Replication operations currently being processed (primary)
+# TYPE ceph_osd_op_wip gauge
+ceph_osd_op_wip{ceph_daemon="osd.3"} 0.0
+ceph_osd_op_wip{ceph_daemon="osd.1"} 0.0
+ceph_osd_op_wip{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_wip{ceph_daemon="osd.0"} 0.0
+# HELP ceph_pg_backfill_toofull PG backfill_toofull
+# TYPE ceph_pg_backfill_toofull gauge
+ceph_pg_backfill_toofull 0.0
+# HELP ceph_osd_flag_noup OSD Flag noup
+# TYPE ceph_osd_flag_noup untyped
+ceph_osd_flag_noup 0.0
+# HELP ceph_pg_scrubbing PG scrubbing
+# TYPE ceph_pg_scrubbing gauge
+ceph_pg_scrubbing 0.0
+# HELP ceph_num_objects_unfound Number of unfound objects
+# TYPE ceph_num_objects_unfound gauge
+ceph_num_objects_unfound 0.0
+# HELP ceph_mon_quorum_status Monitors in quorum
+# TYPE ceph_mon_quorum_status gauge
+ceph_mon_quorum_status{ceph_daemon="mon.controller1"} 1.0
+# HELP ceph_paxos_lease_timeout Lease timeouts
+# TYPE ceph_paxos_lease_timeout counter
+ceph_paxos_lease_timeout{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_rw_prepare_latency_count Latency of read-modify-write operations (excluding queue time and wait for finished) Count
+# TYPE ceph_osd_op_rw_prepare_latency_count counter
+ceph_osd_op_rw_prepare_latency_count{ceph_daemon="osd.3"} 1241.0
+ceph_osd_op_rw_prepare_latency_count{ceph_daemon="osd.1"} 26.0
+ceph_osd_op_rw_prepare_latency_count{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_prepare_latency_count{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_begin_keys_count Keys in transaction on begin Count
+# TYPE ceph_paxos_begin_keys_count counter
+ceph_paxos_begin_keys_count{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_bluestore_submit_lat_count Average submit latency Count
+# TYPE ceph_bluestore_submit_lat_count counter
+ceph_bluestore_submit_lat_count{ceph_daemon="osd.3"} 13553.0
+ceph_bluestore_submit_lat_count{ceph_daemon="osd.1"} 7931.0
+ceph_bluestore_submit_lat_count{ceph_daemon="osd.2"} 3986.0
+ceph_bluestore_submit_lat_count{ceph_daemon="osd.0"} 5342.0
+# HELP ceph_osd_op_prepare_latency_count Latency of client operations (excluding queue time and wait for finished) Count
+# TYPE ceph_osd_op_prepare_latency_count counter
+ceph_osd_op_prepare_latency_count{ceph_daemon="osd.3"} 380161.0
+ceph_osd_op_prepare_latency_count{ceph_daemon="osd.1"} 136536.0
+ceph_osd_op_prepare_latency_count{ceph_daemon="osd.2"} 15698.0
+ceph_osd_op_prepare_latency_count{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_pg_recovering PG recovering
+# TYPE ceph_pg_recovering gauge
+ceph_pg_recovering 0.0
+# HELP ceph_rocksdb_submit_latency_sum Submit Latency Total
+# TYPE ceph_rocksdb_submit_latency_sum counter
+ceph_rocksdb_submit_latency_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pg_repair PG repair
+# TYPE ceph_pg_repair gauge
+ceph_pg_repair 0.0
+# HELP ceph_osd_op_r_latency_count Latency of read operation (including queue time) Count
+# TYPE ceph_osd_op_r_latency_count counter
+ceph_osd_op_r_latency_count{ceph_daemon="osd.3"} 367926.0
+ceph_osd_op_r_latency_count{ceph_daemon="osd.1"} 129368.0
+ceph_osd_op_r_latency_count{ceph_daemon="osd.2"} 12398.0
+ceph_osd_op_r_latency_count{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_share_state_keys_sum Keys in shared state Total
+# TYPE ceph_paxos_share_state_keys_sum counter
+ceph_paxos_share_state_keys_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_paxos_store_state_bytes_sum Data in transaction in stored state Total
+# TYPE ceph_paxos_store_state_bytes_sum counter
+ceph_paxos_store_state_bytes_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_latency_count Latency of client operations (including queue time) Count
+# TYPE ceph_osd_op_latency_count counter
+ceph_osd_op_latency_count{ceph_daemon="osd.3"} 380158.0
+ceph_osd_op_latency_count{ceph_daemon="osd.1"} 136484.0
+ceph_osd_op_latency_count{ceph_daemon="osd.2"} 15698.0
+ceph_osd_op_latency_count{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_paxos_commit_bytes_count Data in transaction on commit Count
+# TYPE ceph_paxos_commit_bytes_count counter
+ceph_paxos_commit_bytes_count{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_paxos_restart Restarts
+# TYPE ceph_paxos_restart counter
+ceph_paxos_restart{ceph_daemon="mon.controller1"} 2.0
+# HELP ceph_pg_down PG down
+# TYPE ceph_pg_down gauge
+ceph_pg_down 0.0
+# HELP ceph_bluefs_slow_total_bytes Total bytes (slow device)
+# TYPE ceph_bluefs_slow_total_bytes gauge
+ceph_bluefs_slow_total_bytes{ceph_daemon="osd.3"} 0.0
+ceph_bluefs_slow_total_bytes{ceph_daemon="osd.1"} 0.0
+ceph_bluefs_slow_total_bytes{ceph_daemon="osd.2"} 0.0
+ceph_bluefs_slow_total_bytes{ceph_daemon="osd.0"} 0.0
+# HELP ceph_paxos_collect_timeout Collect timeouts
+# TYPE ceph_paxos_collect_timeout counter
+ceph_paxos_collect_timeout{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pg_peered PG peered
+# TYPE ceph_pg_peered gauge
+ceph_pg_peered 0.0
+# HELP ceph_osd_commit_latency_ms OSD stat commit_latency_ms
+# TYPE ceph_osd_commit_latency_ms gauge
+ceph_osd_commit_latency_ms{ceph_daemon="osd.3"} 0.0
+ceph_osd_commit_latency_ms{ceph_daemon="osd.1"} 0.0
+ceph_osd_commit_latency_ms{ceph_daemon="osd.2"} 0.0
+ceph_osd_commit_latency_ms{ceph_daemon="osd.0"} 0.0
+# HELP ceph_osd_op_w_process_latency_sum Latency of write operation (excluding queue time) Total
+# TYPE ceph_osd_op_w_process_latency_sum counter
+ceph_osd_op_w_process_latency_sum{ceph_daemon="osd.3"} 181.577414237
+ceph_osd_op_w_process_latency_sum{ceph_daemon="osd.1"} 133.326518573
+ceph_osd_op_w_process_latency_sum{ceph_daemon="osd.2"} 15.959421057
+ceph_osd_op_w_process_latency_sum{ceph_daemon="osd.0"} 21.286772529
+# HELP ceph_osd_weight OSD status weight
+# TYPE ceph_osd_weight untyped
+ceph_osd_weight{ceph_daemon="osd.3"} 1.0
+ceph_osd_weight{ceph_daemon="osd.1"} 1.0
+ceph_osd_weight{ceph_daemon="osd.2"} 1.0
+ceph_osd_weight{ceph_daemon="osd.0"} 1.0
+# HELP ceph_paxos_collect_keys_count Keys in transaction on peon collect Count
+# TYPE ceph_paxos_collect_keys_count counter
+ceph_paxos_collect_keys_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_w_prepare_latency_sum Latency of write operations (excluding queue time and wait for finished) Total
+# TYPE ceph_osd_op_w_prepare_latency_sum counter
+ceph_osd_op_w_prepare_latency_sum{ceph_daemon="osd.3"} 5.515450522
+ceph_osd_op_w_prepare_latency_sum{ceph_daemon="osd.1"} 3.050249166
+ceph_osd_op_w_prepare_latency_sum{ceph_daemon="osd.2"} 2.374515151
+ceph_osd_op_w_prepare_latency_sum{ceph_daemon="osd.0"} 3.913585848
+# HELP ceph_paxos_begin Started and handled begins
+# TYPE ceph_paxos_begin counter
+ceph_paxos_begin{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_osd_flag_noscrub OSD Flag noscrub
+# TYPE ceph_osd_flag_noscrub untyped
+ceph_osd_flag_noscrub 0.0
+# HELP ceph_osd_stat_bytes_used Used space
+# TYPE ceph_osd_stat_bytes_used gauge
+ceph_osd_stat_bytes_used{ceph_daemon="osd.3"} 6860701696.0
+ceph_osd_stat_bytes_used{ceph_daemon="osd.1"} 5433851904.0
+ceph_osd_stat_bytes_used{ceph_daemon="osd.2"} 3971678208.0
+ceph_osd_stat_bytes_used{ceph_daemon="osd.0"} 4567924736.0
+# HELP ceph_osd_flag_norecover OSD Flag norecover
+# TYPE ceph_osd_flag_norecover untyped
+ceph_osd_flag_norecover 0.0
+# HELP ceph_pg_clean PG clean
+# TYPE ceph_pg_clean gauge
+ceph_pg_clean 192.0
+# HELP ceph_mon_election_win Elections won
+# TYPE ceph_mon_election_win counter
+ceph_mon_election_win{ceph_daemon="mon.controller1"} 1.0
+# HELP ceph_osd_op_w_process_latency_count Latency of write operation (excluding queue time) Count
+# TYPE ceph_osd_op_w_process_latency_count counter
+ceph_osd_op_w_process_latency_count{ceph_daemon="osd.3"} 10994.0
+ceph_osd_op_w_process_latency_count{ceph_daemon="osd.1"} 7100.0
+ceph_osd_op_w_process_latency_count{ceph_daemon="osd.2"} 3300.0
+ceph_osd_op_w_process_latency_count{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_rocksdb_rocksdb_write_wal_time_count Rocksdb write wal time Count
+# TYPE ceph_rocksdb_rocksdb_write_wal_time_count counter
+ceph_rocksdb_rocksdb_write_wal_time_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_pool_bytes_used DF pool bytes_used
+# TYPE ceph_pool_bytes_used gauge
+ceph_pool_bytes_used{pool_id="2"} 6326061746.0
+ceph_pool_bytes_used{pool_id="3"} 5167761805.0
+ceph_pool_bytes_used{pool_id="1"} 1625016955.0
+# HELP ceph_disk_occupation Associate Ceph daemon with disk used
+# TYPE ceph_disk_occupation untyped
+ceph_disk_occupation{ceph_daemon="osd.1",device="vdb",db_device="",wal_device="",instance="compute4"} 1.0
+ceph_disk_occupation{ceph_daemon="osd.0",device="vdb",db_device="",wal_device="",instance="compute1"} 1.0
+ceph_disk_occupation{ceph_daemon="osd.3",device="vdc",db_device="",wal_device="",instance="compute4"} 1.0
+ceph_disk_occupation{ceph_daemon="osd.2",device="vdc",db_device="",wal_device="",instance="compute1"} 1.0
+# HELP ceph_pg_snaptrim PG snaptrim
+# TYPE ceph_pg_snaptrim gauge
+ceph_pg_snaptrim 0.0
+# HELP ceph_mds_metadata MDS Metadata
+# TYPE ceph_mds_metadata untyped
+# HELP ceph_paxos_store_state_keys_sum Keys in transaction in stored state Total
+# TYPE ceph_paxos_store_state_keys_sum counter
+ceph_paxos_store_state_keys_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_numpg_removing Placement groups queued for local deletion
+# TYPE ceph_osd_numpg_removing gauge
+ceph_osd_numpg_removing{ceph_daemon="osd.3"} 0.0
+ceph_osd_numpg_removing{ceph_daemon="osd.1"} 0.0
+ceph_osd_numpg_removing{ceph_daemon="osd.2"} 0.0
+ceph_osd_numpg_removing{ceph_daemon="osd.0"} 0.0
+# HELP ceph_pg_remapped PG remapped
+# TYPE ceph_pg_remapped gauge
+ceph_pg_remapped 0.0
+# HELP ceph_pool_raw_bytes_used DF pool raw_bytes_used
+# TYPE ceph_pool_raw_bytes_used gauge
+ceph_pool_raw_bytes_used{pool_id="2"} 6326061568.0
+ceph_pool_raw_bytes_used{pool_id="3"} 5167761920.0
+ceph_pool_raw_bytes_used{pool_id="1"} 1625016960.0
+# HELP ceph_paxos_commit_keys_count Keys in transaction on commit Count
+# TYPE ceph_paxos_commit_keys_count counter
+ceph_paxos_commit_keys_count{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_pg_forced_backfill PG forced_backfill
+# TYPE ceph_pg_forced_backfill gauge
+ceph_pg_forced_backfill 0.0
+# HELP ceph_paxos_new_pn_latency_sum New proposal number getting latency Total
+# TYPE ceph_paxos_new_pn_latency_sum counter
+ceph_paxos_new_pn_latency_sum{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_in_bytes Client operations total write size
+# TYPE ceph_osd_op_in_bytes counter
+ceph_osd_op_in_bytes{ceph_daemon="osd.3"} 1711406002.0
+ceph_osd_op_in_bytes{ceph_daemon="osd.1"} 809207296.0
+ceph_osd_op_in_bytes{ceph_daemon="osd.2"} 21769216.0
+ceph_osd_op_in_bytes{ceph_daemon="osd.0"} 21466624.0
+# HELP ceph_paxos_store_state_latency_count Storing state latency Count
+# TYPE ceph_paxos_store_state_latency_count counter
+ceph_paxos_store_state_latency_count{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_paxos_refresh_latency_count Refresh latency Count
+# TYPE ceph_paxos_refresh_latency_count counter
+ceph_paxos_refresh_latency_count{ceph_daemon="mon.controller1"} 1089600.0
+# HELP ceph_pg_total PG Total Count
+# TYPE ceph_pg_total gauge
+ceph_pg_total 192.0
+# HELP ceph_osd_op_r_prepare_latency_count Latency of read operations (excluding queue time and wait for finished) Count
+# TYPE ceph_osd_op_r_prepare_latency_count counter
+ceph_osd_op_r_prepare_latency_count{ceph_daemon="osd.3"} 367926.0
+ceph_osd_op_r_prepare_latency_count{ceph_daemon="osd.1"} 129410.0
+ceph_osd_op_r_prepare_latency_count{ceph_daemon="osd.2"} 12398.0
+ceph_osd_op_r_prepare_latency_count{ceph_daemon="osd.0"} 0.0
+# HELP ceph_objecter_op_w Write operations
+# TYPE ceph_objecter_op_w counter
+ceph_objecter_op_w{ceph_daemon="osd.3"} 0.0
+ceph_objecter_op_w{ceph_daemon="osd.1"} 0.0
+ceph_objecter_op_w{ceph_daemon="osd.2"} 0.0
+ceph_objecter_op_w{ceph_daemon="osd.0"} 0.0
+# HELP ceph_rocksdb_submit_transaction Submit transactions
+# TYPE ceph_rocksdb_submit_transaction counter
+ceph_rocksdb_submit_transaction{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_objecter_op_r Read operations
+# TYPE ceph_objecter_op_r counter
+ceph_objecter_op_r{ceph_daemon="osd.3"} 0.0
+ceph_objecter_op_r{ceph_daemon="osd.1"} 0.0
+ceph_objecter_op_r{ceph_daemon="osd.2"} 0.0
+ceph_objecter_op_r{ceph_daemon="osd.0"} 0.0
+# HELP ceph_bluefs_num_files File count
+# TYPE ceph_bluefs_num_files gauge
+ceph_bluefs_num_files{ceph_daemon="osd.3"} 9.0
+ceph_bluefs_num_files{ceph_daemon="osd.1"} 11.0
+ceph_bluefs_num_files{ceph_daemon="osd.2"} 9.0
+ceph_bluefs_num_files{ceph_daemon="osd.0"} 10.0
+# HELP ceph_osd_up OSD status up
+# TYPE ceph_osd_up untyped
+ceph_osd_up{ceph_daemon="osd.3"} 1.0
+ceph_osd_up{ceph_daemon="osd.1"} 1.0
+ceph_osd_up{ceph_daemon="osd.2"} 1.0
+ceph_osd_up{ceph_daemon="osd.0"} 1.0
+# HELP ceph_mon_election_lose Elections lost
+# TYPE ceph_mon_election_lose counter
+ceph_mon_election_lose{ceph_daemon="mon.controller1"} 0.0
+# HELP ceph_osd_op_prepare_latency_sum Latency of client operations (excluding queue time and wait for finished) Total
+# TYPE ceph_osd_op_prepare_latency_sum counter
+ceph_osd_op_prepare_latency_sum{ceph_daemon="osd.3"} 62.691966194
+ceph_osd_op_prepare_latency_sum{ceph_daemon="osd.1"} 25.583044321
+ceph_osd_op_prepare_latency_sum{ceph_daemon="osd.2"} 5.717648116
+ceph_osd_op_prepare_latency_sum{ceph_daemon="osd.0"} 3.913585848
+# HELP ceph_bluefs_db_used_bytes Used bytes (main db device)
+# TYPE ceph_bluefs_db_used_bytes gauge
+ceph_bluefs_db_used_bytes{ceph_daemon="osd.3"} 2760900608.0
+ceph_bluefs_db_used_bytes{ceph_daemon="osd.1"} 2683305984.0
+ceph_bluefs_db_used_bytes{ceph_daemon="osd.2"} 870318080.0
+ceph_bluefs_db_used_bytes{ceph_daemon="osd.0"} 881852416.0
+# HELP ceph_osd_op_rw_prepare_latency_sum Latency of read-modify-write operations (excluding queue time and wait for finished) Total
+# TYPE ceph_osd_op_rw_prepare_latency_sum counter
+ceph_osd_op_rw_prepare_latency_sum{ceph_daemon="osd.3"} 0.47040811
+ceph_osd_op_rw_prepare_latency_sum{ceph_daemon="osd.1"} 0.006610614
+ceph_osd_op_rw_prepare_latency_sum{ceph_daemon="osd.2"} 0.0
+ceph_osd_op_rw_prepare_latency_sum{ceph_daemon="osd.0"} 0.0
+# HELP ceph_pool_quota_objects DF pool quota_objects
+# TYPE ceph_pool_quota_objects gauge
+ceph_pool_quota_objects{pool_id="2"} 0.0
+ceph_pool_quota_objects{pool_id="3"} 0.0
+ceph_pool_quota_objects{pool_id="1"} 0.0
+# HELP ceph_osd_flag_nodown OSD Flag nodown
+# TYPE ceph_osd_flag_nodown untyped
+ceph_osd_flag_nodown 0.0
+# HELP ceph_pg_forced_recovery PG forced_recovery
+# TYPE ceph_pg_forced_recovery gauge
+ceph_pg_forced_recovery 0.0
+# HELP ceph_paxos_refresh_latency_sum Refresh latency Total
+# TYPE ceph_paxos_refresh_latency_sum counter
+ceph_paxos_refresh_latency_sum{ceph_daemon="mon.controller1"} 668.74
+# HELP ceph_bluestore_read_lat_sum Average read latency Total
+# TYPE ceph_bluestore_read_lat_sum counter
+ceph_bluestore_read_lat_sum{ceph_daemon="osd.3"} 49.501823879
+ceph_bluestore_read_lat_sum{ceph_daemon="osd.1"} 39.764429005
+ceph_bluestore_read_lat_sum{ceph_daemon="osd.2"} 7.887120196
+ceph_bluestore_read_lat_sum{ceph_daemon="osd.0"} 11.352687297
+# HELP ceph_osd_op_w Client write operations
+# TYPE ceph_osd_op_w counter
+ceph_osd_op_w{ceph_daemon="osd.3"} 10994.0
+ceph_osd_op_w{ceph_daemon="osd.1"} 7100.0
+ceph_osd_op_w{ceph_daemon="osd.2"} 3300.0
+ceph_osd_op_w{ceph_daemon="osd.0"} 4100.0
+# HELP ceph_paxos_commit_bytes_sum Data in transaction on commit Total
+# TYPE ceph_paxos_commit_bytes_sum counter
+ceph_paxos_commit_bytes_sum{ceph_daemon="mon.controller1"} 12062575297.0
+# HELP ceph_bluefs_log_bytes Size of the metadata log
+# TYPE ceph_bluefs_log_bytes gauge
+ceph_bluefs_log_bytes{ceph_daemon="osd.3"} 2572349440.0
+ceph_bluefs_log_bytes{ceph_daemon="osd.1"} 2563981312.0
+ceph_bluefs_log_bytes{ceph_daemon="osd.2"} 806207488.0
+ceph_bluefs_log_bytes{ceph_daemon="osd.0"} 811012096.0
+# HELP ceph_rocksdb_submit_sync_latency_count Submit Sync Latency Count
+# TYPE ceph_rocksdb_submit_sync_latency_count counter
+ceph_rocksdb_submit_sync_latency_count{ceph_daemon="mon.controller1"} 2179267.0

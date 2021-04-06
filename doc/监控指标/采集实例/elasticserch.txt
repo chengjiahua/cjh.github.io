@@ -1,0 +1,678 @@
+# HELP elasticsearch_breakers_estimated_size_bytes Estimated size in bytes of breaker
+# TYPE elasticsearch_breakers_estimated_size_bytes gauge
+elasticsearch_breakers_estimated_size_bytes{breaker="accounting",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 53595
+elasticsearch_breakers_estimated_size_bytes{breaker="fielddata",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+elasticsearch_breakers_estimated_size_bytes{breaker="in_flight_requests",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+elasticsearch_breakers_estimated_size_bytes{breaker="parent",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.38446248e+08
+elasticsearch_breakers_estimated_size_bytes{breaker="request",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_breakers_limit_size_bytes Limit size in bytes for breaker
+# TYPE elasticsearch_breakers_limit_size_bytes gauge
+elasticsearch_breakers_limit_size_bytes{breaker="accounting",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.038876672e+09
+elasticsearch_breakers_limit_size_bytes{breaker="fielddata",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 4.15550668e+08
+elasticsearch_breakers_limit_size_bytes{breaker="in_flight_requests",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.038876672e+09
+elasticsearch_breakers_limit_size_bytes{breaker="parent",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 9.86932838e+08
+elasticsearch_breakers_limit_size_bytes{breaker="request",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 6.23326003e+08
+# HELP elasticsearch_breakers_overhead Overhead of circuit breakers
+# TYPE elasticsearch_breakers_overhead counter
+elasticsearch_breakers_overhead{breaker="accounting",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1
+elasticsearch_breakers_overhead{breaker="fielddata",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.03
+elasticsearch_breakers_overhead{breaker="in_flight_requests",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 2
+elasticsearch_breakers_overhead{breaker="parent",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1
+elasticsearch_breakers_overhead{breaker="request",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1
+# HELP elasticsearch_breakers_tripped tripped for breaker
+# TYPE elasticsearch_breakers_tripped counter
+elasticsearch_breakers_tripped{breaker="accounting",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+elasticsearch_breakers_tripped{breaker="fielddata",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+elasticsearch_breakers_tripped{breaker="in_flight_requests",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+elasticsearch_breakers_tripped{breaker="parent",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+elasticsearch_breakers_tripped{breaker="request",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_cluster_health_active_primary_shards The number of primary shards in your cluster. This is an aggregate total across all indices.
+# TYPE elasticsearch_cluster_health_active_primary_shards gauge
+elasticsearch_cluster_health_active_primary_shards{cluster="kolla_logging"} 1
+# HELP elasticsearch_cluster_health_active_shards Aggregate total of all shards across all indices, which includes replica shards.
+# TYPE elasticsearch_cluster_health_active_shards gauge
+elasticsearch_cluster_health_active_shards{cluster="kolla_logging"} 1
+# HELP elasticsearch_cluster_health_delayed_unassigned_shards Shards delayed to reduce reallocation overhead
+# TYPE elasticsearch_cluster_health_delayed_unassigned_shards gauge
+elasticsearch_cluster_health_delayed_unassigned_shards{cluster="kolla_logging"} 0
+# HELP elasticsearch_cluster_health_initializing_shards Count of shards that are being freshly created.
+# TYPE elasticsearch_cluster_health_initializing_shards gauge
+elasticsearch_cluster_health_initializing_shards{cluster="kolla_logging"} 0
+# HELP elasticsearch_cluster_health_json_parse_failures Number of errors while parsing JSON.
+# TYPE elasticsearch_cluster_health_json_parse_failures counter
+elasticsearch_cluster_health_json_parse_failures 0
+# HELP elasticsearch_cluster_health_number_of_data_nodes Number of data nodes in the cluster.
+# TYPE elasticsearch_cluster_health_number_of_data_nodes gauge
+elasticsearch_cluster_health_number_of_data_nodes{cluster="kolla_logging"} 1
+# HELP elasticsearch_cluster_health_number_of_in_flight_fetch The number of ongoing shard info requests.
+# TYPE elasticsearch_cluster_health_number_of_in_flight_fetch gauge
+elasticsearch_cluster_health_number_of_in_flight_fetch{cluster="kolla_logging"} 0
+# HELP elasticsearch_cluster_health_number_of_nodes Number of nodes in the cluster.
+# TYPE elasticsearch_cluster_health_number_of_nodes gauge
+elasticsearch_cluster_health_number_of_nodes{cluster="kolla_logging"} 1
+# HELP elasticsearch_cluster_health_number_of_pending_tasks Cluster level changes which have not yet been executed
+# TYPE elasticsearch_cluster_health_number_of_pending_tasks gauge
+elasticsearch_cluster_health_number_of_pending_tasks{cluster="kolla_logging"} 0
+# HELP elasticsearch_cluster_health_relocating_shards The number of shards that are currently moving from one node to another node.
+# TYPE elasticsearch_cluster_health_relocating_shards gauge
+elasticsearch_cluster_health_relocating_shards{cluster="kolla_logging"} 0
+# HELP elasticsearch_cluster_health_status Whether all primary and replica shards are allocated.
+# TYPE elasticsearch_cluster_health_status gauge
+elasticsearch_cluster_health_status{cluster="kolla_logging",color="green"} 0
+elasticsearch_cluster_health_status{cluster="kolla_logging",color="red"} 0
+elasticsearch_cluster_health_status{cluster="kolla_logging",color="yellow"} 1
+# HELP elasticsearch_cluster_health_task_max_waiting_in_queue_millis Tasks max time waiting in queue.
+# TYPE elasticsearch_cluster_health_task_max_waiting_in_queue_millis gauge
+elasticsearch_cluster_health_task_max_waiting_in_queue_millis{cluster="kolla_logging"} 0
+# HELP elasticsearch_cluster_health_total_scrapes Current total ElasticSearch cluster health scrapes.
+# TYPE elasticsearch_cluster_health_total_scrapes counter
+elasticsearch_cluster_health_total_scrapes 1
+# HELP elasticsearch_cluster_health_unassigned_shards The number of shards that exist in the cluster state, but cannot be found in the cluster itself.
+# TYPE elasticsearch_cluster_health_unassigned_shards gauge
+elasticsearch_cluster_health_unassigned_shards{cluster="kolla_logging"} 1
+# HELP elasticsearch_cluster_health_up Was the last scrape of the ElasticSearch cluster health endpoint successful.
+# TYPE elasticsearch_cluster_health_up gauge
+elasticsearch_cluster_health_up 1
+# HELP elasticsearch_clusterinfo_last_retrieval_success_ts Timestamp of the last successful cluster info retrieval
+# TYPE elasticsearch_clusterinfo_last_retrieval_success_ts gauge
+elasticsearch_clusterinfo_last_retrieval_success_ts{url="http://10.17.100.101:9200"} 1.600173769e+09
+# HELP elasticsearch_clusterinfo_up Up metric for the cluster info collector
+# TYPE elasticsearch_clusterinfo_up gauge
+elasticsearch_clusterinfo_up{url="http://10.17.100.101:9200"} 1
+# HELP elasticsearch_clusterinfo_version_info Constant metric with ES version information as labels
+# TYPE elasticsearch_clusterinfo_version_info gauge
+elasticsearch_clusterinfo_version_info{build_date="2019-12-09T07:13:43.170096Z",build_hash="e9ccaed468e2fac2275a3761849cbee64b39519f",cluster="kolla_logging",cluster_uuid="pe-kqk6yRuygBKiiZlgz8A",lucene_version="8.3.0",version="7.5.0-SNAPSHOT"} 0
+# HELP elasticsearch_exporter_build_info A metric with a constant '1' value labeled by version, revision, branch, and goversion from which elasticsearch_exporter was built.
+# TYPE elasticsearch_exporter_build_info gauge
+elasticsearch_exporter_build_info{branch="",goversion="go1.13.14",revision="",version=""} 1
+# HELP elasticsearch_filesystem_data_available_bytes Available space on block device in bytes
+# TYPE elasticsearch_filesystem_data_available_bytes gauge
+elasticsearch_filesystem_data_available_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",mount="/var/lib/elasticsearch/data (/dev/vda3)",name="10.17.100.101",path="/var/lib/elasticsearch/data/nodes/0"} 1.4680776704e+10
+# HELP elasticsearch_filesystem_data_free_bytes Free space on block device in bytes
+# TYPE elasticsearch_filesystem_data_free_bytes gauge
+elasticsearch_filesystem_data_free_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",mount="/var/lib/elasticsearch/data (/dev/vda3)",name="10.17.100.101",path="/var/lib/elasticsearch/data/nodes/0"} 1.6415821824e+10
+# HELP elasticsearch_filesystem_data_size_bytes Size of block device in bytes
+# TYPE elasticsearch_filesystem_data_size_bytes gauge
+elasticsearch_filesystem_data_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",mount="/var/lib/elasticsearch/data (/dev/vda3)",name="10.17.100.101",path="/var/lib/elasticsearch/data/nodes/0"} 3.9667761152e+10
+# HELP elasticsearch_filesystem_io_stats_device_operations_count Count of disk operations
+# TYPE elasticsearch_filesystem_io_stats_device_operations_count counter
+elasticsearch_filesystem_io_stats_device_operations_count{cluster="kolla_logging",device="vda3",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 3.930272e+06
+# HELP elasticsearch_filesystem_io_stats_device_read_operations_count Count of disk read operations
+# TYPE elasticsearch_filesystem_io_stats_device_read_operations_count counter
+elasticsearch_filesystem_io_stats_device_read_operations_count{cluster="kolla_logging",device="vda3",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 49662
+# HELP elasticsearch_filesystem_io_stats_device_read_size_kilobytes_sum Total kilobytes read from disk
+# TYPE elasticsearch_filesystem_io_stats_device_read_size_kilobytes_sum counter
+elasticsearch_filesystem_io_stats_device_read_size_kilobytes_sum{cluster="kolla_logging",device="vda3",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.713604e+06
+# HELP elasticsearch_filesystem_io_stats_device_write_operations_count Count of disk write operations
+# TYPE elasticsearch_filesystem_io_stats_device_write_operations_count counter
+elasticsearch_filesystem_io_stats_device_write_operations_count{cluster="kolla_logging",device="vda3",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 3.88061e+06
+# HELP elasticsearch_filesystem_io_stats_device_write_size_kilobytes_sum Total kilobytes written to disk
+# TYPE elasticsearch_filesystem_io_stats_device_write_size_kilobytes_sum counter
+elasticsearch_filesystem_io_stats_device_write_size_kilobytes_sum{cluster="kolla_logging",device="vda3",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.1447058e+08
+# HELP elasticsearch_indices_completion_size_in_bytes Completion in bytes
+# TYPE elasticsearch_indices_completion_size_in_bytes counter
+elasticsearch_indices_completion_size_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_docs Count of documents on this node
+# TYPE elasticsearch_indices_docs gauge
+elasticsearch_indices_docs{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 60
+# HELP elasticsearch_indices_docs_deleted Count of deleted documents on this node
+# TYPE elasticsearch_indices_docs_deleted gauge
+elasticsearch_indices_docs_deleted{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_fielddata_evictions Evictions from field data
+# TYPE elasticsearch_indices_fielddata_evictions counter
+elasticsearch_indices_fielddata_evictions{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_fielddata_memory_size_bytes Field data cache memory usage in bytes
+# TYPE elasticsearch_indices_fielddata_memory_size_bytes gauge
+elasticsearch_indices_fielddata_memory_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_filter_cache_evictions Evictions from filter cache
+# TYPE elasticsearch_indices_filter_cache_evictions counter
+elasticsearch_indices_filter_cache_evictions{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_filter_cache_memory_size_bytes Filter cache memory usage in bytes
+# TYPE elasticsearch_indices_filter_cache_memory_size_bytes gauge
+elasticsearch_indices_filter_cache_memory_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_flush_time_seconds Cumulative flush time in seconds
+# TYPE elasticsearch_indices_flush_time_seconds counter
+elasticsearch_indices_flush_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0.004
+# HELP elasticsearch_indices_flush_total Total flushes
+# TYPE elasticsearch_indices_flush_total counter
+elasticsearch_indices_flush_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1
+# HELP elasticsearch_indices_get_exists_time_seconds Total time get exists in seconds
+# TYPE elasticsearch_indices_get_exists_time_seconds counter
+elasticsearch_indices_get_exists_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_get_exists_total Total get exists operations
+# TYPE elasticsearch_indices_get_exists_total counter
+elasticsearch_indices_get_exists_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_get_missing_time_seconds Total time of get missing in seconds
+# TYPE elasticsearch_indices_get_missing_time_seconds counter
+elasticsearch_indices_get_missing_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_get_missing_total Total get missing
+# TYPE elasticsearch_indices_get_missing_total counter
+elasticsearch_indices_get_missing_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_get_time_seconds Total get time in seconds
+# TYPE elasticsearch_indices_get_time_seconds counter
+elasticsearch_indices_get_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_get_total Total get
+# TYPE elasticsearch_indices_get_total counter
+elasticsearch_indices_get_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_indexing_delete_time_seconds_total Total time indexing delete in seconds
+# TYPE elasticsearch_indices_indexing_delete_time_seconds_total counter
+elasticsearch_indices_indexing_delete_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_indexing_delete_total Total indexing deletes
+# TYPE elasticsearch_indices_indexing_delete_total counter
+elasticsearch_indices_indexing_delete_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_indexing_index_time_seconds_total Cumulative index time in seconds
+# TYPE elasticsearch_indices_indexing_index_time_seconds_total counter
+elasticsearch_indices_indexing_index_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_indexing_index_total Total index calls
+# TYPE elasticsearch_indices_indexing_index_total counter
+elasticsearch_indices_indexing_index_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_indexing_is_throttled Indexing throttling
+# TYPE elasticsearch_indices_indexing_is_throttled gauge
+elasticsearch_indices_indexing_is_throttled{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_indexing_throttle_time_seconds_total Cumulative indexing throttling time
+# TYPE elasticsearch_indices_indexing_throttle_time_seconds_total counter
+elasticsearch_indices_indexing_throttle_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_merges_current Current merges
+# TYPE elasticsearch_indices_merges_current gauge
+elasticsearch_indices_merges_current{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_merges_current_size_in_bytes Size of a current merges in bytes
+# TYPE elasticsearch_indices_merges_current_size_in_bytes gauge
+elasticsearch_indices_merges_current_size_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_merges_docs_total Cumulative docs merged
+# TYPE elasticsearch_indices_merges_docs_total counter
+elasticsearch_indices_merges_docs_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_merges_total Total merges
+# TYPE elasticsearch_indices_merges_total counter
+elasticsearch_indices_merges_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_merges_total_size_bytes_total Total merge size in bytes
+# TYPE elasticsearch_indices_merges_total_size_bytes_total counter
+elasticsearch_indices_merges_total_size_bytes_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_merges_total_throttled_time_seconds_total Total throttled time of merges in seconds
+# TYPE elasticsearch_indices_merges_total_throttled_time_seconds_total counter
+elasticsearch_indices_merges_total_throttled_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_merges_total_time_seconds_total Total time spent merging in seconds
+# TYPE elasticsearch_indices_merges_total_time_seconds_total counter
+elasticsearch_indices_merges_total_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_query_cache_cache_size Query cache cache size
+# TYPE elasticsearch_indices_query_cache_cache_size gauge
+elasticsearch_indices_query_cache_cache_size{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_query_cache_cache_total Query cache cache count
+# TYPE elasticsearch_indices_query_cache_cache_total counter
+elasticsearch_indices_query_cache_cache_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_query_cache_count Query cache count
+# TYPE elasticsearch_indices_query_cache_count counter
+elasticsearch_indices_query_cache_count{cache="hit",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_query_cache_evictions Evictions from query cache
+# TYPE elasticsearch_indices_query_cache_evictions counter
+elasticsearch_indices_query_cache_evictions{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_query_cache_memory_size_bytes Query cache memory usage in bytes
+# TYPE elasticsearch_indices_query_cache_memory_size_bytes gauge
+elasticsearch_indices_query_cache_memory_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_query_cache_total Query cache total count
+# TYPE elasticsearch_indices_query_cache_total counter
+elasticsearch_indices_query_cache_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_query_miss_count Query miss count
+# TYPE elasticsearch_indices_query_miss_count counter
+elasticsearch_indices_query_miss_count{cache="miss",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_refresh_time_seconds_total Total time spent refreshing in seconds
+# TYPE elasticsearch_indices_refresh_time_seconds_total counter
+elasticsearch_indices_refresh_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_refresh_total Total refreshes
+# TYPE elasticsearch_indices_refresh_total counter
+elasticsearch_indices_refresh_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 2
+# HELP elasticsearch_indices_request_cache_count Request cache count
+# TYPE elasticsearch_indices_request_cache_count counter
+elasticsearch_indices_request_cache_count{cache="hit",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_request_cache_evictions Evictions from request cache
+# TYPE elasticsearch_indices_request_cache_evictions counter
+elasticsearch_indices_request_cache_evictions{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_request_cache_memory_size_bytes Request cache memory usage in bytes
+# TYPE elasticsearch_indices_request_cache_memory_size_bytes gauge
+elasticsearch_indices_request_cache_memory_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_request_miss_count Request miss count
+# TYPE elasticsearch_indices_request_miss_count counter
+elasticsearch_indices_request_miss_count{cache="miss",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_fetch_time_seconds Total search fetch time in seconds
+# TYPE elasticsearch_indices_search_fetch_time_seconds counter
+elasticsearch_indices_search_fetch_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_fetch_total Total number of fetches
+# TYPE elasticsearch_indices_search_fetch_total counter
+elasticsearch_indices_search_fetch_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_query_time_seconds Total search query time in seconds
+# TYPE elasticsearch_indices_search_query_time_seconds counter
+elasticsearch_indices_search_query_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_query_total Total number of queries
+# TYPE elasticsearch_indices_search_query_total counter
+elasticsearch_indices_search_query_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_scroll_time_seconds Total scroll time in seconds
+# TYPE elasticsearch_indices_search_scroll_time_seconds counter
+elasticsearch_indices_search_scroll_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_scroll_total Total number of scrolls
+# TYPE elasticsearch_indices_search_scroll_total counter
+elasticsearch_indices_search_scroll_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_suggest_time_seconds Total suggest time in seconds
+# TYPE elasticsearch_indices_search_suggest_time_seconds counter
+elasticsearch_indices_search_suggest_time_seconds{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_search_suggest_total Total number of suggests
+# TYPE elasticsearch_indices_search_suggest_total counter
+elasticsearch_indices_search_suggest_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_segments_count Count of index segments on this node
+# TYPE elasticsearch_indices_segments_count gauge
+elasticsearch_indices_segments_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 5
+# HELP elasticsearch_indices_segments_doc_values_memory_in_bytes Count of doc values memory
+# TYPE elasticsearch_indices_segments_doc_values_memory_in_bytes gauge
+elasticsearch_indices_segments_doc_values_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 852
+# HELP elasticsearch_indices_segments_fixed_bit_set_memory_in_bytes Count of fixed bit set
+# TYPE elasticsearch_indices_segments_fixed_bit_set_memory_in_bytes gauge
+elasticsearch_indices_segments_fixed_bit_set_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_segments_index_writer_memory_in_bytes Count of memory for index writer on this node
+# TYPE elasticsearch_indices_segments_index_writer_memory_in_bytes gauge
+elasticsearch_indices_segments_index_writer_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_segments_memory_bytes Current memory size of segments in bytes
+# TYPE elasticsearch_indices_segments_memory_bytes gauge
+elasticsearch_indices_segments_memory_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 53595
+# HELP elasticsearch_indices_segments_norms_memory_in_bytes Count of memory used by norms
+# TYPE elasticsearch_indices_segments_norms_memory_in_bytes gauge
+elasticsearch_indices_segments_norms_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 5248
+# HELP elasticsearch_indices_segments_points_memory_in_bytes Point values memory usage in bytes
+# TYPE elasticsearch_indices_segments_points_memory_in_bytes gauge
+elasticsearch_indices_segments_points_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 82
+# HELP elasticsearch_indices_segments_stored_fields_memory_in_bytes Count of stored fields memory
+# TYPE elasticsearch_indices_segments_stored_fields_memory_in_bytes gauge
+elasticsearch_indices_segments_stored_fields_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1560
+# HELP elasticsearch_indices_segments_term_vectors_memory_in_bytes Term vectors memory usage in bytes
+# TYPE elasticsearch_indices_segments_term_vectors_memory_in_bytes gauge
+elasticsearch_indices_segments_term_vectors_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_segments_terms_memory_in_bytes Count of terms in memory for this node
+# TYPE elasticsearch_indices_segments_terms_memory_in_bytes gauge
+elasticsearch_indices_segments_terms_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 45853
+# HELP elasticsearch_indices_segments_version_map_memory_in_bytes Version map memory usage in bytes
+# TYPE elasticsearch_indices_segments_version_map_memory_in_bytes gauge
+elasticsearch_indices_segments_version_map_memory_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_store_size_bytes Current size of stored index data in bytes
+# TYPE elasticsearch_indices_store_size_bytes gauge
+elasticsearch_indices_store_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 114942
+# HELP elasticsearch_indices_store_throttle_time_seconds_total Throttle time for index store in seconds
+# TYPE elasticsearch_indices_store_throttle_time_seconds_total counter
+elasticsearch_indices_store_throttle_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_translog_operations Total translog operations
+# TYPE elasticsearch_indices_translog_operations counter
+elasticsearch_indices_translog_operations{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_indices_translog_size_in_bytes Total translog size in bytes
+# TYPE elasticsearch_indices_translog_size_in_bytes counter
+elasticsearch_indices_translog_size_in_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 220
+# HELP elasticsearch_indices_warmer_time_seconds_total Total warmer time in seconds
+# TYPE elasticsearch_indices_warmer_time_seconds_total counter
+elasticsearch_indices_warmer_time_seconds_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0.001
+# HELP elasticsearch_indices_warmer_total Total warmer count
+# TYPE elasticsearch_indices_warmer_total counter
+elasticsearch_indices_warmer_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1
+# HELP elasticsearch_jvm_buffer_pool_used_bytes JVM buffer currently used
+# TYPE elasticsearch_jvm_buffer_pool_used_bytes gauge
+elasticsearch_jvm_buffer_pool_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="direct"} 2.1491e+06
+elasticsearch_jvm_buffer_pool_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="mapped"} 56463
+# HELP elasticsearch_jvm_gc_collection_seconds_count Count of JVM GC runs
+# TYPE elasticsearch_jvm_gc_collection_seconds_count counter
+elasticsearch_jvm_gc_collection_seconds_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",gc="old",host="10.17.100.101",name="10.17.100.101"} 3
+elasticsearch_jvm_gc_collection_seconds_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",gc="young",host="10.17.100.101",name="10.17.100.101"} 46
+# HELP elasticsearch_jvm_gc_collection_seconds_sum GC run time in seconds
+# TYPE elasticsearch_jvm_gc_collection_seconds_sum counter
+elasticsearch_jvm_gc_collection_seconds_sum{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",gc="old",host="10.17.100.101",name="10.17.100.101"} 1.065
+elasticsearch_jvm_gc_collection_seconds_sum{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",gc="young",host="10.17.100.101",name="10.17.100.101"} 2.962
+# HELP elasticsearch_jvm_memory_committed_bytes JVM memory currently committed by area
+# TYPE elasticsearch_jvm_memory_committed_bytes gauge
+elasticsearch_jvm_memory_committed_bytes{area="heap",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.038876672e+09
+elasticsearch_jvm_memory_committed_bytes{area="non-heap",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.23797504e+08
+# HELP elasticsearch_jvm_memory_max_bytes JVM memory max
+# TYPE elasticsearch_jvm_memory_max_bytes gauge
+elasticsearch_jvm_memory_max_bytes{area="heap",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.038876672e+09
+# HELP elasticsearch_jvm_memory_pool_max_bytes JVM memory max by pool
+# TYPE elasticsearch_jvm_memory_pool_max_bytes counter
+elasticsearch_jvm_memory_pool_max_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="old"} 7.24762624e+08
+elasticsearch_jvm_memory_pool_max_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="survivor"} 3.4865152e+07
+elasticsearch_jvm_memory_pool_max_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="young"} 2.79248896e+08
+# HELP elasticsearch_jvm_memory_pool_peak_max_bytes JVM memory peak max by pool
+# TYPE elasticsearch_jvm_memory_pool_peak_max_bytes counter
+elasticsearch_jvm_memory_pool_peak_max_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="old"} 7.24762624e+08
+elasticsearch_jvm_memory_pool_peak_max_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="survivor"} 3.4865152e+07
+elasticsearch_jvm_memory_pool_peak_max_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="young"} 2.79248896e+08
+# HELP elasticsearch_jvm_memory_pool_peak_used_bytes JVM memory peak used by pool
+# TYPE elasticsearch_jvm_memory_pool_peak_used_bytes counter
+elasticsearch_jvm_memory_pool_peak_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="old"} 6.6621816e+07
+elasticsearch_jvm_memory_pool_peak_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="survivor"} 3.4865152e+07
+elasticsearch_jvm_memory_pool_peak_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="young"} 2.79248896e+08
+# HELP elasticsearch_jvm_memory_pool_used_bytes JVM memory currently used by pool
+# TYPE elasticsearch_jvm_memory_pool_used_bytes gauge
+elasticsearch_jvm_memory_pool_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="old"} 6.6621816e+07
+elasticsearch_jvm_memory_pool_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="survivor"} 14448
+elasticsearch_jvm_memory_pool_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",pool="young"} 7.1689576e+07
+# HELP elasticsearch_jvm_memory_used_bytes JVM memory currently used by area
+# TYPE elasticsearch_jvm_memory_used_bytes gauge
+elasticsearch_jvm_memory_used_bytes{area="heap",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.3832584e+08
+elasticsearch_jvm_memory_used_bytes{area="non-heap",cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.11491168e+08
+# HELP elasticsearch_node_stats_json_parse_failures Number of errors while parsing JSON.
+# TYPE elasticsearch_node_stats_json_parse_failures counter
+elasticsearch_node_stats_json_parse_failures 0
+# HELP elasticsearch_node_stats_total_scrapes Current total ElasticSearch node scrapes.
+# TYPE elasticsearch_node_stats_total_scrapes counter
+elasticsearch_node_stats_total_scrapes 1
+# HELP elasticsearch_node_stats_up Was the last scrape of the ElasticSearch nodes endpoint successful.
+# TYPE elasticsearch_node_stats_up gauge
+elasticsearch_node_stats_up 1
+# HELP elasticsearch_nodes_roles Node roles
+# TYPE elasticsearch_nodes_roles gauge
+elasticsearch_nodes_roles{cluster="kolla_logging",host="10.17.100.101",name="10.17.100.101",role="client"} 1
+elasticsearch_nodes_roles{cluster="kolla_logging",host="10.17.100.101",name="10.17.100.101",role="data"} 1
+elasticsearch_nodes_roles{cluster="kolla_logging",host="10.17.100.101",name="10.17.100.101",role="ingest"} 1
+elasticsearch_nodes_roles{cluster="kolla_logging",host="10.17.100.101",name="10.17.100.101",role="master"} 1
+# HELP elasticsearch_os_cpu_percent Percent CPU used by OS
+# TYPE elasticsearch_os_cpu_percent gauge
+elasticsearch_os_cpu_percent{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 49
+# HELP elasticsearch_os_load1 Shortterm load average
+# TYPE elasticsearch_os_load1 gauge
+elasticsearch_os_load1{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 4.26
+# HELP elasticsearch_os_load15 Longterm load average
+# TYPE elasticsearch_os_load15 gauge
+elasticsearch_os_load15{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 3.21
+# HELP elasticsearch_os_load5 Midterm load average
+# TYPE elasticsearch_os_load5 gauge
+elasticsearch_os_load5{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 3.49
+# HELP elasticsearch_os_mem_actual_free_bytes Amount of free physical memory in bytes
+# TYPE elasticsearch_os_mem_actual_free_bytes gauge
+elasticsearch_os_mem_actual_free_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_os_mem_actual_used_bytes Amount of used physical memory in bytes
+# TYPE elasticsearch_os_mem_actual_used_bytes gauge
+elasticsearch_os_mem_actual_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_os_mem_free_bytes Amount of free physical memory in bytes
+# TYPE elasticsearch_os_mem_free_bytes gauge
+elasticsearch_os_mem_free_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 4.933353472e+09
+# HELP elasticsearch_os_mem_used_bytes Amount of used physical memory in bytes
+# TYPE elasticsearch_os_mem_used_bytes gauge
+elasticsearch_os_mem_used_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 2.0712849408e+10
+# HELP elasticsearch_process_cpu_percent Percent CPU used by process
+# TYPE elasticsearch_process_cpu_percent gauge
+elasticsearch_process_cpu_percent{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_process_cpu_time_seconds_sum Process CPU time in seconds
+# TYPE elasticsearch_process_cpu_time_seconds_sum counter
+elasticsearch_process_cpu_time_seconds_sum{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="sys"} 0
+elasticsearch_process_cpu_time_seconds_sum{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="total"} 495.3
+elasticsearch_process_cpu_time_seconds_sum{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="user"} 0
+# HELP elasticsearch_process_max_files_descriptors Max file descriptors
+# TYPE elasticsearch_process_max_files_descriptors gauge
+elasticsearch_process_max_files_descriptors{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 1.048576e+06
+# HELP elasticsearch_process_mem_resident_size_bytes Resident memory in use by process in bytes
+# TYPE elasticsearch_process_mem_resident_size_bytes gauge
+elasticsearch_process_mem_resident_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_process_mem_share_size_bytes Shared memory in use by process in bytes
+# TYPE elasticsearch_process_mem_share_size_bytes gauge
+elasticsearch_process_mem_share_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_process_mem_virtual_size_bytes Total virtual memory used in bytes
+# TYPE elasticsearch_process_mem_virtual_size_bytes gauge
+elasticsearch_process_mem_virtual_size_bytes{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 4.86178816e+09
+# HELP elasticsearch_process_open_files_count Open file descriptors
+# TYPE elasticsearch_process_open_files_count gauge
+elasticsearch_process_open_files_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 255
+# HELP elasticsearch_thread_pool_active_count Thread Pool threads active
+# TYPE elasticsearch_thread_pool_active_count gauge
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="analyze"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="ccr"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_started"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_store"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="flush"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="force_merge"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="generic"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="get"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="listener"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="management"} 1
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="refresh"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="rollup_indexing"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search_throttled"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="security-token-key"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="snapshot"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="transform_indexing"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="warmer"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="watcher"} 0
+elasticsearch_thread_pool_active_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="write"} 0
+# HELP elasticsearch_thread_pool_completed_count Thread Pool operations completed
+# TYPE elasticsearch_thread_pool_completed_count counter
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="analyze"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="ccr"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_started"} 1
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_store"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="flush"} 1
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="force_merge"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="generic"} 17543
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="get"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="listener"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="management"} 25731
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="refresh"} 128582
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="rollup_indexing"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search_throttled"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="security-token-key"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="snapshot"} 2
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="transform_indexing"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="warmer"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="watcher"} 0
+elasticsearch_thread_pool_completed_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="write"} 0
+# HELP elasticsearch_thread_pool_largest_count Thread Pool largest threads count
+# TYPE elasticsearch_thread_pool_largest_count gauge
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="analyze"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="ccr"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_started"} 1
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_store"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="flush"} 1
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="force_merge"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="generic"} 4
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="get"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="listener"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="management"} 5
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="refresh"} 1
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="rollup_indexing"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search_throttled"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="security-token-key"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="snapshot"} 2
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="transform_indexing"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="warmer"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="watcher"} 0
+elasticsearch_thread_pool_largest_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="write"} 0
+# HELP elasticsearch_thread_pool_queue_count Thread Pool operations queued
+# TYPE elasticsearch_thread_pool_queue_count gauge
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="analyze"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="ccr"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_started"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_store"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="flush"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="force_merge"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="generic"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="get"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="listener"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="management"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="refresh"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="rollup_indexing"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search_throttled"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="security-token-key"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="snapshot"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="transform_indexing"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="warmer"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="watcher"} 0
+elasticsearch_thread_pool_queue_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="write"} 0
+# HELP elasticsearch_thread_pool_rejected_count Thread Pool operations rejected
+# TYPE elasticsearch_thread_pool_rejected_count counter
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="analyze"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="ccr"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_started"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_store"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="flush"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="force_merge"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="generic"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="get"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="listener"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="management"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="refresh"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="rollup_indexing"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search_throttled"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="security-token-key"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="snapshot"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="transform_indexing"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="warmer"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="watcher"} 0
+elasticsearch_thread_pool_rejected_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="write"} 0
+# HELP elasticsearch_thread_pool_threads_count Thread Pool current threads count
+# TYPE elasticsearch_thread_pool_threads_count gauge
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="analyze"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="ccr"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_started"} 1
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="fetch_shard_store"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="flush"} 1
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="force_merge"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="generic"} 4
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="get"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="listener"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="management"} 5
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="refresh"} 1
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="rollup_indexing"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="search_throttled"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="security-token-key"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="snapshot"} 1
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="transform_indexing"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="warmer"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="watcher"} 0
+elasticsearch_thread_pool_threads_count{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101",type="write"} 0
+# HELP elasticsearch_transport_rx_packets_total Count of packets received
+# TYPE elasticsearch_transport_rx_packets_total counter
+elasticsearch_transport_rx_packets_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_transport_rx_size_bytes_total Total number of bytes received
+# TYPE elasticsearch_transport_rx_size_bytes_total counter
+elasticsearch_transport_rx_size_bytes_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_transport_tx_packets_total Count of packets sent
+# TYPE elasticsearch_transport_tx_packets_total counter
+elasticsearch_transport_tx_packets_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP elasticsearch_transport_tx_size_bytes_total Total number of bytes sent
+# TYPE elasticsearch_transport_tx_size_bytes_total counter
+elasticsearch_transport_tx_size_bytes_total{cluster="kolla_logging",es_client_node="true",es_data_node="true",es_ingest_node="true",es_master_node="true",host="10.17.100.101",name="10.17.100.101"} 0
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 0
+go_gc_duration_seconds{quantile="0.25"} 0
+go_gc_duration_seconds{quantile="0.5"} 0
+go_gc_duration_seconds{quantile="0.75"} 0
+go_gc_duration_seconds{quantile="1"} 0
+go_gc_duration_seconds_sum 0
+go_gc_duration_seconds_count 0
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 21
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.015088e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 1.015088e+06
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 2814
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 391
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 2.301952e+06
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 1.015088e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 6.4339968e+07
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 2.179072e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 5125
+# HELP go_memstats_heap_released_bytes_total Total number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes_total counter
+go_memstats_heap_released_bytes_total 6.4290816e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 6.651904e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 0
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 5516
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 6944
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 29376
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 32768
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.473924e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 1.056002e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 589824
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 589824
+# HELP go_memstats_sys_bytes Number of bytes obtained by system. Sum of all system allocations.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 7.0518784e+07
+# HELP http_request_duration_microseconds The HTTP request latencies in microseconds.
+# TYPE http_request_duration_microseconds summary
+http_request_duration_microseconds{handler="prometheus",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="prometheus",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="prometheus",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="prometheus"} 0
+http_request_duration_microseconds_count{handler="prometheus"} 0
+# HELP http_request_size_bytes The HTTP request sizes in bytes.
+# TYPE http_request_size_bytes summary
+http_request_size_bytes{handler="prometheus",quantile="0.5"} NaN
+http_request_size_bytes{handler="prometheus",quantile="0.9"} NaN
+http_request_size_bytes{handler="prometheus",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="prometheus"} 0
+http_request_size_bytes_count{handler="prometheus"} 0
+# HELP http_response_size_bytes The HTTP response sizes in bytes.
+# TYPE http_response_size_bytes summary
+http_response_size_bytes{handler="prometheus",quantile="0.5"} NaN
+http_response_size_bytes{handler="prometheus",quantile="0.9"} NaN
+http_response_size_bytes{handler="prometheus",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="prometheus"} 0
+http_response_size_bytes_count{handler="prometheus"} 0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.01
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1024
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 10
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 9.17504e+06
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.60017376942e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 4.6923776e+08

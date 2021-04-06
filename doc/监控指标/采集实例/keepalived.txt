@@ -1,0 +1,45 @@
+# HELP keepalived_up Status
+# TYPE keepalived_up gauge
+keepalived_up 1
+# HELP keepalived_vrrp_addr_list_err Address list errors
+# TYPE keepalived_vrrp_addr_list_err counter
+keepalived_vrrp_addr_list_err{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_advert_interval_err Advertisement interval errors
+# TYPE keepalived_vrrp_advert_interval_err counter
+keepalived_vrrp_advert_interval_err{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_advert_rcvd Advertisements received
+# TYPE keepalived_vrrp_advert_rcvd counter
+keepalived_vrrp_advert_rcvd{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_advert_sent Advertisements sent
+# TYPE keepalived_vrrp_advert_sent counter
+keepalived_vrrp_advert_sent{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 172998
+# HELP keepalived_vrrp_auth_failure Authentication failure
+# TYPE keepalived_vrrp_auth_failure counter
+keepalived_vrrp_auth_failure{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_authtype_mismatch Authentication mismatch
+# TYPE keepalived_vrrp_authtype_mismatch counter
+keepalived_vrrp_authtype_mismatch{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_become_master Became master
+# TYPE keepalived_vrrp_become_master counter
+keepalived_vrrp_become_master{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 1
+# HELP keepalived_vrrp_invalid_authtype Authentication invalid
+# TYPE keepalived_vrrp_invalid_authtype counter
+keepalived_vrrp_invalid_authtype{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_invalid_type_rcvd Invalid type errors
+# TYPE keepalived_vrrp_invalid_type_rcvd counter
+keepalived_vrrp_invalid_type_rcvd{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_ip_ttl_err TTL errors
+# TYPE keepalived_vrrp_ip_ttl_err counter
+keepalived_vrrp_ip_ttl_err{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_packet_len_err Packet length errors
+# TYPE keepalived_vrrp_packet_len_err counter
+keepalived_vrrp_packet_len_err{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_pri_zero_rcvd Priority zero received
+# TYPE keepalived_vrrp_pri_zero_rcvd counter
+keepalived_vrrp_pri_zero_rcvd{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_pri_zero_sent Priority zero sent
+# TYPE keepalived_vrrp_pri_zero_sent counter
+keepalived_vrrp_pri_zero_sent{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0
+# HELP keepalived_vrrp_release_master Released master
+# TYPE keepalived_vrrp_release_master counter
+keepalived_vrrp_release_master{intf="",name="kolla_internal_vip_10",state="MASTER",vrid="10"} 0

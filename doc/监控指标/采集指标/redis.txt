@@ -1,0 +1,32 @@
+指标名称(单位)
+指标表达式
+
+上次写入dump数据以后改变的key次数(次)
+redis_rdb_changes_since_last_save
+
+上次写入dump数据的间隔时长(分)
+(time0-redis_rdb_last_save_timestamp_seconds)/60
+
+使用内存达到峰值内存的百分比(%)
+redis_memory_used_bytes/redis_memory_used_peak _bytes*100
+
+采集器状态()
+up
+
+集群模式()
+redis_cluster_enabled
+
+key总数(个)
+sum(redis_db_keys)
+
+redis内存使用率(%)
+100 * (redis_memory_used_bytes/ (redis_config_maxmemory >0 or redis_total_system_memory_bytes))
+
+redis内存使用量(KB)
+redis_memory_used_bytes/1024
+
+redis运行时长(天)
+redis_uptime_in_seconds/3600/24
+
+redis运行状态()
+redis_up

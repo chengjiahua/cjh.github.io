@@ -1,0 +1,330 @@
+ ceph_active_pgs
+ 集群中活动PG的数量
+ 
+ ceph_backfill_wait_pgs
+ 处于backfill_wait状态的集群中的PG数量
+ 
+ ceph_backfilling_pgs
+ 集群中回填PG的数量
+ 
+ ceph_cache_evict_io_bytes
+ 每秒从高速缓存池中逐出的字节速率
+ 
+ ceph_cache_flush_io_bytes
+ 每秒从高速缓存池中刷新的字节率
+ 
+ ceph_cache_promote_io_ops
+ 每秒衡量的高速缓存提升操作总数
+ 
+ ceph_client_io_ops
+ 每秒测量的集群上的客户端总操作数
+ 
+ ceph_client_io_read_bytes
+ 每秒所有客户端读取的字节率
+ 
+ ceph_client_io_read_ops
+ 每秒测量的集群上客户端读取的I / O操作总数
+ 
+ ceph_client_io_write_bytes
+ 每秒所有客户端写入的字节率
+ 
+ ceph_client_io_write_ops
+ 每秒测量的集群上客户端写I / O操作总数
+ 
+ ceph_cluster_available_bytes
+ 集群中的可用空间
+ 
+ ceph_cluster_capacity_bytes
+ 集群的总容量
+ 
+ ceph_cluster_objects
+ 集群中rados对象的数量
+ 
+ ceph_cluster_used_bytes
+ 当前正在使用的集群的容量
+ 
+ ceph_deep_scrubbing_pgs
+ 集群中深度清理PG的数量
+ 
+ ceph_degraded_objects
+ 所有PG上降级对象的数量，包括副本
+ 
+ ceph_degraded_pgs
+ 降级状态的PG数量
+ 
+ ceph_down_pgs
+ 处于关闭状态的集群中的PG数量
+ 
+ ceph_forced_backfill_pgs
+ 处于force_backfill状态的集群中的PG数量
+ 
+ ceph_forced_recovery_pgs
+ 处于force_recovery状态的集群中的PG数量
+ 
+ ceph_health_status
+ 集群的健康状态，只能在3种状态之间变化（err：2，warn：1，ok：0）
+ 
+ ceph_health_status_interp
+ 集群的健康状态，只能在4个状态之间变化（err：3，critical_warn：2，soft_warn：1，ok：0）
+ 
+ ceph_incomplete_pgs
+ 处于不完整状态的集群中PG的数量
+ 
+ ceph_inconsistent_pgs
+ 处于不一致状态的集群中的PG数量
+ 
+ ceph_mgrs 
+ mgrs的总数，包括备用数据库
+ 
+ ceph_mgrs_active
+ 活动mgrs的计数，可以为0或1
+ 
+ ceph_misplaced_objects
+ 所有PG中放错对象的数量，包括副本
+ 
+ ceph_monitor_clock_skew_seconds
+ 监视节点发生的时钟偏移
+ 
+ ceph_monitor_latency_seconds
+ 监视节点发生的延迟
+ 
+ ceph_monitor_quorum_count
+ 监视器仲裁的总大小
+ 
+ ceph_mons_down
+ 处于DOWN状态的Mons的计数
+ 
+ ceph_new_crash_reports
+ 可用的新崩溃报告数
+ 
+ ceph_osd_avail_bytes 
+ OSD可用存储空间（以字节为单位）
+ 
+ ceph_osd_average_utilization
+ OSD平均利用率
+ 
+ ceph_osd_backfill_full 
+ OSD补余已满状态
+ 
+ ceph_osd_backfill_full_ratio
+ OSD回填完整比率值
+ 
+ ceph_osd_bytes 
+ OSD总字节
+ 
+ ceph_osd_crush_weight 
+ OSD压缩重量
+ 
+ ceph_osd_depth 
+ OSD深度
+ 
+ ceph_osd_down
+ 集群中关闭的OSD数
+ 
+ ceph_osd_full 
+ OSD完整状态
+ 
+ ceph_osd_full_ratio
+ OSD全比率值
+ 
+ ceph_osd_in 
+ OSD输入状态
+ 
+ ceph_osd_near_full
+ OSD即将满状态
+ 
+ ceph_osd_near_full_ratio
+ OSD接近全比例值
+ 
+ ceph_osd_pg_upmap_items_total
+ OSD PG-Upmap例外表条目计数
+ 
+ ceph_osd_pgs 
+ OSD放置组计数
+ 
+ ceph_osd_reweight 
+ OSD加权
+ 
+ ceph_osd_total_avail_bytes
+ OSD总可用存储字节
+ 
+ ceph_osd_total_bytes 
+ OSD总存储字节
+ 
+ ceph_osd_total_used_bytes 
+ OSD使用的总存储字节数
+ 
+ ceph_osd_up 
+ OSD开启状态
+ 
+ ceph_osd_used_bytes 
+ OSD使用的存储空间（以字节为单位）
+ 
+ ceph_osd_utilization 
+ OSD使用率
+ 
+ ceph_osd_variance 
+ OSD差异
+ 
+ ceph_osdmap_flag_full
+ 集群被标记为已满，无法为写入服务
+ 
+ ceph_osdmap_flag_nobackfill 
+ OSD将不会被回填
+ 
+ ceph_osdmap_flag_nodeep_scrub
+ 禁用深度清理
+ 
+ ceph_osdmap_flag_nodown 
+ OSD故障报告将被忽略，OSD不会被标记为已关闭
+ 
+ ceph_osdmap_flag_noin
+ 已退出的OSD不会自动标记为,在配置的间隔后
+ 
+ ceph_osdmap_flag_noout 
+ OSD将不会自动标记出来
+ 
+ ceph_osdmap_flag_norebalance
+ 数据重新平衡已暂停
+ 
+ ceph_osdmap_flag_norecover
+ 恢复已暂停
+ 
+ ceph_osdmap_flag_noscrub
+ 禁用了擦除
+ 
+ ceph_osdmap_flag_notieragent
+ 缓存分层活动已暂停
+ 
+ ceph_osdmap_flag_noup 
+ OSD不允许启动
+ 
+ ceph_osdmap_flag_pauserd
+ 读取已暂停
+ 
+ ceph_osdmap_flag_pausewr
+ 写入被暂停
+ 
+ ceph_osds
+ 集群中OSD总数
+ 
+ ceph_osds_down
+ 处于DOWN状态的OSD计数
+ 
+ ceph_osds_in
+ 处于IN状态且可用于处理请求的OSD计数
+ 
+ ceph_osds_up
+ 处于UP状态的OSD计数
+ 
+ ceph_peering_pgs
+ 集群中对等PG的数量
+ 
+ ceph_pg_state
+ 集群中PG的状态
+ 
+ ceph_pgs_remapped
+ 重新映射并引起集群范围移动的PG数量
+ 
+ ceph_pool_available_bytes
+ 池的可用空间
+ 
+ ceph_pool_dirty_objects_total
+ 总数缓存层池中的脏对象的数量
+ 
+ ceph_pool_expansion_factor
+ 池的数据扩展乘数
+ 
+ ceph_pool_min_size
+ 活动I / O需要存在的对象的最小副本数或块数
+ 
+ ceph_pool_objects_total
+ 总数池中分配的对象数
+ 
+ ceph_pool_percent_used
+ 该池使用的该池可用容量的百分比
+ 
+ ceph_pool_pg_num
+ 分配给池的PG的总数
+ 
+ ceph_pool_pgp_num
+ 分配给池并用于放置的PG的总数
+ 
+ ceph_pool_quota_max_bytes
+ 池中允许的最大数据字节数
+ 
+ ceph_pool_quota_max_objects
+ 池中允许的RADOS对象的最大数量
+ 
+ ceph_pool_raw_used_bytes
+ 当前正在使用的池的原始容量，这取决于大小
+ 
+ ceph_pool_read_bytes_total
+ 池的总读取吞吐量
+ 
+ ceph_pool_read_total
+ 池的总读取I / O调用
+ 
+ ceph_pool_size
+ 运行状况良好的群集需要存在的对象的总副本或大块
+ 
+ ceph_pool_stripe_width
+ 池中RADOS对象的条带宽度
+ 
+ ceph_pool_unfound_objects_total
+ 总数池中未找到的对象的数量
+ 
+ ceph_pool_used_bytes
+ 当前正在使用的池的容量
+ 
+ ceph_pool_write_bytes_total
+ 池的总写吞吐量
+ 
+ ceph_pool_write_total
+ 池的总写I / O调用
+ 
+ ceph_recovering_pgs
+ 集群中恢复PG的数量
+ 
+ ceph_recovery_io_bytes
+ 每秒集群中恢复的字节率
+ 
+ ceph_recovery_io_keys
+ 每秒在集群中恢复的密钥的速率
+ 
+ ceph_recovery_io_objects
+ 每秒集群中恢复的对象的速率
+ 
+ ceph_recovery_wait_pgs
+ 处于recovery_wait状态的集群中的PG数量
+ 
+ ceph_scrubbing_pgs
+ 集群中清理PG的数量
+ 
+ ceph_slow_requests
+ 慢请求/慢操作的数量
+ 
+ ceph_stale_pgs
+ 集群中过时的PG的数量
+ 
+ ceph_stuck_degraded_pgs
+ 处于降级状态的PG数量
+ 
+ ceph_stuck_stale_pgs
+ 集群中滞留的PG数量
+ 
+ ceph_stuck_unclean_pgs
+ 处于不清洁状态的PG数量
+ 
+ ceph_stuck_undersized_pgs
+ 集群中卡住的尺寸过小的PG的数量
+ 
+ ceph_total_pgs
+ 总数集群中的PG数量
+ 
+ ceph_unclean_pgs
+ 处于不清洁状态的PG数量
+ 
+ ceph_undersized_pgs
+ 集群中超大PG的数量
+ 
