@@ -1,5 +1,8 @@
 # 博客专区
 
-## 如果是自己的原创，会标明
+## 原创博客
 
-## 如果是转载他人的博客，则会粘贴出处
+## 转载博客
+
+go语言高性能编程
+https://github.com/geektutu/high-performance-go
