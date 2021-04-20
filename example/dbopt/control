@@ -1,0 +1,180 @@
+#!/bin/bash -e
+
+# release version
+version=0.1.0
+
+CWD=$(cd $(dirname $0)/; pwd)
+cd $CWD
+
+usage()
+{
+	echo -e "Flag shorthand -h has been deprecated, please use --help\n"
+	echo -e "dbopt version = 0.1.0\n"
+	echo -e $"Usage: $0 {build|proto|creat|upload|build|export-all|import-all|compose-up|compose-up-all} <Module-name>\n"
+	echo -e "Usage Module:\n"
+	echo "	run        <Module-name>   Build module and go run"
+	echo "	proto      <Module-name>   Generate protobuf files, including .bm.go .ecode.go .pb.go .swagger.json"
+	echo "	upload     <Module-name>   <proto-name(Empty is all)>	 Auto update api on a Yapi platform"
+	echo "	creat      <Module-name>   Generate a new Module and build it"
+	exit 0
+}
+
+
+run()
+{
+  export GO111MODULE=on
+
+	mod=$1
+	if [ "x${mod}" = "x" ]; then
+		return
+	fi
+
+
+	run_one $mod
+}
+
+run_one()
+{
+	mod=$1
+	mkdir -p  bin/${mod}
+	cp -r app/${mod}/cmd/etc  bin/${mod}
+	go build -ldflags "-X main.version=${version} -X main.buildTime=`date -u '+%Y-%m-%d_%I:%M:%S%p'`"  -o bin/${mod}/${mod}  app/${mod}/cmd/main.go
+	cd bin/${mod} && ./${mod} --conf ./etc/
+}
+
+creat()
+{
+
+	mod=$1
+	if [ "x${mod}" = "x" ]; then
+		echo "your Module-name is empty ,Please make sure your Module-name is exist"
+		exit 1
+	fi
+
+	for file in `ls -a ./app`
+    do
+        if [ "${mod}" = $file ]; then
+			echo "The Module-name already existed"
+			exit 1
+        fi
+    done
+
+	cp -r app/dbopt-demo/ app/${mod}
+	mv app/${mod}/api/v1/dbopt-demo.proto app/${mod}/api/v1/${mod}.proto
+	rm -rf app/${mod}/api/v1/dbopt-demo.*
+	sed -i "s/dbopt-demo/${mod}/g" `grep dbopt-demo -rl app/${mod}/`
+	proto_one $mod
+	echo "Module created successfully"
+}
+
+
+
+upload()
+{
+	mod=$1
+	proto_name=$2
+	if [  "x$mod" = "x" ];then
+		echo "your module-name is empty"
+		exit 1
+	fi
+
+  set +e
+
+	which npm
+	if [  $? -ne  0 ];then
+		echo -e "npm isn't installed, npm is installing..."
+		yum install npm;
+	fi
+
+	which yapi-cli
+	if [  $? -ne  0 ];then
+		echo -e "yapi-cli isn't installed, npm is installing..."
+		npm i -g yapi-cli --registry https://registry.npm.taobao.org
+	fi
+
+	set -e
+
+	src=app/${mod}/api/v1
+	# if [ "x${token}" != "x" ];then
+	# 	if [  ${#token}  -eq  64 ];then
+	# 		sed -i "/^.*token/c\ \ \ \ \ \ \"token\": \"${token}\"," ${src}/yapi-import.json
+	# 	else echo "token length does not match , automatically use the default token for you"
+	# 	fi
+	# fi
+  
+    echo $mod
+    echo ${proto_name}
+	#获取指定目录下的.proto的文件
+  if [ "x${proto_name}" == "x" ];then
+    for file in `ls -a $src`
+      do
+          if [ -f ${src}/$file ]
+          then
+        if [ "${file##*.}"x = "proto"x ] ;then
+          name=${file%.*}.json
+          cp ${src}/yapi-import.json  ${src}/${name}
+          sed -i "/^.*file/c\ \ \ \ \ \ \"file\": \"$CWD/${src}/${file%.*}.swagger.json\"," ${src}/${name}
+          pwd=$CWD/${src}/${name}
+          yapi import --config=${pwd}
+          fi
+          fi
+      done
+  else
+    name=${proto_name}.json
+    cp ${src}/yapi-import.json  ${src}/${name}
+    sed -i "/^.*file/c\ \ \ \ \ \ \"file\": \"$CWD/${src}/${proto_name}.swagger.json\"," ${src}/${name}
+    pwd=$CWD/${src}/${name}
+    yapi import --config=${pwd}
+  fi
+
+}
+
+proto()
+{
+	mod=$1
+	if [ "x${mod}" = "x" ]; then
+		proto_one dbopt-api
+		proto_one dbopt-demo
+		return
+	fi
+
+
+	proto_one $mod
+}
+
+
+proto_one()
+{
+	gopath=`echo $GOPATH`
+	if [  "x${gopath}" = "x" ];then
+		echo "your GOPATH is empty ,Please make sure your GOPATH is exist"
+		exit 1
+	fi
+	which protoc
+	if [  $? -ne  0 ];then
+		echo "protoc isn't installed,Please make sure protoc already installed"
+		exit 1
+	fi
+	mod=$1
+	src=app/${mod}/api/v1
+	#go get -u github.com/go-kratos/kratos/tool/kratos
+	cd ${src} && kratos tool protoc
+}
+
+
+case "$1" in
+	run)
+		run $2
+		;;
+	creat)
+		creat $2
+		;;
+	upload)
+		upload $2 $3
+		;;
+	proto)
+		proto $2 $3
+		;;
+	*)
+		usage
+esac

@@ -1,0 +1,17 @@
+---
+version: 1.0.0
+
+web:
+  addr: 0.0.0.0:7008
+  maxListen: 10
+  timeout: 1s
+
+  
+log:
+  dir: /var/log/dbopt/operations
+
+sqlite3:
+  dsn: '/var/lib/sqlite3/dbopt.db'
+  active: 5
+  idle: 5
+  idleTimeout: 4h
