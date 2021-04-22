@@ -229,7 +229,7 @@ BenchmarkRangeStruct-8              2194            467411 ns/op
 
 我们可以用一个非常简单的例子来证明 range 迭代时，返回的是拷贝。
 
-```go
+```
 persons := []struct{ no int }{{no: 1}, {no: 2}, {no: 3}}
 for _, s := range persons {
     s.no += 10
@@ -247,7 +247,7 @@ fmt.Println(persons) // [{101} {102} {103}]
 
 那如果切片中是指针，而不是结构体呢？
 
-```go
+```
 func generateItems(n int) []*Item {
 	items := make([]*Item, 0, n)
 	for i := 0; i < n; i++ {
