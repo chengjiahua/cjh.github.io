@@ -51,3 +51,12 @@ https://github.com/LockGit/gochat
 
 基于 Go 实现的终端吃豆人游戏
 https://github.com/danicat/pacgo
+
+一个基于 Go 语言实现的报警和处理报警系统。它以发请求或者手动添加方式进行告警，支持短信、电话、发邮件等通知方式。集成了一个看板，基本上算是开箱即用
+https://github.com/target/goalert
+
+哔哩哔哩开源的一套 Go 微服务框架，包含大量微服务相关框架及工具。解决了 gin 在微服务场景下的一些适配和微服务本身的一系列生态
+https://github.com/go-kratos/kratos
+
+Go 夜读，该项目每周四晚上更新 Go 源码阅读以及线下技术讨论。难得的中文 Golang 源码解析，包含文档和YouTube 视频，干货满满
+https://github.com/talkgo/night
