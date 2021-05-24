@@ -158,4 +158,5 @@ func runTaggedExample(session client.Session) {
 	// if err := seriesIter.Err(); err != nil {
 	// 	log.Fatalf("error in series iterator: %v", err)
 	// }
+	
 }
