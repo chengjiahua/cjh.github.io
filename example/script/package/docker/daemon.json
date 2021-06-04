@@ -1,0 +1,4 @@
+{
+    "registry-mirrors" : ["https://registry.docker-cn.com"],
+    "bip": "60.66.66.1/24"
+}
