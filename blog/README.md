@@ -77,3 +77,8 @@ https://github.com/go-kratos/kratos
 Go 夜读，该项目每周四晚上更新 Go 源码阅读以及线下技术讨论。难得的中文 Golang 源码解析，包含文档和YouTube 视频，干货满满
 
 https://github.com/talkgo/night
+
+
+和我一步步部署 kubernetes 集群
+
+https://github.com/opsnull/follow-me-install-kubernetes-cluster
