@@ -48,7 +48,11 @@ update()
 
 # 开始修改网卡信息
 	update_start $interface $ip $gw $mask
-
+	if [ $? -ne 0 ]
+    then
+        echo "修改网卡信息失败" 
+        return 1
+    fi
 }
 
 check_interface()
