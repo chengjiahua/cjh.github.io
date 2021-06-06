@@ -137,4 +137,5 @@ cat *.go |grep Time -A 1 |grep -v Time
 --
  * 是否是丑陋数，所谓丑陋数就是其质数因子只能是2,3,5。
 ```
-![](https://github.com/LockGit/Go/blob/master/img/leetcode.gif)
+
+
