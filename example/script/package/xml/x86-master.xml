@@ -4,8 +4,10 @@
   <currentMemory unit="KiB">MEMORYSIZE</currentMemory>
   <vcpu placement="static">CPUNUM</vcpu>
   <os>
-    <type arch="x86_64" machine="pc-i440fx-4.0">hvm</type>
-    <boot dev="hd"/>
+    <type arch='x86_64' machine='pc-i440fx-4.0'>hvm</type>
+    <loader readonly='yes' type='pflash'>/usr/share/edk2.git/ovmf-x64/OVMF_CODE-pure-efi.fd</loader>
+    <nvram>/usr/share/edk2.git/ovmf-x64/OVMF_VARS-with-csm.fd</nvram>
+    <boot dev='network'/>
   </os>
   <features>
     <acpi/>
