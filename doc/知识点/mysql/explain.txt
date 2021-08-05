@@ -1,0 +1,162 @@
+使用
+explain + sql 语句
+
+
+字段解释
+| id   | select_type | table         | type | possible_keys | key  | key_len | ref  | rows | Extra
+
+
+
+id：
+id相同：从上自下读取表
+id不同：id值越大，优先级越高，越先执行
+
+
+select_type：查询类型
+SIMPLE			简单查询
+简单的select查询，查询中不包含子查询和UNION
+
+PRIMARY			主查询
+查询中若包含任何复杂的子部分，最外层查询则被标记为PRIMARY
+
+SUBQUERY		子查询
+在select或where列表中包含子查询
+
+DERIVED			衍生查询
+在FROM中包含了子查询被标记为DERICED
+MYSQL会递归查询这些子查询，结果放在临时表里
+
+UNION			联合查询
+第二个select出现在union之后，则被标记为UNION
+
+UNION RESULI	
+从UNION表获取结果的SELECT，最后调用
+
+
+table：表
+
+
+
+type：访问类型
+
+system:	
+表只有一行记录（等于系统表），const的特例，忽略不计
+
+const:	
+表示通过索引一次就能找到了，用于PRIMARY KRY（主键），unique（唯一索引）。
+只匹配一行数据，查询次数常量级别
+MariaDB [kops]> explain select * from host_object where id = 2;
++------+-------------+-------------+-------+---------------+---------+---------+-------+------+-------+
+| id   | select_type | table       | type  | possible_keys | key     | key_len | ref   | rows | Extra |
++------+-------------+-------------+-------+---------------+---------+---------+-------+------+-------+
+|    1 | SIMPLE      | host_object | const | PRIMARY       | PRIMARY | 8       | const | 1    |       |
++------+-------------+-------------+-------+---------------+---------+---------+-------+------+-------+
+
+
+eq_ref: 
+唯一索引扫描，对于每个索引键，表中只有一条记录与之匹配。常用于主键或唯一索引扫描。
+MariaDB [kops]> explain select * from  a , b  where a.id = b.id;
++------+-------------+-------+--------+---------------+---------+---------+-----------+------+-------+
+| id   | select_type | table | type   | possible_keys | key     | key_len | ref       | rows | Extra |
++------+-------------+-------+--------+---------------+---------+---------+-----------+------+-------+
+|    1 | SIMPLE      | b     | ALL    | PRIMARY       | NULL    | NULL    | NULL      | 4    |       |
+|    1 | SIMPLE      | a     | eq_ref | PRIMARY       | PRIMARY | 8       | kops.b.id | 1    |       |
++------+-------------+-------+--------+---------------+---------+---------+-----------+------+-------+
+
+b表驱动a表，因为b表的id作为索引查询a中与之匹配的行，那么b表自身就需要全表扫描。
+
+ref:	
+非唯一性扫描，返回匹配某个单独值的所有行。
+MariaDB [kops]> create index inkey on alarm_history(alarm_start,status);
+Query OK, 0 rows affected (0.01 sec)
+
+MariaDB [kops]> explain select * from alarm_history   where  status = 1 ;
++------+-------------+---------------+------+---------------+-------+---------+-------+------+-------+
+| id   | select_type | table         | type | possible_keys | key   | key_len | ref   | rows | Extra |
++------+-------------+---------------+------+---------------+-------+---------+-------+------+-------+
+|    1 | SIMPLE      | alarm_history | ref  | inkey         | inkey | 5       | const | 206  |       |
++------+-------------+---------------+------+---------------+-------+---------+-------+------+-------+
+
+
+range:	
+只检索给定范围内的行，使用一个索引来选择行。key列显示使用了那些索引。
+一般用于where语句中的between , < , > , in 等的查询，部分扫描
+MariaDB [kops]> explain select * from alarm_history  where id in (1,2,3);
++------+-------------+---------------+-------+---------------+---------+---------+------+------+-------------+
+| id   | select_type | table         | type  | possible_keys | key     | key_len | ref  | rows | Extra       |
++------+-------------+---------------+-------+---------------+---------+---------+------+------+-------------+
+|    1 | SIMPLE      | alarm_history | range | PRIMARY       | PRIMARY | 8       | NULL | 3    | Using where |
++------+-------------+---------------+-------+---------------+---------+---------+------+------+-------------+
+
+
+index: 只遍历索引树
+MariaDB [kops]> explain select id  from alarm_history;
++------+-------------+---------------+-------+---------------+-------+---------+------+------+-------------+
+| id   | select_type | table         | type  | possible_keys | key   | key_len | ref  | rows | Extra       |
++------+-------------+---------------+-------+---------------+-------+---------+------+------+-------------+
+|    1 | SIMPLE      | alarm_history | index | NULL          | inkey | 14      | NULL | 1628 | Using index |
++------+-------------+---------------+-------+---------------+-------+---------+------+------+-------------+
+
+ALL：全表扫描
+MariaDB [kops]> explain select * from host_object;
++------+-------------+-------------+------+---------------+------+---------+------+------+-------+
+| id   | select_type | table       | type | possible_keys | key  | key_len | ref  | rows | Extra |
++------+-------------+-------------+------+---------------+------+---------+------+------+-------+
+|    1 | SIMPLE      | host_object | ALL  | NULL          | NULL | NULL    | NULL | 4    |       |
++------+-------------+-------------+------+---------------+------+---------+------+------+-------+
+
+最好到最差，依次如下
+system > const > eq_ref > ref > range > index > ALL
+一般来说，得保证查询达到range级别，最好达到ref级别
+
+
+possible_keys：	
+可能应用在这张表的索引，一个或者多个
+查询涉及到的字段若存在索引，则该索引将被列出，但不一定被查询实际使用
+
+
+key	：
+实际用到的索引，为null则表示索引失效
+查询中若使用了覆盖索引，则该索引仅出现在key列表中
+
+key_len ：
+表示索引使用的字节数，可通过该列计算查询中使用的索引长度。再不损失精确性的情况下，长度越短越好。
+为字段最大可能长度，并非实际使用长度，即key_len根据定义计算得出，不是检索出的
+
+ref：
+显示索引的哪一列被使用了，如果可能的话，是一个常数。哪些列或常量被用于查找索引列上的值。
+
+rows
+
+Extra
+
+
+
+优化实例：
+MariaDB [kops]> explain select * from host_object as a , alarm_history as b where a.node_id = b.host_id ;
++------+-------------+-------+------+---------------+------+---------+------+------+-------------------------------------------------+
+| id   | select_type | table | type | possible_keys | key  | key_len | ref  | rows | Extra                                           |
++------+-------------+-------+------+---------------+------+---------+------+------+-------------------------------------------------+
+|    1 | SIMPLE      | a     | ALL  | NULL          | NULL | NULL    | NULL | 4    |                                                 |
+|    1 | SIMPLE      | b     | ALL  | NULL          | NULL | NULL    | NULL | 1544 | Using where; Using join buffer (flat, BNL join) |
++------+-------------+-------+------+---------------+------+---------+------+------+-------------------------------------------------+
+2 rows in set (0.00 sec)
+
+MariaDB [kops]> create index inkey on alarm_history(host_id,alarm_start);
+Query OK, 0 rows affected (0.01 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [kops]> create index host_key on host_object (node_id);
+Query OK, 0 rows affected (0.00 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [kops]> explain select * from host_object as a , alarm_history as b where a.node_id = b.host_id ;
++------+-------------+-------+------+---------------+-------+---------+----------------+------+-----------------------+
+| id   | select_type | table | type | possible_keys | key   | key_len | ref            | rows | Extra                 |
++------+-------------+-------+------+---------------+-------+---------+----------------+------+-----------------------+
+|    1 | SIMPLE      | a     | ALL  | host_key      | NULL  | NULL    | NULL           | 4    | Using where           |
+|    1 | SIMPLE      | b     | ref  | inkey         | inkey | 9       | kops.a.node_id | 772  | Using index condition |
++------+-------------+-------+------+---------------+-------+---------+----------------+------+-----------------------+
+
+检索rows少了一半，效率提高一倍。
+

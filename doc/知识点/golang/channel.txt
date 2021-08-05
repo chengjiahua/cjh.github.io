@@ -1,0 +1,17 @@
+channel存在3种状态：
+1.nil，未初始化的状态，只进行了声明，或者手动赋值为nil
+2.active，正常的channel，可读或者可写
+3.closed，已关闭，千万不要误认为关闭channel后，channel的值是nil
+
+
+channel可进行3种操作：
+1.读
+2.写
+3.关闭
+
+
+操作		nil的channel	正常channel		已关闭channel
+<- ch		阻塞			成功或阻塞		读到零值
+ch <-		阻塞			成功或阻塞		panic
+close(ch)	panic			成功			panic
+

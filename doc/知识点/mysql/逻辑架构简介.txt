@@ -1,0 +1,63 @@
+1.连接层
+
+2.服务层
+
+3.引擎层
+
+4.存储层
+
+
+#mysql提供引擎
+show engines;
+
+#mysql当前默认引擎
+show variables like '%storage%';
+
+MyISAM和InnoDB区别
+
+对比项 				MyISAM						InnoDB
+
+主外键				不支持						支持
+
+事务				不支持						支持
+
+缓存				只缓存索引，不缓存数据		不仅缓存索引，也缓存数据，对性能要求较高					
+
+
+行表锁				表锁						行锁
+				即使操作一条记录				操作时只锁住一行
+				也会锁住整个表，不适合高并发	适合高并发
+
+表空间				小							大
+
+关注点				性能						事务
+
+默认安装			Y							Y
+
+
+
+mysql语句解析
+
+人写的sql语句：
+select <select_condition>
+from <tableA>
+join <tableB> on <join_condition>
+where <where_condition>
+group by <group_by_list>
+having <having_condition>
+order by <order_by_condition>
+limit <limit_condition>
+
+
+
+机器读的sql语句
+
+from <tableA>
+on <join_condition>
+join <tableB>
+where <where_condition>
+group by <group_by_list>
+having <having_condition>
+select <select_condition>
+order by <order_by_condition>
+limit <limit_condition>

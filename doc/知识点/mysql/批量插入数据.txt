@@ -1,0 +1,108 @@
+/* 1.dept表 */
+CREATE TABLE `dept` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `deptno` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '部门id',
+  `dname` varchar(20) NOT NULL DEFAULT '' COMMENT '部门名字',
+  `loc` varchar(13) NOT NULL DEFAULT '' COMMENT '部门地址',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='部门表'
+
+/* 2.emp表 */
+CREATE TABLE `emp` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `empno` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '员工编号',
+  `ename` varchar(20) NOT NULL DEFAULT '' COMMENT '员工名字',
+  `job` varchar(9) NOT NULL DEFAULT '' COMMENT '职位',
+  `mgr` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '上级编号',
+  `hiredata` date NOT NULL COMMENT '入职时间',
+  `sal` decimal(7,2) NOT NULL COMMENT '薪水',
+  `comm` decimal(7,2) NOT NULL COMMENT '分红',
+  `deptno` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '部门id',
+  INDEX(deptno),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='员工表'
+
+
+
+# 在mysql中设置 
+# log_bin_trust_function_creators 默认是关闭的 需要手动开启
+mysql> SHOW VARIABLES LIKE 'log_bin_trust_function_creators';
++---------------------------------+-------+
+| Variable_name                   | Value |
++---------------------------------+-------+
+| log_bin_trust_function_creators | OFF   |
++---------------------------------+-------+
+1 row in set (0.00 sec)
+
+mysql> SET GLOBAL log_bin_trust_function_creators=1;
+Query OK, 0 rows affected (0.00 sec)
+
+上述修改方式MySQL重启后会失败，在my.cnf配置文件下修改永久有效。
+
+[mysqld]
+log_bin_trust_function_creators=ON
+
+
+# 1、函数：随机产生字符串
+DELIMITER $$
+CREATE FUNCTION rand_string(n INT) RETURNS VARCHAR(255)
+BEGIN
+    DECLARE chars_str VARCHAR(100) DEFAULT 'abcdefghijklmnopqrstuvwsyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    DECLARE return_str VARCHAR(255) DEFAULT '';
+    DECLARE i INT DEFAULT 0;
+    WHILE i < n DO
+    SET return_str = CONCAT(return_str,SUBSTRING(chars_str,FLOOR(1+RAND()*52),1));
+    SET i = i + 1;
+    END WHILE;
+    RETURN return_str;
+END $$
+
+# 2、函数：随机产生部门编号
+DELIMITER $$
+CREATE FUNCTION rand_num() RETURNS INT(5)
+BEGIN
+    DECLARE i INT DEFAULT 0;
+    SET i = FLOOR(100 + RAND() * 10);
+    RETURN i;
+END $$
+
+
+
+# 1、函数：向dept表批量插入
+DELIMITER $$
+CREATE PROCEDURE insert_dept(IN START INT(10),IN max_num INT(10))
+BEGIN
+DECLARE i INT DEFAULT 0;
+    SET autocommit = 0;
+    REPEAT
+    SET i = i + 1;
+    INSERT INTO dept(deptno,dname,loc) VALUES((START + i),rand_string(10),rand_string(8));
+    UNTIL i = max_num
+    END REPEAT;
+    COMMIT;
+END $$
+
+# 2、函数：向emp表批量插入
+DELIMITER $$
+CREATE PROCEDURE insert_emp(IN START INT(10),IN max_num INT(10))
+BEGIN
+DECLARE i INT DEFAULT 0;
+    SET autocommit = 0;
+    REPEAT
+    SET i = i + 1;
+    INSERT INTO emp(empno,ename,job,mgr,hiredata,sal,comm,deptno) VALUES((START + i),rand_string(6),'SALESMAN',0001,CURDATE(),( 2000 + i),(400 + i),rand_num());
+    UNTIL i = max_num
+    END REPEAT;
+    COMMIT;
+END $$
+
+
+
+# 1、调用存储过程向dept表插入10个部门。
+DELIMITER ;
+CALL insert_dept(100,20);
+
+# 2、调用存储过程向emp表插入50万条数据。
+DELIMITER ;
+CALL insert_emp(100001,5000000);
+
